@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\PRN212HotelManagement",
+    "\\PRN212HotelManagement\\HotelManagement_BLL"
   ],
+  "SelectedNode": "\\PRN212HotelManagement\\HotelManagement_BLL\\Class1.cs",
   "PreviewInSolutionExplorer": false
 }
