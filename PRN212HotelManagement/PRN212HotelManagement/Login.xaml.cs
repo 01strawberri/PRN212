@@ -1,4 +1,5 @@
 ﻿using HotelManagement_BLL;
+using HotelManagement_DAL;
 using HotelManagement_DAL.DBContext;
 using HotelManagement_DAL.Repositories;
 using Microsoft.Win32;
@@ -81,20 +82,20 @@ namespace PRN212HotelManagement
             else
             {
                 MessageBox.Show($"Signed in as {role}.", "Login Success", MessageBoxButton.OK, MessageBoxImage.Information);
-            }
-
-            switch (role)
-            {
-                case "Admin":
-                    //Open Admin WPF
-                    AdminWPF adminWPF = new AdminWPF();
-                    adminWPF.Show();
-                    break;
-                case "Staff":
-                    //Open Staff WPF
-                    StaffWPF staffWPF = new StaffWPF();
-                    staffWPF.Show();
-                    break;
+                switch (role)
+                {
+                    case "Admin":
+                        //Open Admin WPF
+                        User currentUser = _userService.GetUserByUsername(username);
+                        AdminWPF adminWPF = new AdminWPF(currentUser);
+                        adminWPF.Show();
+                        break;
+                    case "Staff":
+                        //Open Staff WPF
+                        StaffWPF staffWPF = new StaffWPF();
+                        staffWPF.Show();
+                        break;
+                }
             }
 
             this.Close();

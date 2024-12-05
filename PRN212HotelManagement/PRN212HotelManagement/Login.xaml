@@ -51,7 +51,7 @@
                         </Grid.ColumnDefinitions>
 
                         <Image Source="/Images/Account2.png" Height="20"/>
-                        <TextBlock x:Name="textAccount" MouseDown="textAccount_MouseDown" Text="Email" Style="{StaticResource textHint}"/>
+                        <TextBlock x:Name="textAccount" MouseDown="textAccount_MouseDown" Text="Username" Style="{StaticResource textHint}"/>
                         <TextBox x:Name="txtAccount" TextChanged="txtAccount_TextChanged" Style="{StaticResource textBox}"/>
                     </Grid>
                 </Border>
