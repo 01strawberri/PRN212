@@ -1,4 +1,5 @@
 ﻿using HotelManagement_DAL.DBContext;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +10,7 @@ namespace HotelManagement_DAL.Repositories
 {
     public class UserRepository
     {
-        private readonly Prn212hotelManagementContext _prn212hotelManagementContext;
+        private Prn212hotelManagementContext _prn212hotelManagementContext;
 
         public UserRepository(Prn212hotelManagementContext prn212hotelManagementContext)
         {

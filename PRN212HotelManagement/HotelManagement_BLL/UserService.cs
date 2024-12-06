@@ -1,4 +1,5 @@
 ﻿using HotelManagement_DAL;
+using HotelManagement_DAL.DBContext;
 using HotelManagement_DAL.Repositories;
 using System;
 using System.Collections.Generic;

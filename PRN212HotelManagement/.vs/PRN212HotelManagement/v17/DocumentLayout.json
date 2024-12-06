@@ -3,40 +3,48 @@
   "WorkspaceRootPath": "C:\\Users\\Han_Mai\\Desktop\\PRN212\\PRN212HotelManagement_Git\\PRN212HotelManagement\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{51C0295F-BCC1-425B-8E85-8B0FE798C4FD}|PRN212HotelManagement\\PRN212HotelManagement.csproj|c:\\users\\han_mai\\desktop\\prn212\\prn212hotelmanagement_git\\prn212hotelmanagement\\prn212hotelmanagement\\adminwpf.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{51C0295F-BCC1-425B-8E85-8B0FE798C4FD}|PRN212HotelManagement\\PRN212HotelManagement.csproj|solutionrelative:prn212hotelmanagement\\adminwpf.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{51C0295F-BCC1-425B-8E85-8B0FE798C4FD}|PRN212HotelManagement\\PRN212HotelManagement.csproj|c:\\users\\han_mai\\desktop\\prn212\\prn212hotelmanagement_git\\prn212hotelmanagement\\prn212hotelmanagement\\adminwpf.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{51C0295F-BCC1-425B-8E85-8B0FE798C4FD}|PRN212HotelManagement\\PRN212HotelManagement.csproj|solutionrelative:prn212hotelmanagement\\adminwpf.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{51C0295F-BCC1-425B-8E85-8B0FE798C4FD}|PRN212HotelManagement\\PRN212HotelManagement.csproj|c:\\users\\han_mai\\desktop\\prn212\\prn212hotelmanagement_git\\prn212hotelmanagement\\prn212hotelmanagement\\register.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{51C0295F-BCC1-425B-8E85-8B0FE798C4FD}|PRN212HotelManagement\\PRN212HotelManagement.csproj|solutionrelative:prn212hotelmanagement\\register.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{51C0295F-BCC1-425B-8E85-8B0FE798C4FD}|PRN212HotelManagement\\PRN212HotelManagement.csproj|c:\\users\\han_mai\\desktop\\prn212\\prn212hotelmanagement_git\\prn212hotelmanagement\\prn212hotelmanagement\\login.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{51C0295F-BCC1-425B-8E85-8B0FE798C4FD}|PRN212HotelManagement\\PRN212HotelManagement.csproj|solutionrelative:prn212hotelmanagement\\login.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8227DEF3-13AB-4FC5-A226-52BC5EDACA15}|HotelManagement_DAL\\HotelManagement_DAL.csproj|c:\\users\\han_mai\\desktop\\prn212\\prn212hotelmanagement_git\\prn212hotelmanagement\\hotelmanagement_dal\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8227DEF3-13AB-4FC5-A226-52BC5EDACA15}|HotelManagement_DAL\\HotelManagement_DAL.csproj|solutionrelative:hotelmanagement_dal\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{8227DEF3-13AB-4FC5-A226-52BC5EDACA15}|HotelManagement_DAL\\HotelManagement_DAL.csproj|c:\\users\\han_mai\\desktop\\prn212\\prn212hotelmanagement_git\\prn212hotelmanagement\\hotelmanagement_dal\\dbcontext\\prn212hotelmanagementcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8227DEF3-13AB-4FC5-A226-52BC5EDACA15}|HotelManagement_DAL\\HotelManagement_DAL.csproj|solutionrelative:hotelmanagement_dal\\dbcontext\\prn212hotelmanagementcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3B01494A-AE10-486C-A289-275FC999D499}|HotelManagement_BLL\\HotelManagement_BLL.csproj|c:\\users\\han_mai\\desktop\\prn212\\prn212hotelmanagement_git\\prn212hotelmanagement\\hotelmanagement_bll\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3B01494A-AE10-486C-A289-275FC999D499}|HotelManagement_BLL\\HotelManagement_BLL.csproj|solutionrelative:hotelmanagement_bll\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51C0295F-BCC1-425B-8E85-8B0FE798C4FD}|PRN212HotelManagement\\PRN212HotelManagement.csproj|c:\\users\\han_mai\\desktop\\prn212\\prn212hotelmanagement_git\\prn212hotelmanagement\\prn212hotelmanagement\\adminwpf.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{51C0295F-BCC1-425B-8E85-8B0FE798C4FD}|PRN212HotelManagement\\PRN212HotelManagement.csproj|solutionrelative:prn212hotelmanagement\\adminwpf.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{51C0295F-BCC1-425B-8E85-8B0FE798C4FD}|PRN212HotelManagement\\PRN212HotelManagement.csproj|c:\\users\\han_mai\\desktop\\prn212\\prn212hotelmanagement_git\\prn212hotelmanagement\\prn212hotelmanagement\\login.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{51C0295F-BCC1-425B-8E85-8B0FE798C4FD}|PRN212HotelManagement\\PRN212HotelManagement.csproj|solutionrelative:prn212hotelmanagement\\login.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{51C0295F-BCC1-425B-8E85-8B0FE798C4FD}|PRN212HotelManagement\\PRN212HotelManagement.csproj|c:\\users\\han_mai\\desktop\\prn212\\prn212hotelmanagement_git\\prn212hotelmanagement\\prn212hotelmanagement\\staffwpf.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
-      "RelativeMoniker": "D:0:0:{51C0295F-BCC1-425B-8E85-8B0FE798C4FD}|PRN212HotelManagement\\PRN212HotelManagement.csproj|solutionrelative:prn212hotelmanagement\\staffwpf.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+      "AbsoluteMoniker": "D:0:0:{51C0295F-BCC1-425B-8E85-8B0FE798C4FD}|PRN212HotelManagement\\PRN212HotelManagement.csproj|c:\\users\\han_mai\\desktop\\prn212\\prn212hotelmanagement_git\\prn212hotelmanagement\\prn212hotelmanagement\\login.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{51C0295F-BCC1-425B-8E85-8B0FE798C4FD}|PRN212HotelManagement\\PRN212HotelManagement.csproj|solutionrelative:prn212hotelmanagement\\login.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{51C0295F-BCC1-425B-8E85-8B0FE798C4FD}|PRN212HotelManagement\\PRN212HotelManagement.csproj|c:\\users\\han_mai\\desktop\\prn212\\prn212hotelmanagement_git\\prn212hotelmanagement\\prn212hotelmanagement\\staffwpf.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{51C0295F-BCC1-425B-8E85-8B0FE798C4FD}|PRN212HotelManagement\\PRN212HotelManagement.csproj|solutionrelative:prn212hotelmanagement\\staffwpf.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8227DEF3-13AB-4FC5-A226-52BC5EDACA15}|HotelManagement_DAL\\HotelManagement_DAL.csproj|c:\\users\\han_mai\\desktop\\prn212\\prn212hotelmanagement_git\\prn212hotelmanagement\\hotelmanagement_dal\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8227DEF3-13AB-4FC5-A226-52BC5EDACA15}|HotelManagement_DAL\\HotelManagement_DAL.csproj|solutionrelative:hotelmanagement_dal\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51C0295F-BCC1-425B-8E85-8B0FE798C4FD}|PRN212HotelManagement\\PRN212HotelManagement.csproj|c:\\users\\han_mai\\desktop\\prn212\\prn212hotelmanagement_git\\prn212hotelmanagement\\prn212hotelmanagement\\register.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{51C0295F-BCC1-425B-8E85-8B0FE798C4FD}|PRN212HotelManagement\\PRN212HotelManagement.csproj|solutionrelative:prn212hotelmanagement\\register.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51C0295F-BCC1-425B-8E85-8B0FE798C4FD}|PRN212HotelManagement\\PRN212HotelManagement.csproj|c:\\users\\han_mai\\desktop\\prn212\\prn212hotelmanagement_git\\prn212hotelmanagement\\prn212hotelmanagement\\staffwpf.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{51C0295F-BCC1-425B-8E85-8B0FE798C4FD}|PRN212HotelManagement\\PRN212HotelManagement.csproj|solutionrelative:prn212hotelmanagement\\staffwpf.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{51C0295F-BCC1-425B-8E85-8B0FE798C4FD}|PRN212HotelManagement\\PRN212HotelManagement.csproj|c:\\users\\han_mai\\desktop\\prn212\\prn212hotelmanagement_git\\prn212hotelmanagement\\prn212hotelmanagement\\register.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -55,10 +63,6 @@
       "RelativeMoniker": "D:0:0:{51C0295F-BCC1-425B-8E85-8B0FE798C4FD}|PRN212HotelManagement\\PRN212HotelManagement.csproj|solutionrelative:prn212hotelmanagement\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8227DEF3-13AB-4FC5-A226-52BC5EDACA15}|HotelManagement_DAL\\HotelManagement_DAL.csproj|c:\\users\\han_mai\\desktop\\prn212\\prn212hotelmanagement_git\\prn212hotelmanagement\\hotelmanagement_dal\\dbcontext\\prn212hotelmanagementcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8227DEF3-13AB-4FC5-A226-52BC5EDACA15}|HotelManagement_DAL\\HotelManagement_DAL.csproj|solutionrelative:hotelmanagement_dal\\dbcontext\\prn212hotelmanagementcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/HANMAI_HAN_MAI/PRN212HotelManagement/sa/SqlTable/dbo.User.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     }
   ],
@@ -73,42 +77,83 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
+              "Title": "Prn212hotelManagementContext.cs",
+              "DocumentMoniker": "C:\\Users\\Han_Mai\\Desktop\\PRN212\\PRN212HotelManagement_Git\\PRN212HotelManagement\\HotelManagement_DAL\\DBContext\\Prn212hotelManagementContext.cs",
+              "RelativeDocumentMoniker": "HotelManagement_DAL\\DBContext\\Prn212hotelManagementContext.cs",
+              "ToolTip": "C:\\Users\\Han_Mai\\Desktop\\PRN212\\PRN212HotelManagement_Git\\PRN212HotelManagement\\HotelManagement_DAL\\DBContext\\Prn212hotelManagementContext.cs",
+              "RelativeToolTip": "HotelManagement_DAL\\DBContext\\Prn212hotelManagementContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T09:24:30.105Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "UserRepository.cs",
               "DocumentMoniker": "C:\\Users\\Han_Mai\\Desktop\\PRN212\\PRN212HotelManagement_Git\\PRN212HotelManagement\\HotelManagement_DAL\\Repositories\\UserRepository.cs",
               "RelativeDocumentMoniker": "HotelManagement_DAL\\Repositories\\UserRepository.cs",
               "ToolTip": "C:\\Users\\Han_Mai\\Desktop\\PRN212\\PRN212HotelManagement_Git\\PRN212HotelManagement\\HotelManagement_DAL\\Repositories\\UserRepository.cs",
               "RelativeToolTip": "HotelManagement_DAL\\Repositories\\UserRepository.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAewBkAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACIAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T20:30:34.197Z"
+              "WhenOpened": "2024-12-05T20:30:34.197Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AdminWPF.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Han_Mai\\Desktop\\PRN212\\PRN212HotelManagement_Git\\PRN212HotelManagement\\PRN212HotelManagement\\AdminWPF.xaml.cs",
-              "RelativeDocumentMoniker": "PRN212HotelManagement\\AdminWPF.xaml.cs",
-              "ToolTip": "C:\\Users\\Han_Mai\\Desktop\\PRN212\\PRN212HotelManagement_Git\\PRN212HotelManagement\\PRN212HotelManagement\\AdminWPF.xaml.cs",
-              "RelativeToolTip": "PRN212HotelManagement\\AdminWPF.xaml.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAA6wBwAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T20:14:01.01Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 7,
               "Title": "StaffWPF.xaml",
               "DocumentMoniker": "C:\\Users\\Han_Mai\\Desktop\\PRN212\\PRN212HotelManagement_Git\\PRN212HotelManagement\\PRN212HotelManagement\\StaffWPF.xaml",
               "RelativeDocumentMoniker": "PRN212HotelManagement\\StaffWPF.xaml",
               "ToolTip": "C:\\Users\\Han_Mai\\Desktop\\PRN212\\PRN212HotelManagement_Git\\PRN212HotelManagement\\PRN212HotelManagement\\StaffWPF.xaml",
               "RelativeToolTip": "PRN212HotelManagement\\StaffWPF.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-05T20:12:23.73Z"
+              "WhenOpened": "2024-12-05T20:12:23.73Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "AdminWPF.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Han_Mai\\Desktop\\PRN212\\PRN212HotelManagement_Git\\PRN212HotelManagement\\PRN212HotelManagement\\AdminWPF.xaml.cs",
+              "RelativeDocumentMoniker": "PRN212HotelManagement\\AdminWPF.xaml.cs",
+              "ToolTip": "C:\\Users\\Han_Mai\\Desktop\\PRN212\\PRN212HotelManagement_Git\\PRN212HotelManagement\\PRN212HotelManagement\\AdminWPF.xaml.cs",
+              "RelativeToolTip": "PRN212HotelManagement\\AdminWPF.xaml.cs",
+              "ViewState": "AgIAAHwAAAAAAAAAAAAAAJQAAABSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T20:14:01.01Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Login.xaml",
+              "DocumentMoniker": "C:\\Users\\Han_Mai\\Desktop\\PRN212\\PRN212HotelManagement_Git\\PRN212HotelManagement\\PRN212HotelManagement\\Login.xaml",
+              "RelativeDocumentMoniker": "PRN212HotelManagement\\Login.xaml",
+              "ToolTip": "C:\\Users\\Han_Mai\\Desktop\\PRN212\\PRN212HotelManagement_Git\\PRN212HotelManagement\\PRN212HotelManagement\\Login.xaml",
+              "RelativeToolTip": "PRN212HotelManagement\\Login.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-12-03T19:25:17.428Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Login.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Han_Mai\\Desktop\\PRN212\\PRN212HotelManagement_Git\\PRN212HotelManagement\\PRN212HotelManagement\\Login.xaml.cs",
+              "RelativeDocumentMoniker": "PRN212HotelManagement\\Login.xaml.cs",
+              "ToolTip": "C:\\Users\\Han_Mai\\Desktop\\PRN212\\PRN212HotelManagement_Git\\PRN212HotelManagement\\PRN212HotelManagement\\Login.xaml.cs",
+              "RelativeToolTip": "PRN212HotelManagement\\Login.xaml.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAIA2wFkAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T09:18:36.487Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "AdminWPF.xaml",
               "DocumentMoniker": "C:\\Users\\Han_Mai\\Desktop\\PRN212\\PRN212HotelManagement_Git\\PRN212HotelManagement\\PRN212HotelManagement\\AdminWPF.xaml",
               "RelativeDocumentMoniker": "PRN212HotelManagement\\AdminWPF.xaml",
@@ -121,41 +166,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Login.xaml",
-              "DocumentMoniker": "C:\\Users\\Han_Mai\\Desktop\\PRN212\\PRN212HotelManagement_Git\\PRN212HotelManagement\\PRN212HotelManagement\\Login.xaml",
-              "RelativeDocumentMoniker": "PRN212HotelManagement\\Login.xaml",
-              "ToolTip": "C:\\Users\\Han_Mai\\Desktop\\PRN212\\PRN212HotelManagement_Git\\PRN212HotelManagement\\PRN212HotelManagement\\Login.xaml",
-              "RelativeToolTip": "PRN212HotelManagement\\Login.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-03T19:25:17.428Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Login.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Han_Mai\\Desktop\\PRN212\\PRN212HotelManagement_Git\\PRN212HotelManagement\\PRN212HotelManagement\\Login.xaml.cs",
-              "RelativeDocumentMoniker": "PRN212HotelManagement\\Login.xaml.cs",
-              "ToolTip": "C:\\Users\\Han_Mai\\Desktop\\PRN212\\PRN212HotelManagement_Git\\PRN212HotelManagement\\PRN212HotelManagement\\Login.xaml.cs",
-              "RelativeToolTip": "PRN212HotelManagement\\Login.xaml.cs",
-              "ViewState": "AgIAAEcAAAAAAAAAAAAmwFgAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T09:18:36.487Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
               "Title": "UserService.cs",
               "DocumentMoniker": "C:\\Users\\Han_Mai\\Desktop\\PRN212\\PRN212HotelManagement_Git\\PRN212HotelManagement\\HotelManagement_BLL\\UserService.cs",
               "RelativeDocumentMoniker": "HotelManagement_BLL\\UserService.cs",
               "ToolTip": "C:\\Users\\Han_Mai\\Desktop\\PRN212\\PRN212HotelManagement_Git\\PRN212HotelManagement\\HotelManagement_BLL\\UserService.cs",
               "RelativeToolTip": "HotelManagement_BLL\\UserService.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAawD8AAAA2AAAAAAAAAA==",
+              "ViewState": "AgIAADIAAAAAAAAAAAAwwEMAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T09:19:21.106Z"
+              "WhenOpened": "2024-12-05T09:19:21.106Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 9,
               "Title": "Register.xaml",
               "DocumentMoniker": "C:\\Users\\Han_Mai\\Desktop\\PRN212\\PRN212HotelManagement_Git\\PRN212HotelManagement\\PRN212HotelManagement\\Register.xaml",
               "RelativeDocumentMoniker": "PRN212HotelManagement\\Register.xaml",
@@ -166,7 +189,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\Han_Mai\\Desktop\\PRN212\\PRN212HotelManagement_Git\\PRN212HotelManagement\\HotelManagement_DAL\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "HotelManagement_DAL\\Entities\\User.cs",
+              "ToolTip": "C:\\Users\\Han_Mai\\Desktop\\PRN212\\PRN212HotelManagement_Git\\PRN212HotelManagement\\HotelManagement_DAL\\Entities\\User.cs",
+              "RelativeToolTip": "HotelManagement_DAL\\Entities\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-06T08:24:32.974Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "StaffWPF.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Han_Mai\\Desktop\\PRN212\\PRN212HotelManagement_Git\\PRN212HotelManagement\\PRN212HotelManagement\\StaffWPF.xaml.cs",
               "RelativeDocumentMoniker": "PRN212HotelManagement\\StaffWPF.xaml.cs",
@@ -178,7 +214,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "Register.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Han_Mai\\Desktop\\PRN212\\PRN212HotelManagement_Git\\PRN212HotelManagement\\PRN212HotelManagement\\Register.xaml.cs",
               "RelativeDocumentMoniker": "PRN212HotelManagement\\Register.xaml.cs",
@@ -190,7 +226,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "AssemblyInfo.cs",
               "DocumentMoniker": "C:\\Users\\Han_Mai\\Desktop\\PRN212\\PRN212HotelManagement_Git\\PRN212HotelManagement\\PRN212HotelManagement\\AssemblyInfo.cs",
               "RelativeDocumentMoniker": "PRN212HotelManagement\\AssemblyInfo.cs",
@@ -202,7 +238,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "App.xaml",
               "DocumentMoniker": "C:\\Users\\Han_Mai\\Desktop\\PRN212\\PRN212HotelManagement_Git\\PRN212HotelManagement\\PRN212HotelManagement\\App.xaml",
               "RelativeDocumentMoniker": "PRN212HotelManagement\\App.xaml",
@@ -214,7 +250,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Han_Mai\\Desktop\\PRN212\\PRN212HotelManagement_Git\\PRN212HotelManagement\\PRN212HotelManagement\\appsettings.json",
               "RelativeDocumentMoniker": "PRN212HotelManagement\\appsettings.json",
@@ -226,19 +262,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Prn212hotelManagementContext.cs",
-              "DocumentMoniker": "C:\\Users\\Han_Mai\\Desktop\\PRN212\\PRN212HotelManagement_Git\\PRN212HotelManagement\\HotelManagement_DAL\\DBContext\\Prn212hotelManagementContext.cs",
-              "RelativeDocumentMoniker": "HotelManagement_DAL\\DBContext\\Prn212hotelManagementContext.cs",
-              "ToolTip": "C:\\Users\\Han_Mai\\Desktop\\PRN212\\PRN212HotelManagement_Git\\PRN212HotelManagement\\HotelManagement_DAL\\DBContext\\Prn212hotelManagementContext.cs",
-              "RelativeToolTip": "HotelManagement_DAL\\DBContext\\Prn212hotelManagementContext.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAkwC0AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T09:24:30.105Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "dbo.User.sql",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/HANMAI_HAN_MAI/PRN212HotelManagement/sa/SqlTable/dbo.User.sql",
               "ToolTip": "ViewDataWindow_MSSQL__/HANMAI_HAN_MAI/PRN212HotelManagement/sa/SqlTable/dbo.User.sql",
