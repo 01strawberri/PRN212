@@ -175,7 +175,11 @@ namespace PRN212HotelManagement
             Login login = new Login();
             login.Show();
         }
-
+        private void btn_ManageUser_Click(object sender, RoutedEventArgs e)
+        {
+            ManageUsers manageUsersWindow = new ManageUsers();
+            manageUsersWindow.ShowDialog();
+        }
         private void btn_ManageRoom_Click(object sender, RoutedEventArgs e)
         {
 
