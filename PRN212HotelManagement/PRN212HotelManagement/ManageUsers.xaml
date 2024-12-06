@@ -1,0 +1,69 @@
+﻿<Window x:Class="PRN212HotelManagement.ManageUsers"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Manage Users" Height="600" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Title -->
+        <TextBlock Text="Manage Users" FontSize="24" FontWeight="Bold" Margin="10" HorizontalAlignment="Center"/>
+
+        <!-- DataGrid for displaying users -->
+        <DataGrid x:Name="dataGridUsers" Grid.Row="1" AutoGenerateColumns="False" Margin="10" IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="User ID" Binding="{Binding UserId}" Width="Auto"/>
+                <DataGridTextColumn Header="Username" Binding="{Binding UserName}" Width="*"/>
+                <DataGridTextColumn Header="Email" Binding="{Binding UserEmail}" Width="*"/>
+                <DataGridTextColumn Header="Phone" Binding="{Binding UserPhone}" Width="*"/>
+                <DataGridTextColumn Header="Role" Binding="{Binding UserRole}" Width="Auto"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <!-- Buttons for managing users -->
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
+            <Button x:Name="btnAddUser" Content="Add User" Width="100" Margin="5" Click="btnAddUser_Click"/>
+            <Button x:Name="btnEditUser" Content="Edit User" Width="100" Margin="5" Click="btnEditUser_Click"/>
+            <Button x:Name="btnDeleteUser" Content="Delete User" Width="100" Margin="5" Click="btnDeleteUser_Click"/>
+        </StackPanel>
+
+        <!-- Popup for adding/editing users -->
+        <Grid x:Name="popupGrid" Visibility="Collapsed" Background="#80000000" Grid.RowSpan="3">
+            <Border Background="White" Padding="20" Margin="100">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <TextBlock Text="Username:" Grid.Row="0" Margin="5"/>
+                    <TextBox x:Name="txtUsername" Grid.Row="0" Margin="5" Width="300"/>
+
+                    <TextBlock Text="Email:" Grid.Row="1" Margin="5"/>
+                    <TextBox x:Name="txtEmail" Grid.Row="1" Margin="5" Width="300"/>
+
+                    <TextBlock Text="Password:" Grid.Row="2" Margin="5"/>
+                    <PasswordBox x:Name="txtPassword" Grid.Row="2" Margin="5" Width="300"/>
+
+                    <TextBlock Text="Phone:" Grid.Row="3" Margin="5"/>
+                    <TextBox x:Name="txtPhone" Grid.Row="3" Margin="5" Width="300"/>
+
+                    <StackPanel Grid.Row="4" Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
+                        <Button x:Name="btnSave" Content="Save" Width="100" Margin="5" Click="btnSave_Click"/>
+                        <Button x:Name="btnCancel" Content="Cancel" Width="100" Margin="5" Click="btnCancel_Click"/>
+                    </StackPanel>
+                </Grid>
+            </Border>
+        </Grid>
+    </Grid>
+</Window>
