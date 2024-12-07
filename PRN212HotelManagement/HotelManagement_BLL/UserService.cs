@@ -66,6 +66,19 @@ namespace HotelManagement_BLL
         {
             return _userRepository.GetUserByUserName(username);
         }
+        public List<User> GetAllUsers()
+        {
+            return _userRepository.GetAllUsers();
+        }
 
+        public bool UpdateUser(User user)
+        {
+            return _userRepository.UpdateUser(user);
+        }
+
+        public bool DeleteUser(int userId)
+        {
+            return _userRepository.DeleteUser(userId);
+        }
     }
 }

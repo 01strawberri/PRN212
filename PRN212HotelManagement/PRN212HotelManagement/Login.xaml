@@ -12,7 +12,7 @@
             <ColumnDefinition Width="1.5*" />
         </Grid.ColumnDefinitions>
 
-        <Image Source="/Images/close.png" Grid.Column="1" Panel.ZIndex="1" MouseUp="Image_MouseUp" Style="{StaticResource imgClose}"/>
+        <Image Source="pack://application:,,,/Images/close.png" Grid.Column="1" Panel.ZIndex="1" MouseUp="Image_MouseUp" Style="{StaticResource imgClose}"/>
 
         <Border CornerRadius="10 0 0 10">
             <Border.Background>
@@ -50,9 +50,9 @@
                             <ColumnDefinition Width="*"/>
                         </Grid.ColumnDefinitions>
 
-                        <Image Source="/Images/Account2.png" Height="20"/>
+                        <Image Source="pack://application:,,,/Images/Account2.png" Height="20"/>
                         <TextBlock x:Name="textAccount" MouseDown="textAccount_MouseDown" Text="Username" Style="{StaticResource textHint}"/>
-                        <TextBox x:Name="txtAccount" TextChanged="txtAccount_TextChanged" Style="{StaticResource textBox}"/>
+                        <TextBox x:Name="txtAccount" TextChanged="txtAccount_TextChanged" Style="{StaticResource textBox}" KeyDown="txtAccount_KeyDown"/>
                     </Grid>
                 </Border>
 
@@ -63,9 +63,9 @@
                             <ColumnDefinition Width="*"/>
                         </Grid.ColumnDefinitions>
 
-                        <Image Source="/Images/Lock.png" Height="20"/>
+                        <Image Source="pack://application:,,,/Images/Lock.png" Height="20"/>
                         <TextBlock x:Name="textPassword" MouseDown="textPassword_MouseDown" Text="Password" Style="{StaticResource textHint}"/>
-                        <PasswordBox x:Name="txtPassword" PasswordChanged="txtPassword_PasswordChanged" Style="{StaticResource textBox}"/>
+                        <PasswordBox x:Name="txtPassword" PasswordChanged="txtPassword_PasswordChanged" Style="{StaticResource textBox}" KeyDown="txtPassword_KeyDown"/>
                     </Grid>
                 </Border>
 

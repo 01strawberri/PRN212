@@ -175,10 +175,27 @@ namespace PRN212HotelManagement
             Login login = new Login();
             login.Show();
         }
+        private void Image_MouseUp(object sender, MouseButtonEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
 
         private void btn_ManageRoom_Click(object sender, RoutedEventArgs e)
         {
+            ManageRooms manageRooms = new ManageRooms();
+            manageRooms.ShowDialog();
+        }
 
+
+        private void btn_Bookings_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btn_ManageUser_Click(object sender, RoutedEventArgs e)
+        {
+            ManageUsers manageUsersWindow = new ManageUsers();
+            manageUsersWindow.ShowDialog();
         }
     }
 }

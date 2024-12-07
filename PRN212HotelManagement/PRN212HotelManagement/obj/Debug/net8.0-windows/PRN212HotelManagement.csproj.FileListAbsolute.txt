@@ -251,3 +251,9 @@ C:\Users\Han_Mai\Desktop\PRN212\PRN212HotelManagement_Git\PRN212HotelManagement\
 C:\Users\Han_Mai\Desktop\PRN212\PRN212HotelManagement_Git\PRN212HotelManagement\PRN212HotelManagement\obj\Debug\net8.0-windows\PRN212HotelManagement.pdb
 C:\Users\Han_Mai\Desktop\PRN212\PRN212HotelManagement_Git\PRN212HotelManagement\PRN212HotelManagement\obj\Debug\net8.0-windows\PRN212HotelManagement.genruntimeconfig.cache
 C:\Users\Han_Mai\Desktop\PRN212\PRN212HotelManagement_Git\PRN212HotelManagement\PRN212HotelManagement\obj\Debug\net8.0-windows\ref\PRN212HotelManagement.dll
+E:\Git\PRN212\PRN212HotelManagement\PRN212HotelManagement\obj\Debug\net8.0-windows\ManageUsers.g.cs
+E:\Git\PRN212\PRN212HotelManagement\PRN212HotelManagement\obj\Debug\net8.0-windows\ManageUsers.baml
+E:\Git\PRN212\PRN212HotelManagement\PRN212HotelManagement\obj\Debug\net8.0-windows\ManageRooms.g.cs
+E:\Git\PRN212\PRN212HotelManagement\PRN212HotelManagement\obj\Debug\net8.0-windows\ManageRooms.baml
+E:\Git\PRN212\PRN212HotelManagement\PRN212HotelManagement\obj\Debug\net8.0-windows\Booking.g.cs
+E:\Git\PRN212\PRN212HotelManagement\PRN212HotelManagement\obj\Debug\net8.0-windows\Booking.baml
