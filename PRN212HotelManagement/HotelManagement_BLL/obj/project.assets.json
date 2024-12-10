@@ -3138,11 +3138,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Han_Mai\\Desktop\\PRN212\\PRN212HotelManagement_Git\\PRN212HotelManagement\\HotelManagement_BLL\\HotelManagement_BLL.csproj",
+      "projectUniqueName": "C:\\Users\\Han_Mai\\Desktop\\PRN212\\PRN212HotelManagement\\PRN212\\PRN212HotelManagement\\HotelManagement_BLL\\HotelManagement_BLL.csproj",
       "projectName": "HotelManagement_BLL",
-      "projectPath": "C:\\Users\\Han_Mai\\Desktop\\PRN212\\PRN212HotelManagement_Git\\PRN212HotelManagement\\HotelManagement_BLL\\HotelManagement_BLL.csproj",
+      "projectPath": "C:\\Users\\Han_Mai\\Desktop\\PRN212\\PRN212HotelManagement\\PRN212\\PRN212HotelManagement\\HotelManagement_BLL\\HotelManagement_BLL.csproj",
       "packagesPath": "C:\\Users\\Han_Mai\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Han_Mai\\Desktop\\PRN212\\PRN212HotelManagement_Git\\PRN212HotelManagement\\HotelManagement_BLL\\obj\\",
+      "outputPath": "C:\\Users\\Han_Mai\\Desktop\\PRN212\\PRN212HotelManagement\\PRN212\\PRN212HotelManagement\\HotelManagement_BLL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Han_Mai\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3160,8 +3160,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Han_Mai\\Desktop\\PRN212\\PRN212HotelManagement_Git\\PRN212HotelManagement\\HotelManagement_DAL\\HotelManagement_DAL.csproj": {
-              "projectPath": "C:\\Users\\Han_Mai\\Desktop\\PRN212\\PRN212HotelManagement_Git\\PRN212HotelManagement\\HotelManagement_DAL\\HotelManagement_DAL.csproj"
+            "C:\\Users\\Han_Mai\\Desktop\\PRN212\\PRN212HotelManagement\\PRN212\\PRN212HotelManagement\\HotelManagement_DAL\\HotelManagement_DAL.csproj": {
+              "projectPath": "C:\\Users\\Han_Mai\\Desktop\\PRN212\\PRN212HotelManagement\\PRN212\\PRN212HotelManagement\\HotelManagement_DAL\\HotelManagement_DAL.csproj"
             }
           }
         }
