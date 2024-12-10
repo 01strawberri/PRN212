@@ -94,7 +94,8 @@ namespace PRN212HotelManagement
                         break;
                     case "Staff":
                         //Open Staff WPF
-                        StaffWPF staffWPF = new StaffWPF();
+                        User currentUserr = _userService.GetUserByUsername(username);
+                        StaffWPF staffWPF = new StaffWPF(currentUserr);
                         staffWPF.Show();
                         break;
                 }
