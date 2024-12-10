@@ -57,3 +57,18 @@ C:\Users\motmu\Source\Repos\PRN212\PRN212HotelManagement\HotelManagement_DAL\obj
 C:\Users\motmu\Source\Repos\PRN212\PRN212HotelManagement\HotelManagement_DAL\obj\Debug\net8.0\HotelManagement_DAL.pdb
 C:\Users\motmu\Source\Repos\PRN212\PRN212HotelManagement\HotelManagement_DAL\obj\Debug\net8.0\HotelManagement_DAL.genruntimeconfig.cache
 C:\Users\motmu\Source\Repos\PRN212\PRN212HotelManagement\HotelManagement_DAL\obj\Debug\net8.0\ref\HotelManagement_DAL.dll
+C:\THAI_DANG\FPT University\Semester 5\PRN212\PROJECT_3W\PRN212\PRN212HotelManagement\HotelManagement_DAL\bin\Debug\net8.0\HotelManagement_DAL.deps.json
+C:\THAI_DANG\FPT University\Semester 5\PRN212\PROJECT_3W\PRN212\PRN212HotelManagement\HotelManagement_DAL\bin\Debug\net8.0\HotelManagement_DAL.runtimeconfig.json
+C:\THAI_DANG\FPT University\Semester 5\PRN212\PROJECT_3W\PRN212\PRN212HotelManagement\HotelManagement_DAL\bin\Debug\net8.0\HotelManagement_DAL.dll
+C:\THAI_DANG\FPT University\Semester 5\PRN212\PROJECT_3W\PRN212\PRN212HotelManagement\HotelManagement_DAL\bin\Debug\net8.0\HotelManagement_DAL.pdb
+C:\THAI_DANG\FPT University\Semester 5\PRN212\PROJECT_3W\PRN212\PRN212HotelManagement\HotelManagement_DAL\obj\Debug\net8.0\HotelManagement_DAL.csproj.AssemblyReference.cache
+C:\THAI_DANG\FPT University\Semester 5\PRN212\PROJECT_3W\PRN212\PRN212HotelManagement\HotelManagement_DAL\obj\Debug\net8.0\HotelManagement_DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\THAI_DANG\FPT University\Semester 5\PRN212\PROJECT_3W\PRN212\PRN212HotelManagement\HotelManagement_DAL\obj\Debug\net8.0\HotelManagement_DAL.AssemblyInfoInputs.cache
+C:\THAI_DANG\FPT University\Semester 5\PRN212\PROJECT_3W\PRN212\PRN212HotelManagement\HotelManagement_DAL\obj\Debug\net8.0\HotelManagement_DAL.AssemblyInfo.cs
+C:\THAI_DANG\FPT University\Semester 5\PRN212\PROJECT_3W\PRN212\PRN212HotelManagement\HotelManagement_DAL\obj\Debug\net8.0\HotelManagement_DAL.csproj.CoreCompileInputs.cache
+C:\THAI_DANG\FPT University\Semester 5\PRN212\PROJECT_3W\PRN212\PRN212HotelManagement\HotelManagement_DAL\obj\Debug\net8.0\HotelManagement_DAL.sourcelink.json
+C:\THAI_DANG\FPT University\Semester 5\PRN212\PROJECT_3W\PRN212\PRN212HotelManagement\HotelManagement_DAL\obj\Debug\net8.0\HotelManagement_DAL.dll
+C:\THAI_DANG\FPT University\Semester 5\PRN212\PROJECT_3W\PRN212\PRN212HotelManagement\HotelManagement_DAL\obj\Debug\net8.0\refint\HotelManagement_DAL.dll
+C:\THAI_DANG\FPT University\Semester 5\PRN212\PROJECT_3W\PRN212\PRN212HotelManagement\HotelManagement_DAL\obj\Debug\net8.0\HotelManagement_DAL.pdb
+C:\THAI_DANG\FPT University\Semester 5\PRN212\PROJECT_3W\PRN212\PRN212HotelManagement\HotelManagement_DAL\obj\Debug\net8.0\HotelManagement_DAL.genruntimeconfig.cache
+C:\THAI_DANG\FPT University\Semester 5\PRN212\PROJECT_3W\PRN212\PRN212HotelManagement\HotelManagement_DAL\obj\Debug\net8.0\ref\HotelManagement_DAL.dll

@@ -7,10 +7,19 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="AdminService\AddServices.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="AdminService\EditService.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="AdminWPF.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Login.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="AdminService\ManageService.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="ManageUsers.xaml.cs">
@@ -24,10 +33,19 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="AdminService\AddServices.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="AdminService\EditService.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="AdminWPF.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Login.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="AdminService\ManageService.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="ManageUsers.xaml">

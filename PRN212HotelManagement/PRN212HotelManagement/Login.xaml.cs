@@ -2,6 +2,7 @@
 using HotelManagement_DAL;
 using HotelManagement_DAL.DBContext;
 using HotelManagement_DAL.Repositories;
+using Microsoft.Data.SqlClient;
 using Microsoft.Win32;
 using System;
 using System.Collections.Generic;

@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\motmu\\Source\\Repos\\PRN212\\PRN212HotelManagement\\HotelManagement_DAL\\HotelManagement_DAL.csproj": {}
+    "C:\\THAI_DANG\\FPT University\\Semester 5\\PRN212\\PROJECT_3W\\PRN212\\PRN212HotelManagement\\HotelManagement_DAL\\HotelManagement_DAL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\motmu\\Source\\Repos\\PRN212\\PRN212HotelManagement\\HotelManagement_DAL\\HotelManagement_DAL.csproj": {
+    "C:\\THAI_DANG\\FPT University\\Semester 5\\PRN212\\PROJECT_3W\\PRN212\\PRN212HotelManagement\\HotelManagement_DAL\\HotelManagement_DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\motmu\\Source\\Repos\\PRN212\\PRN212HotelManagement\\HotelManagement_DAL\\HotelManagement_DAL.csproj",
+        "projectUniqueName": "C:\\THAI_DANG\\FPT University\\Semester 5\\PRN212\\PROJECT_3W\\PRN212\\PRN212HotelManagement\\HotelManagement_DAL\\HotelManagement_DAL.csproj",
         "projectName": "HotelManagement_DAL",
-        "projectPath": "C:\\Users\\motmu\\Source\\Repos\\PRN212\\PRN212HotelManagement\\HotelManagement_DAL\\HotelManagement_DAL.csproj",
-        "packagesPath": "C:\\Users\\motmu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\motmu\\Source\\Repos\\PRN212\\PRN212HotelManagement\\HotelManagement_DAL\\obj\\",
+        "projectPath": "C:\\THAI_DANG\\FPT University\\Semester 5\\PRN212\\PROJECT_3W\\PRN212\\PRN212HotelManagement\\HotelManagement_DAL\\HotelManagement_DAL.csproj",
+        "packagesPath": "C:\\Users\\Dang\\.nuget\\packages\\",
+        "outputPath": "C:\\THAI_DANG\\FPT University\\Semester 5\\PRN212\\PROJECT_3W\\PRN212\\PRN212HotelManagement\\HotelManagement_DAL\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\motmu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Dang\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,7 +26,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "c:\\program files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -91,7 +94,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "c:\\program files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

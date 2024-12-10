@@ -184,5 +184,11 @@ namespace PRN212HotelManagement
         {
 
         }
+
+        private void btn_ManageService_Click(object sender, RoutedEventArgs e)
+        {
+            ManageService manageServiceWindow = new ManageService();
+            manageServiceWindow.ShowDialog();
+        }
     }
 }
