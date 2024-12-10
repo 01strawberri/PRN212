@@ -88,6 +88,8 @@ namespace PRN212HotelManagement
                         //Open Admin WPF
                         User currentUser = _userService.GetUserByUsername(username);
                         AdminWPF adminWPF = new AdminWPF(currentUser);
+                        ManageRooms manageRooms = new ManageRooms(currentUser);
+                        ManageUsers manageUsers = new ManageUsers(currentUser); 
                         adminWPF.Show();
                         break;
                     case "Staff":

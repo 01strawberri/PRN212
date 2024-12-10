@@ -5,21 +5,39 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PRN212HotelManagement"
         mc:Ignorable="d"
-        Title="Manage Users" Height="500" Width="800">
-    <Grid>
+        Title="Manage Users" Height="600" Width="800">
+    <Grid Height="484" VerticalAlignment="Top">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
-        <!-- Title Section -->
-        <StackPanel Background="#3AA9AD">
-            <TextBlock Text="Manage Users" FontSize="24" FontWeight="Bold" Margin="10" HorizontalAlignment="Center" Grid.Row="0"/>
+        <!-- Navbar -->
+        <StackPanel Grid.Row="0" Background="#3AA9AD" Orientation="Horizontal">
+            <Button x:Name="btn_Profile" Content="Profile" Width="91" Height="40" Margin="5" Background="Transparent" 
+            Foreground="White" BorderThickness="0" Click="btn_Account_Click"/>
+            <Button x:Name="btn_Bookings" Content="Bookings" Width="92" Height="40" Margin="5" Background="Transparent" 
+            Foreground="White" BorderThickness="0" Click="btn_Bookings_Click"/>
+            <Button x:Name="btn_ManageRoom" Content="Manage Room" Width="124" Height="40" Background="Transparent" 
+            Foreground="White" BorderThickness="0" Click="btn_ManageRoom_Click"/>
+            <Button x:Name="btn_ManageUser" Width="129" Height="40" Margin="5" Background="Transparent" 
+            Foreground="White" BorderThickness="0" Content="Manage Users" Click="btn_ManageUser_Click" />
+            <Button x:Name="btn_ManageService" Content="Manage Services" Width="108" Height="40" Margin="5" Background="Transparent" 
+            Foreground="White" BorderThickness="0"/>
+            <Button x:Name="btn_Transaction" Content="Transaction" Width="100" Height="40" Margin="5" Background="Transparent" 
+            Foreground="White" BorderThickness="0" HorizontalAlignment="Right"/>
+            <Button x:Name="btn_Logout" Content="Logout" Width="100" Height="40" Margin="5" Background="Transparent" 
+            Foreground="White" BorderThickness="0" HorizontalAlignment="Right" Click="btn_Logout_Click"/>
         </StackPanel>
-        
+
+        <!-- Title Section -->
+        <StackPanel Background="#A36361" Margin="0,0,0,324" Grid.Row="1">
+            <TextBlock Text="Manage Users" FontSize="24" FontWeight="Bold" Margin="10" HorizontalAlignment="Center" Grid.Row="0" Foreground="Wheat"/>
+        </StackPanel>
+
         <!-- DataGrid for displaying users -->
-        <DataGrid x:Name="dataGridUsers" Grid.Row="1" AutoGenerateColumns="False" Margin="10" IsReadOnly="True" Background="White">
+        <DataGrid x:Name="dataGridUsers" Grid.Row="1" AutoGenerateColumns="False" Margin="7,81,13,10" IsReadOnly="True" Background="White" Grid.RowSpan="2">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="User ID" Binding="{Binding UserId}" Width="Auto"/>
                 <DataGridTextColumn Header="Username" Binding="{Binding UserName}" Width="*"/>
@@ -30,7 +48,7 @@
         </DataGrid>
 
         <!-- Buttons for managing users -->
-        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Left" Margin="233,59,0,-39">
             <Button x:Name="btnAddUser" Content="Add User" Width="100" Margin="5" Background="green" Foreground="White" Click="btnAddUser_Click"/>
             <Button x:Name="btnEditUser" Content="Edit User" Width="100" Margin="5" Background="#3AA9AD" Foreground="White" Click="btnEditUser_Click"/>
             <Button x:Name="btnDeleteUser" Content="Delete User" Width="100" Margin="5" Background="red" Foreground="White" Click="btnDeleteUser_Click"/>

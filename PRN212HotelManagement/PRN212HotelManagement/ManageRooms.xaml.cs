@@ -25,12 +25,17 @@ namespace PRN212HotelManagement
     {
         private RoomService _roomService;
         private List<Room> _rooms;
-        public ManageRooms()
+        private User currentUser;
+
+        public ManageRooms(User user)
         {
+            InitializeComponent();
+            currentUser = user;
             InitializeComponent();
             _roomService = new RoomService(new RoomRepository(new Prn212hotelManagementContext()));
             LoadRooms();
         }
+        
 
         private void LoadRooms()
         {
@@ -138,6 +143,41 @@ namespace PRN212HotelManagement
             }
         }
 
+        private void btn_Account_Click(object sender, RoutedEventArgs e)
+        {
+            AdminWPF account = new AdminWPF(currentUser);
+            account.Show();
+            this.Close();
+        }
+        private void btn_Logout_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+            Login login = new Login();
+            login.Show();
+        }
+
+        private void btn_ManageRoom_Click(object sender, RoutedEventArgs e)
+        {
+            ManageRooms manageRooms = new ManageRooms(currentUser);
+            manageRooms.Show();
+            this.Close();
+        }
+
+
+        private void btn_Bookings_Click(object sender, RoutedEventArgs e)
+        {
+            Booking manageRooms = new Booking();
+            manageRooms.Show();
+            this.Close();
+        }
+
+        private void btn_ManageUser_Click(object sender, RoutedEventArgs e)
+        {
+            ManageUsers manageUsersWindow = new ManageUsers(currentUser);
+            manageUsersWindow.Show();
+            this.Close();
+        }
+
         //Cancel in popup
         private void btnCancelRoom_Click(object sender, RoutedEventArgs e)
         {
@@ -149,7 +189,7 @@ namespace PRN212HotelManagement
             txtRoomType.Clear();
             txtRoomDescription.Clear();
             txtRoomStatus.Clear();
-            txtRoomName.Tag = null; //Reset tag 
+            txtRoomName.Tag = null; 
         }
     }
 }
