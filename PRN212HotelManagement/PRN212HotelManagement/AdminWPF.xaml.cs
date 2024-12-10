@@ -192,9 +192,7 @@ namespace PRN212HotelManagement
 
         private void btn_Bookings_Click(object sender, RoutedEventArgs e)
         {
-            Booking manageRooms = new Booking();
-            manageRooms.Show();
-            this.Close();
+            
         }
 
         private void btn_ManageUser_Click(object sender, RoutedEventArgs e)

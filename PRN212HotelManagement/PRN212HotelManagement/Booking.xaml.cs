@@ -13,13 +13,15 @@ namespace PRN212HotelManagement
         private readonly BookingServices _bookingService;
         private readonly UserService _userService;
         private readonly RoomService _roomService;
+        private User currentUser;
 
         private Booking _currentBooking;
         private List<User> _users;
         private List<Room> _rooms;
 
-        public Booking()
+        public Booking(User user)
         {
+            currentUser = user;
             InitializeComponent();
             _bookingService = new BookingServices(new BookingRepository(new Prn212hotelManagementContext()), new UserRepository(new Prn212hotelManagementContext()), new RoomRepository(new Prn212hotelManagementContext()));
             _userService = new UserService(new UserRepository(new Prn212hotelManagementContext()));
@@ -58,6 +60,32 @@ namespace PRN212HotelManagement
             //    comboUserName.SelectedValue = _currentBooking.comboUserName.Text;
 
             //}
+        }
+
+        private void btn_Profile_Click(object sender, RoutedEventArgs e)
+        {
+            StaffWPF staffProfile = new StaffWPF(currentUser);
+            staffProfile.Show();
+            this.Close();
+        }
+
+        private void btn_Rooms_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btn_Bookings_Click(object sender, RoutedEventArgs e)
+        {
+            Booking bookingWindow = new Booking(currentUser);
+            bookingWindow.Show();
+            this.Close();
+        }
+
+        private void btn_Logout_Click(object sender, RoutedEventArgs e)
+        {
+            Login login = new Login();
+            login.Show();
+            this.Close();
         }
     }
 }

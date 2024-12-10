@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PRN212HotelManagement"
         mc:Ignorable="d"
-        Title="Booking" Height="500" Width="800">
+        Title="Booking" Height="700" Width="800">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -18,13 +18,57 @@
             <!-- Buttons Row -->
         </Grid.RowDefinitions>
 
+        <!-- Navbar -->
+        <StackPanel Grid.Row="0" Background="#3AA9AD" Orientation="Horizontal">
+            <Button x:Name="btn_Profile" 
+            Content="Profile" 
+            Width="91" 
+            Height="40" 
+            Margin="5" 
+            Background="Transparent" 
+            Foreground="White" 
+            BorderThickness="0" 
+            Click="btn_Profile_Click"/>
+
+            <Button x:Name="btn_Rooms" 
+            Content="Rooms" 
+            Width="92" 
+            Height="40" 
+            Margin="5" 
+            Background="Transparent" 
+            Foreground="White" 
+            BorderThickness="0" 
+            Click="btn_Rooms_Click"/>
+
+            <Button x:Name="btn_Bookings" 
+            Content="Bookings" 
+            Width="92" 
+            Height="40" 
+            Margin="5" 
+            Background="Transparent" 
+            Foreground="White" 
+            BorderThickness="0" 
+            Click="btn_Bookings_Click"/>
+
+            <Button x:Name="btn_Logout" 
+            Content="Logout" 
+            Width="100" 
+            Height="40" 
+            Margin="5" 
+            Background="Transparent" 
+            Foreground="White" 
+            BorderThickness="0" 
+            HorizontalAlignment="Right" 
+            Click="btn_Logout_Click"/>
+        </StackPanel>
+
         <!-- Title Section -->
-        <StackPanel Background="#3AA9AD">
-            <TextBlock Text="Manage Bookings" FontSize="24" FontWeight="Bold" Margin="10" HorizontalAlignment="Center"/>
+        <StackPanel Background="#a36361" Margin="0,0,0,499" Grid.Row="2">
+            <TextBlock Text="Manage Bookings" FontSize="24" FontWeight="Bold" Margin="10" HorizontalAlignment="Center" Foreground="Wheat"/>
         </StackPanel>
 
         <!-- Search Section -->
-        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Left" Margin="86,90,0,399" Grid.RowSpan="2">
             <StackPanel Orientation="Vertical" Margin="5">
                 <TextBlock Text="User Name" FontWeight="Bold" Margin="5" HorizontalAlignment="Center"/>
                 <TextBox x:Name="txtSearchUserName" Width="150" Margin="5"/>
@@ -44,7 +88,7 @@
         </StackPanel>
 
         <!-- DataGrid for displaying bookings -->
-        <DataGrid x:Name="dataGridBookings" Grid.Row="2" AutoGenerateColumns="False" Margin="10" IsReadOnly="True" Background="White">
+        <DataGrid x:Name="dataGridBookings" Grid.Row="2" AutoGenerateColumns="False" Margin="10,190,10,0" IsReadOnly="True" Background="White">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Booking ID" Binding="{Binding BookingId}" Width="Auto"/>
                 <DataGridTextColumn Header="User Name" Binding="{Binding User.UserName}" Width="*"/>

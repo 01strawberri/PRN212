@@ -39,15 +39,12 @@ namespace PRN212HotelManagement
 
         private void btn_Rooms_Click(object sender, RoutedEventArgs e)
         {
-            // Add room management functionality for staff
-            // RoomList roomList = new RoomList(currentUser);
-            // roomList.Show();
-            // this.Close();
+            
         }
 
         private void btn_Bookings_Click(object sender, RoutedEventArgs e)
         {
-            Booking bookingWindow = new Booking();
+            Booking bookingWindow = new Booking(currentUser);
             bookingWindow.Show();
             this.Close();
         }
