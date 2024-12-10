@@ -9,7 +9,25 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Images\account2.png" />
+    <None Remove="Images\close.png" />
+    <None Remove="Images\lock.png" />
+    <None Remove="Images\phone.png" />
+    <None Remove="Images\profile.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\HotelManagement_BLL\HotelManagement_BLL.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\account2.png" />
+    <Resource Include="Images\close.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\lock.png" />
+    <Resource Include="Images\phone.png" />
+    <Resource Include="Images\profile.png" />
   </ItemGroup>
 
   <ItemGroup>

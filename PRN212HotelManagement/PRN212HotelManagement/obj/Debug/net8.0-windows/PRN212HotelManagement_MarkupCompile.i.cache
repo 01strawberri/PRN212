@@ -4,17 +4,30 @@
 winexe
 C#
 .cs
+<<<<<<< HEAD
 C:\Users\Han_Mai\Desktop\PRN212\PRN212HotelManagement\PRN212\PRN212HotelManagement\PRN212HotelManagement\obj\Debug\net8.0-windows\
+=======
+E:\Git\PRN212\PRN212HotelManagement\PRN212HotelManagement\obj\Debug\net8.0-windows\
+>>>>>>> cf99d5f64a78da6de24eb0e8538e1092cda4f893
 PRN212HotelManagement
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
+<<<<<<< HEAD
 C:\Users\Han_Mai\Desktop\PRN212\PRN212HotelManagement\PRN212\PRN212HotelManagement\PRN212HotelManagement\App.xaml
 4930094624
 
 10354532711
 246-639693307
 AdminWPF.xaml;Login.xaml;Register.xaml;StaffWPF.xaml;
+=======
+E:\Git\PRN212\PRN212HotelManagement\PRN212HotelManagement\App.xaml
+7-1407022217
+
+12-1016711507
+2461543839852
+AdminWPF.xaml;Booking.xaml;Login.xaml;ManageRooms.xaml;ManageUsers.xaml;Register.xaml;StaffWPF.xaml;
+>>>>>>> cf99d5f64a78da6de24eb0e8538e1092cda4f893
 
 False
 

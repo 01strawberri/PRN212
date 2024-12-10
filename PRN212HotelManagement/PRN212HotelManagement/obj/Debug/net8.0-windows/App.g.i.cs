@@ -47,7 +47,11 @@ namespace PRN212HotelManagement {
         /// InitializeComponent
         /// </summary>
         [System.Diagnostics.DebuggerNonUserCodeAttribute()]
+<<<<<<< HEAD
         [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "8.0.8.0")]
+=======
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "8.0.10.0")]
+>>>>>>> cf99d5f64a78da6de24eb0e8538e1092cda4f893
         public void InitializeComponent() {
             if (_contentLoaded) {
                 return;
@@ -59,7 +63,7 @@ namespace PRN212HotelManagement {
             
             #line default
             #line hidden
-            System.Uri resourceLocater = new System.Uri("/PRN212HotelManagement;V1.0.0.0;component/app.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/PRN212HotelManagement;component/app.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\App.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
@@ -73,7 +77,11 @@ namespace PRN212HotelManagement {
         /// </summary>
         [System.STAThreadAttribute()]
         [System.Diagnostics.DebuggerNonUserCodeAttribute()]
+<<<<<<< HEAD
         [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "8.0.8.0")]
+=======
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "8.0.10.0")]
+>>>>>>> cf99d5f64a78da6de24eb0e8538e1092cda4f893
         public static void Main() {
             PRN212HotelManagement.App app = new PRN212HotelManagement.App();
             app.InitializeComponent();

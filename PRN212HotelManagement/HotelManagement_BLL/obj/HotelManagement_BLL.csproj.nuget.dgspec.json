@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\Han_Mai\\Desktop\\PRN212\\PRN212HotelManagement\\PRN212\\PRN212HotelManagement\\HotelManagement_BLL\\HotelManagement_BLL.csproj": {}
   },
   "projects": {
@@ -12,9 +13,26 @@
         "projectPath": "C:\\Users\\Han_Mai\\Desktop\\PRN212\\PRN212HotelManagement\\PRN212\\PRN212HotelManagement\\HotelManagement_BLL\\HotelManagement_BLL.csproj",
         "packagesPath": "C:\\Users\\Han_Mai\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Han_Mai\\Desktop\\PRN212\\PRN212HotelManagement\\PRN212\\PRN212HotelManagement\\HotelManagement_BLL\\obj\\",
+=======
+    "E:\\Git\\PRN212\\PRN212HotelManagement\\HotelManagement_BLL\\HotelManagement_BLL.csproj": {}
+  },
+  "projects": {
+    "E:\\Git\\PRN212\\PRN212HotelManagement\\HotelManagement_BLL\\HotelManagement_BLL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Git\\PRN212\\PRN212HotelManagement\\HotelManagement_BLL\\HotelManagement_BLL.csproj",
+        "projectName": "HotelManagement_BLL",
+        "projectPath": "E:\\Git\\PRN212\\PRN212HotelManagement\\HotelManagement_BLL\\HotelManagement_BLL.csproj",
+        "packagesPath": "C:\\Users\\hungv\\.nuget\\packages\\",
+        "outputPath": "E:\\Git\\PRN212\\PRN212HotelManagement\\HotelManagement_BLL\\obj\\",
+>>>>>>> cf99d5f64a78da6de24eb0e8538e1092cda4f893
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Han_Mai\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\hungv\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -29,8 +47,13 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
+<<<<<<< HEAD
               "C:\\Users\\Han_Mai\\Desktop\\PRN212\\PRN212HotelManagement\\PRN212\\PRN212HotelManagement\\HotelManagement_DAL\\HotelManagement_DAL.csproj": {
                 "projectPath": "C:\\Users\\Han_Mai\\Desktop\\PRN212\\PRN212HotelManagement\\PRN212\\PRN212HotelManagement\\HotelManagement_DAL\\HotelManagement_DAL.csproj"
+=======
+              "E:\\Git\\PRN212\\PRN212HotelManagement\\HotelManagement_DAL\\HotelManagement_DAL.csproj": {
+                "projectPath": "E:\\Git\\PRN212\\PRN212HotelManagement\\HotelManagement_DAL\\HotelManagement_DAL.csproj"
+>>>>>>> cf99d5f64a78da6de24eb0e8538e1092cda4f893
               }
             }
           }
@@ -65,10 +88,11 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
+<<<<<<< HEAD
     "C:\\Users\\Han_Mai\\Desktop\\PRN212\\PRN212HotelManagement\\PRN212\\PRN212HotelManagement\\HotelManagement_DAL\\HotelManagement_DAL.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -77,9 +101,23 @@
         "projectPath": "C:\\Users\\Han_Mai\\Desktop\\PRN212\\PRN212HotelManagement\\PRN212\\PRN212HotelManagement\\HotelManagement_DAL\\HotelManagement_DAL.csproj",
         "packagesPath": "C:\\Users\\Han_Mai\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Han_Mai\\Desktop\\PRN212\\PRN212HotelManagement\\PRN212\\PRN212HotelManagement\\HotelManagement_DAL\\obj\\",
+=======
+    "E:\\Git\\PRN212\\PRN212HotelManagement\\HotelManagement_DAL\\HotelManagement_DAL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Git\\PRN212\\PRN212HotelManagement\\HotelManagement_DAL\\HotelManagement_DAL.csproj",
+        "projectName": "HotelManagement_DAL",
+        "projectPath": "E:\\Git\\PRN212\\PRN212HotelManagement\\HotelManagement_DAL\\HotelManagement_DAL.csproj",
+        "packagesPath": "C:\\Users\\hungv\\.nuget\\packages\\",
+        "outputPath": "E:\\Git\\PRN212\\PRN212HotelManagement\\HotelManagement_DAL\\obj\\",
+>>>>>>> cf99d5f64a78da6de24eb0e8538e1092cda4f893
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Han_Mai\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\hungv\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -156,7 +194,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

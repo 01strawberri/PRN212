@@ -10,7 +10,16 @@
     <Compile Update="AdminWPF.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Booking.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Login.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ManageRooms.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ManageUsers.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Register.xaml.cs">
@@ -24,7 +33,16 @@
     <Page Update="AdminWPF.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Booking.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Login.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ManageRooms.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ManageUsers.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Register.xaml">

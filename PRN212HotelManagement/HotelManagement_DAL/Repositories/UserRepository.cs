@@ -38,5 +38,42 @@ namespace HotelManagement_DAL.Repositories
             _prn212hotelManagementContext.SaveChanges();
             return true;
         }
+        public List<User> GetAllUsers()
+        {
+            return _prn212hotelManagementContext.Users.ToList();
+        }
+
+        public bool UpdateUser(User user)
+        {
+            var existingUser = _prn212hotelManagementContext.Users.FirstOrDefault(u => u.UserId == user.UserId);
+
+            if (existingUser == null)
+            {
+                return false;
+            }
+
+            existingUser.UserName = user.UserName;
+            existingUser.UserEmail = user.UserEmail;
+            existingUser.UserPassword = user.UserPassword;
+            existingUser.UserPhone = user.UserPhone;
+            existingUser.UserRole = user.UserRole;
+
+            _prn212hotelManagementContext.SaveChanges();
+            return true;
+        }
+
+        public bool DeleteUser(int userId)
+        {
+            var user = _prn212hotelManagementContext.Users.FirstOrDefault(u => u.UserId == userId);
+
+            if (user == null)
+            {
+                return false;
+            }
+
+            _prn212hotelManagementContext.Users.Remove(user);
+            _prn212hotelManagementContext.SaveChanges();
+            return true;
+        }
     }
 }
