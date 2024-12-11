@@ -622,10 +622,7 @@
           "HotelManagement_DAL": "1.0.0"
         },
         "runtime": {
-          "HotelManagement_BLL.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "HotelManagement_BLL.dll": {}
         }
       },
       "HotelManagement_DAL/1.0.0": {
@@ -636,10 +633,7 @@
           "Microsoft.Extensions.Configuration.Json": "8.0.0"
         },
         "runtime": {
-          "HotelManagement_DAL.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "HotelManagement_DAL.dll": {}
         }
       }
     }
