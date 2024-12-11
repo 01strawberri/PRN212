@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\THAI_DANG\\FPT University\\Semester 5\\PRN212\\PROJECT_3W\\PRN212\\PRN212HotelManagement\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{51C0295F-BCC1-425B-8E85-8B0FE798C4FD}|PRN212HotelManagement\\PRN212HotelManagement.csproj|c:\\thai_dang\\fpt university\\semester 5\\prn212\\project_3w\\prn212\\prn212hotelmanagement\\prn212hotelmanagement\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{51C0295F-BCC1-425B-8E85-8B0FE798C4FD}|PRN212HotelManagement\\PRN212HotelManagement.csproj|solutionrelative:prn212hotelmanagement\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B01494A-AE10-486C-A289-275FC999D499}|HotelManagement_BLL\\HotelManagement_BLL.csproj|c:\\thai_dang\\fpt university\\semester 5\\prn212\\project_3w\\prn212\\prn212hotelmanagement\\hotelmanagement_bll\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B01494A-AE10-486C-A289-275FC999D499}|HotelManagement_BLL\\HotelManagement_BLL.csproj|solutionrelative:hotelmanagement_bll\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8227DEF3-13AB-4FC5-A226-52BC5EDACA15}|HotelManagement_DAL\\HotelManagement_DAL.csproj|c:\\thai_dang\\fpt university\\semester 5\\prn212\\project_3w\\prn212\\prn212hotelmanagement\\hotelmanagement_dal\\repositories\\servicerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8227DEF3-13AB-4FC5-A226-52BC5EDACA15}|HotelManagement_DAL\\HotelManagement_DAL.csproj|solutionrelative:hotelmanagement_dal\\repositories\\servicerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -13,10 +21,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{3B01494A-AE10-486C-A289-275FC999D499}|HotelManagement_BLL\\HotelManagement_BLL.csproj|c:\\thai_dang\\fpt university\\semester 5\\prn212\\project_3w\\prn212\\prn212hotelmanagement\\hotelmanagement_bll\\servicesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3B01494A-AE10-486C-A289-275FC999D499}|HotelManagement_BLL\\HotelManagement_BLL.csproj|solutionrelative:hotelmanagement_bll\\servicesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3B01494A-AE10-486C-A289-275FC999D499}|HotelManagement_BLL\\HotelManagement_BLL.csproj|c:\\thai_dang\\fpt university\\semester 5\\prn212\\project_3w\\prn212\\prn212hotelmanagement\\hotelmanagement_bll\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3B01494A-AE10-486C-A289-275FC999D499}|HotelManagement_BLL\\HotelManagement_BLL.csproj|solutionrelative:hotelmanagement_bll\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{51C0295F-BCC1-425B-8E85-8B0FE798C4FD}|PRN212HotelManagement\\PRN212HotelManagement.csproj|c:\\thai_dang\\fpt university\\semester 5\\prn212\\project_3w\\prn212\\prn212hotelmanagement\\prn212hotelmanagement\\manageusers.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -77,10 +81,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{8227DEF3-13AB-4FC5-A226-52BC5EDACA15}|HotelManagement_DAL\\HotelManagement_DAL.csproj|c:\\thai_dang\\fpt university\\semester 5\\prn212\\project_3w\\prn212\\prn212hotelmanagement\\hotelmanagement_dal\\dbcontext\\prn212hotelmanagementcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8227DEF3-13AB-4FC5-A226-52BC5EDACA15}|HotelManagement_DAL\\HotelManagement_DAL.csproj|solutionrelative:hotelmanagement_dal\\dbcontext\\prn212hotelmanagementcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{51C0295F-BCC1-425B-8E85-8B0FE798C4FD}|PRN212HotelManagement\\PRN212HotelManagement.csproj|c:\\thai_dang\\fpt university\\semester 5\\prn212\\project_3w\\prn212\\prn212hotelmanagement\\prn212hotelmanagement\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{51C0295F-BCC1-425B-8E85-8B0FE798C4FD}|PRN212HotelManagement\\PRN212HotelManagement.csproj|solutionrelative:prn212hotelmanagement\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3B01494A-AE10-486C-A289-275FC999D499}|HotelManagement_BLL\\HotelManagement_BLL.csproj|c:\\thai_dang\\fpt university\\semester 5\\prn212\\project_3w\\prn212\\prn212hotelmanagement\\hotelmanagement_bll\\hotelmanagement_bll.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -164,20 +164,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "EditService.xaml.cs",
-              "DocumentMoniker": "C:\\THAI_DANG\\FPT University\\Semester 5\\PRN212\\PROJECT_3W\\PRN212\\PRN212HotelManagement\\PRN212HotelManagement\\AdminService\\EditService.xaml.cs",
-              "RelativeDocumentMoniker": "PRN212HotelManagement\\AdminService\\EditService.xaml.cs",
-              "ToolTip": "C:\\THAI_DANG\\FPT University\\Semester 5\\PRN212\\PROJECT_3W\\PRN212\\PRN212HotelManagement\\PRN212HotelManagement\\AdminService\\EditService.xaml.cs",
-              "RelativeToolTip": "PRN212HotelManagement\\AdminService\\EditService.xaml.cs",
-              "ViewState": "AQIAADMAAAAAAAAAAAD4v0MAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T11:51:45.627Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "ServicesService.cs",
               "DocumentMoniker": "C:\\THAI_DANG\\FPT University\\Semester 5\\PRN212\\PROJECT_3W\\PRN212\\PRN212HotelManagement\\HotelManagement_BLL\\ServicesService.cs",
               "RelativeDocumentMoniker": "HotelManagement_BLL\\ServicesService.cs",
@@ -185,12 +172,11 @@
               "RelativeToolTip": "HotelManagement_BLL\\ServicesService.cs",
               "ViewState": "AQIAAAkAAAAAAAAAAAAhwBsAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T10:49:48.552Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-07T10:49:48.552Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "UserService.cs",
               "DocumentMoniker": "C:\\THAI_DANG\\FPT University\\Semester 5\\PRN212\\PROJECT_3W\\PRN212\\PRN212HotelManagement\\HotelManagement_BLL\\UserService.cs",
               "RelativeDocumentMoniker": "HotelManagement_BLL\\UserService.cs",
@@ -203,7 +189,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "ManageUsers.xaml.cs",
               "DocumentMoniker": "C:\\THAI_DANG\\FPT University\\Semester 5\\PRN212\\PROJECT_3W\\PRN212\\PRN212HotelManagement\\PRN212HotelManagement\\ManageUsers.xaml.cs",
               "RelativeDocumentMoniker": "PRN212HotelManagement\\ManageUsers.xaml.cs",
@@ -211,12 +197,11 @@
               "RelativeToolTip": "PRN212HotelManagement\\ManageUsers.xaml.cs",
               "ViewState": "AQIAAFQAAAAAAAAAAAAgwHQAAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T11:07:09.077Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-07T11:07:09.077Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "UserRepository.cs",
               "DocumentMoniker": "C:\\THAI_DANG\\FPT University\\Semester 5\\PRN212\\PROJECT_3W\\PRN212\\PRN212HotelManagement\\HotelManagement_DAL\\Repositories\\UserRepository.cs",
               "RelativeDocumentMoniker": "HotelManagement_DAL\\Repositories\\UserRepository.cs",
@@ -224,12 +209,11 @@
               "RelativeToolTip": "HotelManagement_DAL\\Repositories\\UserRepository.cs",
               "ViewState": "AQIAAAsAAAAAAAAAAAAAwB8AAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T09:49:16.718Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-07T09:49:16.718Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "ServiceRepository.cs",
               "DocumentMoniker": "C:\\THAI_DANG\\FPT University\\Semester 5\\PRN212\\PROJECT_3W\\PRN212\\PRN212HotelManagement\\HotelManagement_DAL\\Repositories\\ServiceRepository.cs",
               "RelativeDocumentMoniker": "HotelManagement_DAL\\Repositories\\ServiceRepository.cs",
@@ -242,7 +226,32 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\THAI_DANG\\FPT University\\Semester 5\\PRN212\\PROJECT_3W\\PRN212\\PRN212HotelManagement\\PRN212HotelManagement\\appsettings.json",
+              "RelativeDocumentMoniker": "PRN212HotelManagement\\appsettings.json",
+              "ToolTip": "C:\\THAI_DANG\\FPT University\\Semester 5\\PRN212\\PROJECT_3W\\PRN212\\PRN212HotelManagement\\PRN212HotelManagement\\appsettings.json",
+              "RelativeToolTip": "PRN212HotelManagement\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-05T09:23:22.994Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "EditService.xaml.cs",
+              "DocumentMoniker": "C:\\THAI_DANG\\FPT University\\Semester 5\\PRN212\\PROJECT_3W\\PRN212\\PRN212HotelManagement\\PRN212HotelManagement\\AdminService\\EditService.xaml.cs",
+              "RelativeDocumentMoniker": "PRN212HotelManagement\\AdminService\\EditService.xaml.cs",
+              "ToolTip": "C:\\THAI_DANG\\FPT University\\Semester 5\\PRN212\\PROJECT_3W\\PRN212\\PRN212HotelManagement\\PRN212HotelManagement\\AdminService\\EditService.xaml.cs",
+              "RelativeToolTip": "PRN212HotelManagement\\AdminService\\EditService.xaml.cs",
+              "ViewState": "AQIAADMAAAAAAAAAAAD4v0MAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T11:51:45.627Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "ManageService.xaml.cs",
               "DocumentMoniker": "C:\\THAI_DANG\\FPT University\\Semester 5\\PRN212\\PROJECT_3W\\PRN212\\PRN212HotelManagement\\PRN212HotelManagement\\AdminService\\ManageService.xaml.cs",
               "RelativeDocumentMoniker": "PRN212HotelManagement\\AdminService\\ManageService.xaml.cs",
@@ -250,12 +259,11 @@
               "RelativeToolTip": "PRN212HotelManagement\\AdminService\\ManageService.xaml.cs",
               "ViewState": "AQIAAEMAAAAAAAAAAIAwwEAAAAA3AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T11:29:45.708Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-07T11:29:45.708Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "AddServices.xaml.cs",
               "DocumentMoniker": "C:\\THAI_DANG\\FPT University\\Semester 5\\PRN212\\PROJECT_3W\\PRN212\\PRN212HotelManagement\\PRN212HotelManagement\\AdminService\\AddServices.xaml.cs",
               "RelativeDocumentMoniker": "PRN212HotelManagement\\AdminService\\AddServices.xaml.cs",
@@ -263,48 +271,44 @@
               "RelativeToolTip": "PRN212HotelManagement\\AdminService\\AddServices.xaml.cs",
               "ViewState": "AQIAABIAAAAAAAAAAAAAACYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-11T08:27:53.69Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-11T08:27:53.69Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "ManageService.xaml",
               "DocumentMoniker": "C:\\THAI_DANG\\FPT University\\Semester 5\\PRN212\\PROJECT_3W\\PRN212\\PRN212HotelManagement\\PRN212HotelManagement\\AdminService\\ManageService.xaml",
               "RelativeDocumentMoniker": "PRN212HotelManagement\\AdminService\\ManageService.xaml",
               "ToolTip": "C:\\THAI_DANG\\FPT University\\Semester 5\\PRN212\\PROJECT_3W\\PRN212\\PRN212HotelManagement\\PRN212HotelManagement\\AdminService\\ManageService.xaml",
               "RelativeToolTip": "PRN212HotelManagement\\AdminService\\ManageService.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-07T11:28:55.561Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-07T11:28:55.561Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "AddServices.xaml",
               "DocumentMoniker": "C:\\THAI_DANG\\FPT University\\Semester 5\\PRN212\\PROJECT_3W\\PRN212\\PRN212HotelManagement\\PRN212HotelManagement\\AdminService\\AddServices.xaml",
               "RelativeDocumentMoniker": "PRN212HotelManagement\\AdminService\\AddServices.xaml",
               "ToolTip": "C:\\THAI_DANG\\FPT University\\Semester 5\\PRN212\\PROJECT_3W\\PRN212\\PRN212HotelManagement\\PRN212HotelManagement\\AdminService\\AddServices.xaml",
               "RelativeToolTip": "PRN212HotelManagement\\AdminService\\AddServices.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-08T06:29:23.97Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-08T06:29:23.97Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "EditService.xaml",
               "DocumentMoniker": "C:\\THAI_DANG\\FPT University\\Semester 5\\PRN212\\PROJECT_3W\\PRN212\\PRN212HotelManagement\\PRN212HotelManagement\\AdminService\\EditService.xaml",
               "RelativeDocumentMoniker": "PRN212HotelManagement\\AdminService\\EditService.xaml",
               "ToolTip": "C:\\THAI_DANG\\FPT University\\Semester 5\\PRN212\\PROJECT_3W\\PRN212\\PRN212HotelManagement\\PRN212HotelManagement\\AdminService\\EditService.xaml",
               "RelativeToolTip": "PRN212HotelManagement\\AdminService\\EditService.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-08T11:50:00.124Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-08T11:50:00.124Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "Service.cs",
               "DocumentMoniker": "C:\\THAI_DANG\\FPT University\\Semester 5\\PRN212\\PROJECT_3W\\PRN212\\PRN212HotelManagement\\HotelManagement_DAL\\Entities\\Service.cs",
               "RelativeDocumentMoniker": "HotelManagement_DAL\\Entities\\Service.cs",
@@ -312,12 +316,11 @@
               "RelativeToolTip": "HotelManagement_DAL\\Entities\\Service.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAuwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T12:10:29.255Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-08T12:10:29.255Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\THAI_DANG\\FPT University\\Semester 5\\PRN212\\PROJECT_3W\\PRN212\\PRN212HotelManagement\\HotelManagement_DAL\\Entities\\User.cs",
               "RelativeDocumentMoniker": "HotelManagement_DAL\\Entities\\User.cs",
@@ -325,12 +328,11 @@
               "RelativeToolTip": "HotelManagement_DAL\\Entities\\User.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T08:24:32.974Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-06T08:24:32.974Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "Transaction.cs",
               "DocumentMoniker": "C:\\THAI_DANG\\FPT University\\Semester 5\\PRN212\\PROJECT_3W\\PRN212\\PRN212HotelManagement\\HotelManagement_DAL\\Entities\\Transaction.cs",
               "RelativeDocumentMoniker": "HotelManagement_DAL\\Entities\\Transaction.cs",
@@ -338,36 +340,33 @@
               "RelativeToolTip": "HotelManagement_DAL\\Entities\\Transaction.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-11T08:22:17.361Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-11T08:22:17.361Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "AdminWPF.xaml",
               "DocumentMoniker": "C:\\THAI_DANG\\FPT University\\Semester 5\\PRN212\\PROJECT_3W\\PRN212\\PRN212HotelManagement\\PRN212HotelManagement\\AdminWPF.xaml",
               "RelativeDocumentMoniker": "PRN212HotelManagement\\AdminWPF.xaml",
               "ToolTip": "C:\\THAI_DANG\\FPT University\\Semester 5\\PRN212\\PROJECT_3W\\PRN212\\PRN212HotelManagement\\PRN212HotelManagement\\AdminWPF.xaml",
               "RelativeToolTip": "PRN212HotelManagement\\AdminWPF.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-07T09:39:30.804Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-07T09:39:30.804Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "ManageUsers.xaml",
               "DocumentMoniker": "C:\\THAI_DANG\\FPT University\\Semester 5\\PRN212\\PROJECT_3W\\PRN212\\PRN212HotelManagement\\PRN212HotelManagement\\ManageUsers.xaml",
               "RelativeDocumentMoniker": "PRN212HotelManagement\\ManageUsers.xaml",
               "ToolTip": "C:\\THAI_DANG\\FPT University\\Semester 5\\PRN212\\PROJECT_3W\\PRN212\\PRN212HotelManagement\\PRN212HotelManagement\\ManageUsers.xaml",
               "RelativeToolTip": "PRN212HotelManagement\\ManageUsers.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-07T09:40:31.568Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-07T09:40:31.568Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "AdminWPF.xaml.cs",
               "DocumentMoniker": "C:\\THAI_DANG\\FPT University\\Semester 5\\PRN212\\PROJECT_3W\\PRN212\\PRN212HotelManagement\\PRN212HotelManagement\\AdminWPF.xaml.cs",
               "RelativeDocumentMoniker": "PRN212HotelManagement\\AdminWPF.xaml.cs",
@@ -375,12 +374,11 @@
               "RelativeToolTip": "PRN212HotelManagement\\AdminWPF.xaml.cs",
               "ViewState": "AQIAAC0AAAAAAAAAAAAYwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T06:31:00.577Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-08T06:31:00.577Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "Class1.cs",
               "DocumentMoniker": "C:\\THAI_DANG\\FPT University\\Semester 5\\PRN212\\PROJECT_3W\\PRN212\\PRN212HotelManagement\\HotelManagement_BLL\\Class1.cs",
               "RelativeDocumentMoniker": "HotelManagement_BLL\\Class1.cs",
@@ -388,12 +386,11 @@
               "RelativeToolTip": "HotelManagement_BLL\\Class1.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T12:08:20.83Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-06T12:08:20.83Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "Prn212hotelManagementContext.cs",
               "DocumentMoniker": "C:\\THAI_DANG\\FPT University\\Semester 5\\PRN212\\PROJECT_3W\\PRN212\\PRN212HotelManagement\\HotelManagement_DAL\\DBContext\\Prn212hotelManagementContext.cs",
               "RelativeDocumentMoniker": "HotelManagement_DAL\\DBContext\\Prn212hotelManagementContext.cs",
@@ -401,20 +398,7 @@
               "RelativeToolTip": "HotelManagement_DAL\\DBContext\\Prn212hotelManagementContext.cs",
               "ViewState": "AQIAALEAAAAAAAAAAAAuwAcAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T09:39:37.215Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\THAI_DANG\\FPT University\\Semester 5\\PRN212\\PROJECT_3W\\PRN212\\PRN212HotelManagement\\PRN212HotelManagement\\appsettings.json",
-              "RelativeDocumentMoniker": "PRN212HotelManagement\\appsettings.json",
-              "ToolTip": "C:\\THAI_DANG\\FPT University\\Semester 5\\PRN212\\PROJECT_3W\\PRN212\\PRN212HotelManagement\\PRN212HotelManagement\\appsettings.json",
-              "RelativeToolTip": "PRN212HotelManagement\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAuAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-12-05T09:23:22.994Z"
+              "WhenOpened": "2024-12-07T09:39:37.215Z"
             },
             {
               "$type": "Document",
@@ -528,8 +512,7 @@
               "ToolTip": "C:\\THAI_DANG\\FPT University\\Semester 5\\PRN212\\PROJECT_3W\\PRN212\\PRN212HotelManagement\\PRN212HotelManagement\\App.xaml",
               "RelativeToolTip": "PRN212HotelManagement\\App.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-05T20:14:36.553Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-05T20:14:36.553Z"
             },
             {
               "$type": "Document",
