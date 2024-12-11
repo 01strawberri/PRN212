@@ -44,8 +44,8 @@ namespace PRN212HotelManagement
 
         private void btn_Bookings_Click(object sender, RoutedEventArgs e)
         {
-            Booking bookingWindow = new Booking(currentUser);
-            bookingWindow.Show();
+            ViewBookingForStaff viewBookingForStaff = new ViewBookingForStaff(currentUser);
+            viewBookingForStaff.Show();
             this.Close();
         }
 
