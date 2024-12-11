@@ -350,3 +350,5 @@ C:\Users\Han_Mai\Desktop\PRN212\PRN212HotelManagement\PRN212\PRN212HotelManageme
 C:\Users\Han_Mai\Desktop\PRN212\PRN212HotelManagement\PRN212\PRN212HotelManagement\PRN212HotelManagement\obj\Debug\net8.0-windows\PRN212HotelManagement.pdb
 C:\Users\Han_Mai\Desktop\PRN212\PRN212HotelManagement\PRN212\PRN212HotelManagement\PRN212HotelManagement\obj\Debug\net8.0-windows\PRN212HotelManagement.genruntimeconfig.cache
 C:\Users\Han_Mai\Desktop\PRN212\PRN212HotelManagement\PRN212\PRN212HotelManagement\PRN212HotelManagement\obj\Debug\net8.0-windows\ref\PRN212HotelManagement.dll
+E:\Git\PRN212\PRN212HotelManagement\PRN212HotelManagement\obj\Debug\net8.0-windows\ViewBookingForStaff.g.cs
+E:\Git\PRN212\PRN212HotelManagement\PRN212HotelManagement\obj\Debug\net8.0-windows\ViewBookingForStaff.baml
