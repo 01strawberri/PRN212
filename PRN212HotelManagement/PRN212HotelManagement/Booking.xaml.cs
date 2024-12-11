@@ -147,5 +147,30 @@ namespace PRN212HotelManagement
             }
         }
 
+        private void comboBookingType_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (comboBookingType.SelectedItem is ComboBoxItem selectedItem)
+            {
+                if (selectedItem.Content.ToString() == "By Hour")
+                {
+                    hourlyBookingPanel.Visibility = Visibility.Visible;
+                    
+                    // Populate time slots (e.g., every hour from 7:00 to 22:00)
+                    startTimePicker.Items.Clear();
+                    endTimePicker.Items.Clear();
+                    for (int hour = 7; hour <= 22; hour++)
+                    {
+                        string time = $"{hour:D2}:00";
+                        startTimePicker.Items.Add(time);
+                        endTimePicker.Items.Add(time);
+                    }
+                }
+                else // By Day
+                {
+                    hourlyBookingPanel.Visibility = Visibility.Collapsed;
+                }
+            }
+        }
+
     }
 }

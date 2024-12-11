@@ -353,9 +353,7 @@ C:\Users\Han_Mai\Desktop\PRN212\PRN212HotelManagement\PRN212\PRN212HotelManageme
 C:\Users\Han_Mai\Desktop\PRN212\PRN212HotelManagement\PRN212\PRN212HotelManagement\PRN212HotelManagement\obj\Debug\net8.0-windows\AdminService\AddServices.g.cs
 C:\Users\Han_Mai\Desktop\PRN212\PRN212HotelManagement\PRN212\PRN212HotelManagement\PRN212HotelManagement\obj\Debug\net8.0-windows\AdminService\EditService.g.cs
 C:\Users\Han_Mai\Desktop\PRN212\PRN212HotelManagement\PRN212\PRN212HotelManagement\PRN212HotelManagement\obj\Debug\net8.0-windows\AdminService\ManageService.g.cs
-C:\Users\Han_Mai\Desktop\PRN212\PRN212HotelManagement\PRN212\PRN212HotelManagement\PRN212HotelManagement\obj\Debug\net8.0-windows\ViewBookingForStaff.g.cs
 C:\Users\Han_Mai\Desktop\PRN212\PRN212HotelManagement\PRN212\PRN212HotelManagement\PRN212HotelManagement\obj\Debug\net8.0-windows\AdminService\ManageService.baml
-C:\Users\Han_Mai\Desktop\PRN212\PRN212HotelManagement\PRN212\PRN212HotelManagement\PRN212HotelManagement\obj\Debug\net8.0-windows\ViewBookingForStaff.baml
 C:\Users\Han_Mai\Desktop\PRN212\PRN212HotelManagement\PRN212\PRN212HotelManagement\PRN212HotelManagement\obj\Debug\net8.0-windows\Booking.g.cs
 C:\Users\Han_Mai\Desktop\PRN212\PRN212HotelManagement\PRN212\PRN212HotelManagement\PRN212HotelManagement\obj\Debug\net8.0-windows\Booking.baml
 E:\Git\PRN212\PRN212HotelManagement\PRN212HotelManagement\obj\Debug\net8.0-windows\AdminService\AddServices.baml
@@ -368,3 +366,7 @@ E:\Git\PRN212\PRN212HotelManagement\PRN212HotelManagement\obj\Debug\net8.0-windo
 E:\Git\PRN212\PRN212HotelManagement\PRN212HotelManagement\obj\Debug\net8.0-windows\AdminService\ManageService.baml
 E:\Git\PRN212\PRN212HotelManagement\PRN212HotelManagement\obj\Debug\net8.0-windows\BookingDetail.baml
 E:\Git\PRN212\PRN212HotelManagement\PRN212HotelManagement\obj\Debug\net8.0-windows\ViewBookingForAdmin.baml
+C:\Users\Han_Mai\Desktop\PRN212\PRN212HotelManagement\PRN212\PRN212HotelManagement\PRN212HotelManagement\obj\Debug\net8.0-windows\BookingDetail.g.cs
+C:\Users\Han_Mai\Desktop\PRN212\PRN212HotelManagement\PRN212\PRN212HotelManagement\PRN212HotelManagement\obj\Debug\net8.0-windows\ViewBookingForAdmin.g.cs
+C:\Users\Han_Mai\Desktop\PRN212\PRN212HotelManagement\PRN212\PRN212HotelManagement\PRN212HotelManagement\obj\Debug\net8.0-windows\BookingDetail.baml
+C:\Users\Han_Mai\Desktop\PRN212\PRN212HotelManagement\PRN212\PRN212HotelManagement\PRN212HotelManagement\obj\Debug\net8.0-windows\ViewBookingForAdmin.baml
