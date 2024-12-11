@@ -28,16 +28,9 @@ namespace PRN212HotelManagement
 
         public ManageService()
         {
-            try
-            {
-                InitializeComponent(); // Initialize the UI components
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Error: {ex.Message}", "Initialization Error");
-            }
 
-            // Initialize the services collection and service layer
+            InitializeComponent(); 
+
             services = new ObservableCollection<Service>();
             _services = new ServicesService();
 

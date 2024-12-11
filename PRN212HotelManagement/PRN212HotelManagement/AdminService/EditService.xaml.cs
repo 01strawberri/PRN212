@@ -25,14 +25,23 @@ namespace PRN212HotelManagement.AdminService
         {
             InitializeComponent();
 
-            // Populate fields with existing data
+            
             ServiceTypeTextBox.Text = serviceToEdit.ServiceType;
             ServiceNameTextBox.Text = serviceToEdit.ServiceName;
             ServiceDescriptionTextBox.Text = serviceToEdit.ServiceDescription;
             ServicePriceTextBox.Text = serviceToEdit.ServicePrice.ToString();
             ServiceStatusComboBox.SelectedItem = serviceToEdit.ServiceStatus;
-            
-            // Set the EditedService as a clone to avoid direct changes
+
+            foreach (var item in ServiceStatusComboBox.Items)
+            {
+                if ((item as ComboBoxItem)?.Content.ToString() == serviceToEdit.ServiceStatus)
+                {
+                    ServiceStatusComboBox.SelectedItem = item;
+                    break;
+                }
+            }
+
+
             EditedService = new Service
             {
                 ServiceId = serviceToEdit.ServiceId,
@@ -48,14 +57,13 @@ namespace PRN212HotelManagement.AdminService
         {
             try
             {
-                // Update EditedService with changes
                 EditedService.ServiceType = ServiceTypeTextBox.Text;
                 EditedService.ServiceName = ServiceNameTextBox.Text;
                 EditedService.ServiceDescription = ServiceDescriptionTextBox.Text;
                 EditedService.ServicePrice = decimal.Parse(ServicePriceTextBox.Text);
                 EditedService.ServiceStatus = (ServiceStatusComboBox.SelectedItem as ComboBoxItem)?.Content.ToString();
 
-                DialogResult = true; // Mark operation as successful
+                DialogResult = true; 
                 Close();
             }
             catch (Exception ex)
@@ -66,7 +74,7 @@ namespace PRN212HotelManagement.AdminService
 
         private void CancelButton_Click(object sender, RoutedEventArgs e)
         {
-            DialogResult = false; // Cancel operation
+            DialogResult = false; 
             Close();
         }
 
