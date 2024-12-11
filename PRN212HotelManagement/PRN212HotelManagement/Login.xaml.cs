@@ -89,11 +89,14 @@ namespace PRN212HotelManagement
                         //Open Admin WPF
                         User currentUser = _userService.GetUserByUsername(username);
                         AdminWPF adminWPF = new AdminWPF(currentUser);
+                        ManageRooms manageRooms = new ManageRooms(currentUser);
+                        ManageUsers manageUsers = new ManageUsers(currentUser); 
                         adminWPF.Show();
                         break;
                     case "Staff":
                         //Open Staff WPF
-                        StaffWPF staffWPF = new StaffWPF();
+                        User currentUserr = _userService.GetUserByUsername(username);
+                        StaffWPF staffWPF = new StaffWPF(currentUserr);
                         staffWPF.Show();
                         break;
                 }
@@ -121,5 +124,21 @@ namespace PRN212HotelManagement
             registerWindow.Show();
             this.Close();
         }
+        private void txtAccount_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+            {
+                Button_Click(sender, new RoutedEventArgs());
+            }
+        }
+
+        private void txtPassword_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+            {
+                Button_Click(sender, new RoutedEventArgs());
+            }
+        }
+
     }
 }

@@ -1,6 +1,10 @@
 ﻿using HotelManagement_DAL.DBContext;
+using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace HotelManagement_DAL.Repositories
 {
@@ -17,12 +21,10 @@ namespace HotelManagement_DAL.Repositories
         {
             return _prn212hotelManagementContext.Users.FirstOrDefault(u => u.UserEmail == email);
         }
-
         public User? GetUserByUserName(string username)
         {
             return _prn212hotelManagementContext.Users.FirstOrDefault(u => u.UserName == username);
         }
-
         public bool AddUser(User user)
         {
             var existingUser = _prn212hotelManagementContext.Users.FirstOrDefault(u => u.UserEmail == user.UserEmail || u.UserName == user.UserName);
@@ -36,7 +38,6 @@ namespace HotelManagement_DAL.Repositories
             _prn212hotelManagementContext.SaveChanges();
             return true;
         }
-
         public List<User> GetAllUsers()
         {
             return _prn212hotelManagementContext.Users.ToList();

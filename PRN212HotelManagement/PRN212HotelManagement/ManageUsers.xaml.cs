@@ -1,33 +1,45 @@
-﻿using System;
-using System.Linq;
-using System.Windows;
+﻿using HotelManagement_BLL;
 using HotelManagement_DAL;
 using HotelManagement_DAL.DBContext;
 using HotelManagement_DAL.Repositories;
-using HotelManagement_BLL;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Shapes;
 
 namespace PRN212HotelManagement
 {
+    /// <summary>
+    /// Interaction logic for ManageUsers.xaml
+    /// </summary>
     public partial class ManageUsers : Window
     {
         private UserService _userService;
         private User _currentUser;
-
-        public ManageUsers()
+        private User currentUser;
+        public ManageUsers(User user)
         {
             InitializeComponent();
+            currentUser = user;
             var context = new Prn212hotelManagementContext();
             var userRepository = new UserRepository(context);
             _userService = new UserService(userRepository);
             LoadUsers();
         }
-
         private void LoadUsers()
         {
             var users = _userService.GetAllUsers();
             dataGridUsers.ItemsSource = users;
         }
-
         private void btnAddUser_Click(object sender, RoutedEventArgs e)
         {
             _currentUser = null;
@@ -125,6 +137,41 @@ namespace PRN212HotelManagement
                     MessageBox.Show("Error updating user.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
             }
+        }
+
+        private void btn_Account_Click(object sender, RoutedEventArgs e)
+        {
+            AdminWPF account = new AdminWPF(currentUser);
+            account.Show();
+            this.Close();
+        }
+        private void btn_Logout_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+            Login login = new Login();
+            login.Show();
+        }
+
+        private void btn_ManageRoom_Click(object sender, RoutedEventArgs e)
+        {
+            ManageRooms manageRooms = new ManageRooms(currentUser);
+            manageRooms.Show();
+            this.Close();
+        }
+
+
+        private void btn_Bookings_Click(object sender, RoutedEventArgs e)
+        {
+            Booking manageRooms = new Booking();
+            manageRooms.Show();
+            this.Close();
+        }
+
+        private void btn_ManageUser_Click(object sender, RoutedEventArgs e)
+        {
+            ManageUsers manageUsersWindow = new ManageUsers(currentUser);
+            manageUsersWindow.Show();
+            this.Close();
         }
 
         private void btnCancel_Click(object sender, RoutedEventArgs e)

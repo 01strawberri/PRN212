@@ -18,7 +18,7 @@ namespace HotelManagement_BLL
             _userRepository = userRepository;
         }
 
-        public string Login(string username, string password)
+        public string Login(string username , string password)
         {
             var user = _userRepository.GetUserByUserName(username);
 
@@ -41,7 +41,6 @@ namespace HotelManagement_BLL
                 return "Invalid";
             }
         }
-
         public bool AccountExists(string email, string username)
         {
             var userByEmail = _userRepository.GetUserByEmail(email);
@@ -49,7 +48,6 @@ namespace HotelManagement_BLL
 
             return userByEmail != null && userByUsername != null;
         }
-
         public bool Register(string email, string username, string password, string phone)
         {
             var newUser = new User
@@ -68,7 +66,6 @@ namespace HotelManagement_BLL
         {
             return _userRepository.GetUserByUserName(username);
         }
-
         public List<User> GetAllUsers()
         {
             return _userRepository.GetAllUsers();

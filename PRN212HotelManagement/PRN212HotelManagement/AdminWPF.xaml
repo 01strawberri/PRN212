@@ -12,18 +12,19 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
+
         <!-- Navbar -->
         <StackPanel Grid.Row="0" Background="#3AA9AD" Orientation="Horizontal">
             <Button x:Name="btn_Profile" Content="Profile" Width="91" Height="40" Margin="5" Background="Transparent" 
                     Foreground="White" BorderThickness="0" Click="btn_Account_Click"/>
             <Button x:Name="btn_Bookings" Content="Bookings" Width="92" Height="40" Margin="5" Background="Transparent" 
-                    Foreground="White" BorderThickness="0"/>
-            <Button x:Name="btn_ManageRoom" Content="Manage Room" Width="124" Height="40" Background="Transparent" 
+                    Foreground="White" BorderThickness="0" Click="btn_Bookings_Click"/>
+            <Button x:Name="btn_ManageRoom" Content="Manage Rooms" Width="124" Height="40" Background="Transparent" 
                     Foreground="White" BorderThickness="0" Click="btn_ManageRoom_Click"/>
             <Button x:Name="btn_ManageUser" Width="129" Height="40" Margin="5" Background="Transparent" 
-                    Foreground="White" BorderThickness="0" Content="Manage Users" Click="btn_ManageUser_Click"/>
+                    Foreground="White" BorderThickness="0" Content="Manage Users" Click="btn_ManageUser_Click" />
             <Button x:Name="btn_ManageService" Content="Manage Services" Width="108" Height="40" Margin="5" Background="Transparent" 
-                    Foreground="White" BorderThickness="0" Click="btn_ManageService_Click"/>
+                    Foreground="White" BorderThickness="0"/>
             <Button x:Name="btn_Transaction" Content="Transaction" Width="100" Height="40" Margin="5" Background="Transparent" 
                     Foreground="White" BorderThickness="0" HorizontalAlignment="Right"/>
             <Button x:Name="btn_Logout" Content="Logout" Width="100" Height="40" Margin="5" Background="Transparent" 
@@ -39,9 +40,9 @@
             <!-- Left side - Profile Image -->
             <StackPanel Grid.Column="0" Margin="10">
                 <Border Width="150" Height="150" CornerRadius="75">
-                    <Image Source="/Images/profile.png"/>
+                    <Image Source="pack://application:,,,/Images/profile.png"/>
                 </Border>
-                <TextBlock Text="Admin Profile" 
+                <TextBlock x:Name="txt_ProfileName" 
                            FontSize="20" 
                            FontWeight="Bold" 
                            HorizontalAlignment="Center"
@@ -128,7 +129,7 @@
                                 Content="Update Email" 
                                 HorizontalAlignment="Left" 
                                 Margin="300,1,0,0" 
-                                Width="80"/>
+                                Width="80" Click="btn_ChangeEmail_Click"/>
                     </Grid>
                 </Border>
 
@@ -148,7 +149,8 @@
                         <TextBlock x:Name="txtPhone" 
                                    Grid.Column="1" 
                                    VerticalAlignment="Center"/>
-                        <Button x:Name="btn_ChangePhone" Grid.Column="1" Content="Update PhoneNumber" HorizontalAlignment="Left" Margin="254,0,0,0" Height="30" VerticalAlignment="Center" Width="126"/>
+                        <Button x:Name="btn_ChangePhone" Grid.Column="1" Content="Update PhoneNumber" HorizontalAlignment="Left" Margin="254,0,0,0" Height="30" VerticalAlignment="Center" Width="126" Click="btn_ChangePhone_Click"/>
+
                     </Grid>
                 </Border>
 
