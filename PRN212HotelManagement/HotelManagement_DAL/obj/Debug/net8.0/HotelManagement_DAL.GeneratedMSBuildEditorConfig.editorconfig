@@ -8,10 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = HotelManagement_DAL
-<<<<<<< HEAD
 build_property.ProjectDir = C:\Users\Han_Mai\Desktop\PRN212\PRN212HotelManagement\PRN212\PRN212HotelManagement\HotelManagement_DAL\
-=======
-build_property.ProjectDir = C:\THAI_DANG\FPT University\Semester 5\PRN212\PROJECT_3W\PRN212\PRN212HotelManagement\HotelManagement_DAL\
->>>>>>> 1e6a0662307dbf56129bdcb199ce274bd838f38e
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

@@ -167,17 +167,13 @@ namespace PRN212HotelManagement {
         /// InitializeComponent
         /// </summary>
         [System.Diagnostics.DebuggerNonUserCodeAttribute()]
-<<<<<<< HEAD
         [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "8.0.8.0")]
-=======
-        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "8.0.4.0")]
->>>>>>> 1e6a0662307dbf56129bdcb199ce274bd838f38e
         public void InitializeComponent() {
             if (_contentLoaded) {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/PRN212HotelManagement;V1.0.0.0;component/adminwpf.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/PRN212HotelManagement;component/adminwpf.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\AdminWPF.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
@@ -187,11 +183,7 @@ namespace PRN212HotelManagement {
         }
         
         [System.Diagnostics.DebuggerNonUserCodeAttribute()]
-<<<<<<< HEAD
         [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "8.0.8.0")]
-=======
-        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "8.0.4.0")]
->>>>>>> 1e6a0662307dbf56129bdcb199ce274bd838f38e
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Never)]
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Design", "CA1033:InterfaceMethodsShouldBeCallableByChildTypes")]
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity")]
