@@ -23,8 +23,8 @@ namespace PRN212HotelManagement
     /// </summary>
     public partial class ManageService : Window
     {
-        private readonly ServicesService _services; // Service layer to interact with data
-        private ObservableCollection<Service> services; // ObservableCollection for binding to DataGrid
+        private readonly ServicesService _services; 
+        private ObservableCollection<Service> services; 
 
         public ManageService()
         {
@@ -34,28 +34,22 @@ namespace PRN212HotelManagement
             services = new ObservableCollection<Service>();
             _services = new ServicesService();
 
-            // Load the services into the ObservableCollection and bind to DataGrid
             LoadServices();
         }
 
-        // Method to load services from database into the ObservableCollection
         private void LoadServices()
         {
             try
             {
-                // Clear the existing collection
+
                 services.Clear();
 
-                // Retrieve services from the database
                 var loadedServices = _services.GetServices();
 
-                // Add services to the ObservableCollection
                 foreach (var service in loadedServices)
                 {
                     services.Add(service);
                 }
-
-                // Bind the ObservableCollection to the DataGrid
                 ServicesDataGrid.ItemsSource = services;
             }
             catch (Exception ex)
@@ -64,13 +58,11 @@ namespace PRN212HotelManagement
             }
         }
 
-        // Event handler for adding a new service
         private void AddService_Click(object sender, RoutedEventArgs e)
         {
-            // Open the AddServiceWindow
             var addServiceWindow = new AddServices();
 
-            if (addServiceWindow.ShowDialog() == true) // If the dialog returns true
+            if (addServiceWindow.ShowDialog() == true) 
             {
                 var newService = addServiceWindow.NewService;
 
@@ -78,10 +70,8 @@ namespace PRN212HotelManagement
                 {
                     try
                     {
-                        // Add the new service to the database
                         _services.AddService(newService);
 
-                        // Add the new service to the ObservableCollection
                         services.Add(newService);
                     }
                     catch (Exception ex)
@@ -96,17 +86,13 @@ namespace PRN212HotelManagement
         {
             if (ServicesDataGrid.SelectedItem is Service selectedService)
             {
-                // Open the EditService window with the selected service
                 var editServiceWindow = new EditService(selectedService);
 
-                if (editServiceWindow.ShowDialog() == true) // Wait for Save confirmation
+                if (editServiceWindow.ShowDialog() == true) 
                 {
                     try
                     {
-                        // Call the UpdateService method with the updated service
                         _services.UpdateService(editServiceWindow.EditedService);
-
-                        // Refresh the DataGrid
                         LoadServices();
                     }
                     catch (Exception ex)
@@ -121,7 +107,6 @@ namespace PRN212HotelManagement
             }
         }
 
-            // Event handler for deleting a service
             private void DeleteService_Click(object sender, RoutedEventArgs e)
         {
             if (ServicesDataGrid.SelectedItem is Service selectedService)
@@ -136,10 +121,8 @@ namespace PRN212HotelManagement
                 {
                     try
                     {
-                        // Delete the service from the database
                         _services.DeleteService(selectedService.ServiceId);
 
-                        // Remove the service from the ObservableCollection
                         services.Remove(selectedService);
                     }
                     catch (Exception ex)

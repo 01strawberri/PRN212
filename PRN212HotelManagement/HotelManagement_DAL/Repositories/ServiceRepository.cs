@@ -29,8 +29,12 @@ namespace HotelManagement_DAL.Repositories
 
         public void UpdateService(Service service)
         {
-            _context.Services.Update(service);
-            _context.SaveChanges();
+            var serviceInDb = _context.Services.SingleOrDefault(s => s.ServiceId == service.ServiceId);
+            if (serviceInDb != null)
+            {
+                _context.Entry(serviceInDb).CurrentValues.SetValues(service);
+                _context.SaveChanges();
+            }
         }
 
         public void DeleteService(int serviceId)

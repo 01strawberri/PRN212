@@ -31,42 +31,8 @@ namespace HotelManagement_BLL
         }
         public void UpdateService(Service updatedService)
         {
-            using (var context = new Prn212hotelManagementContext())
-            {
-                try
-                {
-                    // Fetch the existing service from the database
-                    var serviceInDb = context.Services.SingleOrDefault(s => s.ServiceId == updatedService.ServiceId);
-
-                    if (serviceInDb == null)
-                    {
-                        throw new Exception("Service not found in the database.");
-                    }
-
-                    // Update the values
-                    context.Entry(serviceInDb).CurrentValues.SetValues(updatedService);
-                    context.Entry(serviceInDb).State = EntityState.Modified;
-
-                    // Save changes
-                    context.SaveChanges();
-                }
-                catch (DbUpdateException ex)
-                {
-                    // Log inner exception
-                    Debug.WriteLine($"Database update error: {ex.InnerException?.Message}", "Update Error");
-                    throw;
-                }
-                catch (Exception ex)
-                {
-                    // Handle generic errors
-                    Debug.WriteLine($"Error: {ex.Message}", "Update Error");
-                    throw;
-                }
-            }
+            _repository.UpdateService(updatedService);
         }
-
-
-
 
         public void DeleteService(int serviceId)
         {

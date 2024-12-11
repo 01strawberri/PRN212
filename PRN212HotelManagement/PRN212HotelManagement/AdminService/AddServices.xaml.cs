@@ -28,7 +28,6 @@ namespace PRN212HotelManagement
         {
             try
             {
-                // Validate inputs before creating the new service
                 if (string.IsNullOrWhiteSpace(ServiceTypeTextBox.Text) ||
                     string.IsNullOrWhiteSpace(ServiceNameTextBox.Text) ||
                     string.IsNullOrWhiteSpace(ServicePriceTextBox.Text) ||
@@ -38,7 +37,6 @@ namespace PRN212HotelManagement
                     return;
                 }
 
-                // Create the new service object
                 NewService = new Service
                 {
                     ServiceType = ServiceTypeTextBox.Text,
