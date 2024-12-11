@@ -14,11 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PRN212HotelManagement")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-<<<<<<< HEAD
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+83c86d9ec34b679b7f43c881f2cf883bbd7c7ad8")]
-=======
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+da21ecdb5fed024b3520aa23955834e199a61973")]
->>>>>>> 1e6a0662307dbf56129bdcb199ce274bd838f38e
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4bea8bba4ca1546cf48231090d188adcffd69708")]
 [assembly: System.Reflection.AssemblyProductAttribute("PRN212HotelManagement")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PRN212HotelManagement")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
