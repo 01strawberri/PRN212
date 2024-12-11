@@ -18,6 +18,11 @@ namespace HotelManagement_BLL
             _roomRepository = roomRepository;
         }
 
+        public BookingServices(BookingRepository bookingRepository)
+        {
+            _bookingRepository = bookingRepository;
+        }
+
         public bool AddBooking(int userId, int roomId, string bookingType, string bookingStatus, DateOnly bookingStartDay, DateOnly bookingEndDay, decimal totalPrice)
         {
             var newBooking = new Booking

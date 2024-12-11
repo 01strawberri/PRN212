@@ -28,6 +28,12 @@
     <Compile Update="StaffWPF.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="TransactionDetailWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="TransactionWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="ViewBookingForStaff.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -52,6 +58,12 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="StaffWPF.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="TransactionDetailWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="TransactionWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="ViewBookingForStaff.xaml">

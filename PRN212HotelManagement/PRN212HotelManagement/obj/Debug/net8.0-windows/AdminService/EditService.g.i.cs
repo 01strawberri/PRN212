@@ -92,7 +92,7 @@ namespace PRN212HotelManagement.AdminService {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/PRN212HotelManagement;component/adminservice/editservice.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/PRN212HotelManagement;V1.0.0.0;component/adminservice/editservice.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\AdminService\EditService.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
