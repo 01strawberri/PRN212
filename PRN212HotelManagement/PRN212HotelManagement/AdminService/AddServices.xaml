@@ -1,0 +1,42 @@
+﻿<Window x:Class="PRN212HotelManagement.AddServices"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Add Service" Height="350" Width="400">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <!-- Labels and Input Fields -->
+        <TextBlock Text="Type:" Grid.Row="0" Grid.Column="0" Margin="5" VerticalAlignment="Center" />
+        <TextBox x:Name="ServiceTypeTextBox" Grid.Row="0" Grid.Column="1" Margin="5" />
+
+        <TextBlock Text="Name:" Grid.Row="1" Grid.Column="0" Margin="5" VerticalAlignment="Center" />
+        <TextBox x:Name="ServiceNameTextBox" Grid.Row="1" Grid.Column="1" Margin="5" />
+
+        <TextBlock Text="Description:" Grid.Row="2" Grid.Column="0" Margin="5" VerticalAlignment="Center" />
+        <TextBox x:Name="ServiceDescriptionTextBox" Grid.Row="2" Grid.Column="1" Margin="5" />
+
+        <TextBlock Text="Price:" Grid.Row="3" Grid.Column="0" Margin="5" VerticalAlignment="Center" />
+        <TextBox x:Name="ServicePriceTextBox" Grid.Row="3" Grid.Column="1" Margin="5" />
+
+        <TextBlock Text="Status:" Grid.Row="4" Grid.Column="0" Margin="5" VerticalAlignment="Center" />
+        <ComboBox x:Name="ServiceStatusComboBox" Grid.Row="4" Grid.Column="1" Margin="5">
+            <ComboBoxItem Content="Available" />
+            <ComboBoxItem Content="Unavailable" />
+        </ComboBox>
+
+        <!-- Add Button -->
+        <Button Content="Add" Grid.Row="5" Grid.ColumnSpan="2" HorizontalAlignment="Right" Margin="5" Padding="10,5"
+                Click="AddButton_Click" />
+    </Grid>
+</Window>

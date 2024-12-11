@@ -1,0 +1,25 @@
+﻿<Window x:Class="PRN212HotelManagement.ManageService"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PRN212HotelManagement"
+        mc:Ignorable="d"
+        Title="ManageService" Height="450" Width="800">
+    <Grid>
+        <DataGrid x:Name="ServicesDataGrid" AutoGenerateColumns="False" IsReadOnly="True" Margin="10,10,10,50">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Binding="{Binding ServiceId}" Width="50" />
+                <DataGridTextColumn Header="Type" Binding="{Binding ServiceType}" Width="100" />
+                <DataGridTextColumn Header="Name" Binding="{Binding ServiceName}" Width="150" />
+                <DataGridTextColumn Header="Description" Binding="{Binding ServiceDescription}" Width="200" />
+                <DataGridTextColumn Header="Price" Binding="{Binding ServicePrice}" Width="100" />
+                <DataGridTextColumn Header="Status" Binding="{Binding ServiceStatus}" Width="100" />
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <Button Content="Add Service" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="212,0,0,20" Click="AddService_Click" />
+        <Button Content="Edit Service" HorizontalAlignment="Left" VerticalAlignment="Bottom" Click="EditService_Click" Margin="355,0,0,20" />
+        <Button Content="Delete Service" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,213,20" Click="DeleteService_Click" />
+    </Grid>
+</Window>
