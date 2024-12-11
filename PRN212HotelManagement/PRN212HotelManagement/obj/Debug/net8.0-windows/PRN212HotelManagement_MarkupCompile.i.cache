@@ -4,17 +4,30 @@
 winexe
 C#
 .cs
+<<<<<<< HEAD
 C:\Users\Han_Mai\Desktop\PRN212\PRN212HotelManagement\PRN212\PRN212HotelManagement\PRN212HotelManagement\obj\Debug\net8.0-windows\
+=======
+E:\Git\PRN212\PRN212HotelManagement\PRN212HotelManagement\obj\Debug\net8.0-windows\
+>>>>>>> f71273cd9ddaaf60496399a2fec44ed49b2dffe5
 PRN212HotelManagement
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
+<<<<<<< HEAD
 C:\Users\Han_Mai\Desktop\PRN212\PRN212HotelManagement\PRN212\PRN212HotelManagement\PRN212HotelManagement\App.xaml
 111739823667
 
 16661893773
 246-639693307
 AdminService\AddServices.xaml;AdminService\EditService.xaml;AdminService\ManageService.xaml;AdminWPF.xaml;Booking.xaml;Login.xaml;ManageRooms.xaml;ManageUsers.xaml;Register.xaml;StaffWPF.xaml;ViewBookingForStaff.xaml;
+=======
+E:\Git\PRN212\PRN212HotelManagement\PRN212HotelManagement\App.xaml
+12-116274366
+
+171926568707
+2461543839852
+AdminService\AddServices.xaml;AdminService\EditService.xaml;AdminService\ManageService.xaml;AdminWPF.xaml;Booking.xaml;Login.xaml;ManageRooms.xaml;ManageUsers.xaml;Register.xaml;StaffWPF.xaml;ViewBookingForAdmin.xaml;ViewBookingForStaff.xaml;
+>>>>>>> f71273cd9ddaaf60496399a2fec44ed49b2dffe5
 
 False
 
