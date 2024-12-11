@@ -108,6 +108,7 @@
         <StackPanel Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
             <Button x:Name="btnAddBooking" Content="Add Booking" Width="100" Margin="5" Background="green" Foreground="White" Click="btnAddBooking_Click"/>
             <Button x:Name="btnEditBooking" Content="Edit Booking" Width="100" Margin="5" Background="#3AA9AD" Foreground="White" Click="btnEditBooking_Click"/>
+            <Button x:Name="btnViewDetail" Content="View Detail" Width="100" Margin="5" Background="blue" Foreground="White" Click="btnViewDetail_Click"/>
         </StackPanel>
 
         <!-- Popup for Add/Edit Booking -->

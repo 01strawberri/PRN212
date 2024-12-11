@@ -26,8 +26,10 @@ namespace HotelManagement_DAL.Repositories
         public Booking? GetBookingById(int id)
         {
             return _prn212hotelManagementContext.Bookings
-                .Include(b => b.User)
-                .Include(b => b.Room)
+                .Include(b => b.User) // Tải thông tin User
+                .Include(b => b.Room) // Tải thông tin Room
+                .Include(b => b.BookingServices) // Tải các dịch vụ liên quan
+                    .ThenInclude(bs => bs.Service) // Tải thông tin chi tiết từng Service
                 .FirstOrDefault(b => b.BookingId == id);
         }
 

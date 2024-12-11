@@ -47,11 +47,7 @@ namespace PRN212HotelManagement {
         /// InitializeComponent
         /// </summary>
         [System.Diagnostics.DebuggerNonUserCodeAttribute()]
-<<<<<<< HEAD
-        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "8.0.8.0")]
-=======
         [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "8.0.10.0")]
->>>>>>> f71273cd9ddaaf60496399a2fec44ed49b2dffe5
         public void InitializeComponent() {
             if (_contentLoaded) {
                 return;
@@ -77,11 +73,7 @@ namespace PRN212HotelManagement {
         /// </summary>
         [System.STAThreadAttribute()]
         [System.Diagnostics.DebuggerNonUserCodeAttribute()]
-<<<<<<< HEAD
-        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "8.0.8.0")]
-=======
         [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "8.0.10.0")]
->>>>>>> f71273cd9ddaaf60496399a2fec44ed49b2dffe5
         public static void Main() {
             PRN212HotelManagement.App app = new PRN212HotelManagement.App();
             app.InitializeComponent();

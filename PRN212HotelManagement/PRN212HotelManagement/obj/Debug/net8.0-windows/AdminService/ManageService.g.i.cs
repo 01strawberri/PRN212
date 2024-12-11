@@ -55,17 +55,13 @@ namespace PRN212HotelManagement {
         /// InitializeComponent
         /// </summary>
         [System.Diagnostics.DebuggerNonUserCodeAttribute()]
-<<<<<<< HEAD
-        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "8.0.8.0")]
-=======
         [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "8.0.10.0")]
->>>>>>> f71273cd9ddaaf60496399a2fec44ed49b2dffe5
         public void InitializeComponent() {
             if (_contentLoaded) {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/PRN212HotelManagement;V1.0.0.0;component/adminservice/manageservice.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/PRN212HotelManagement;component/adminservice/manageservice.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\AdminService\ManageService.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
@@ -75,11 +71,7 @@ namespace PRN212HotelManagement {
         }
         
         [System.Diagnostics.DebuggerNonUserCodeAttribute()]
-<<<<<<< HEAD
-        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "8.0.8.0")]
-=======
         [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "8.0.10.0")]
->>>>>>> f71273cd9ddaaf60496399a2fec44ed49b2dffe5
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Never)]
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Design", "CA1033:InterfaceMethodsShouldBeCallableByChildTypes")]
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity")]

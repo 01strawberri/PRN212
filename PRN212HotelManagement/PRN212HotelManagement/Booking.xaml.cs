@@ -123,5 +123,29 @@ namespace PRN212HotelManagement
             login.Show();
             this.Close();
         }
+
+        private void btnViewDetail_Click(object sender, RoutedEventArgs e)
+        {
+            if (dataGridBookings.SelectedItem is HotelManagement_DAL.Booking selectedBooking)
+            {
+                // Tạo các repository cần thiết
+                var context = new Prn212hotelManagementContext();
+                var bookingRepository = new BookingRepository(context);
+                var userRepository = new UserRepository(context);
+                var roomRepository = new RoomRepository(context);
+
+                // Tạo BookingServices với các repository
+                var bookingServices = new BookingServices(bookingRepository, userRepository, roomRepository);
+
+                // Truyền BookingId và BookingServices vào BookingDetail
+                BookingDetail detailWindow = new BookingDetail(selectedBooking.BookingId, bookingServices);
+                detailWindow.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Please select a booking to view details.", "No Booking Selected", MessageBoxButton.OK, MessageBoxImage.Warning);
+            }
+        }
+
     }
 }

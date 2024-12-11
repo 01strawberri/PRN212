@@ -8,10 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = PRN212HotelManagement
-<<<<<<< HEAD
-build_property.ProjectDir = C:\Users\Han_Mai\Desktop\PRN212\PRN212HotelManagement\PRN212\PRN212HotelManagement\PRN212HotelManagement\
-=======
 build_property.ProjectDir = E:\Git\PRN212\PRN212HotelManagement\PRN212HotelManagement\
->>>>>>> f71273cd9ddaaf60496399a2fec44ed49b2dffe5
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
