@@ -68,23 +68,27 @@
         </StackPanel>
 
         <!-- Search Section -->
-        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Left" Margin="86,90,0,399" Grid.RowSpan="2">
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Left" Margin="154,95,0,394" Grid.RowSpan="2">
             <StackPanel Orientation="Vertical" Margin="5">
                 <TextBlock Text="User Name" FontWeight="Bold" Margin="5" HorizontalAlignment="Center"/>
-                <TextBox x:Name="txtSearchUserName" Width="150" Margin="5"/>
+                <TextBox x:Name="txtSearchUserName" Width="150" Margin="5" TextChanged="txtSearchUserName_TextChanged"/>
             </StackPanel>
 
             <StackPanel Orientation="Vertical" Margin="5">
                 <TextBlock Text="Room Name" FontWeight="Bold" Margin="5" HorizontalAlignment="Center"/>
-                <TextBox x:Name="txtSearchRoomName" Width="150" Margin="5"/>
+                <TextBox x:Name="txtSearchRoomName" Width="150" Margin="5" TextChanged="txtSearchRoomName_TextChanged"/>
             </StackPanel>
 
             <StackPanel Orientation="Vertical" Margin="5">
                 <TextBlock Text="Booking Status" FontWeight="Bold" Margin="5" HorizontalAlignment="Center"/>
-                <TextBox x:Name="txtSearchBookingStatus" Width="150" Margin="5"/>
+                <ComboBox x:Name="cboSearchBookingStatus" Width="150" Margin="5" SelectionChanged="cboSearchBookingStatus_SelectionChanged">
+                    <ComboBoxItem Content="All"/>
+                    <ComboBoxItem Content="Pending"/>
+                    <ComboBoxItem Content="Confirmed"/>
+                    <ComboBoxItem Content="Completed"/>
+                    <ComboBoxItem Content="Canceled"/>
+                </ComboBox>
             </StackPanel>
-
-            <Button x:Name="btnSearch" Content="Search" Width="100" Height="40" Margin="5" Background="#3AA9AD" Foreground="White"/>
         </StackPanel>
 
         <!-- DataGrid for displaying bookings -->
@@ -104,64 +108,90 @@
         <StackPanel Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
             <Button x:Name="btnAddBooking" Content="Add Booking" Width="100" Margin="5" Background="green" Foreground="White" Click="btnAddBooking_Click"/>
             <Button x:Name="btnEditBooking" Content="Edit Booking" Width="100" Margin="5" Background="#3AA9AD" Foreground="White" Click="btnEditBooking_Click"/>
-            <Button x:Name="btnDeleteBooking" Content="Delete Booking" Width="100" Margin="5" Background="red" Foreground="White"/>
+            <Button x:Name="btnViewDetail" Content="View Detail" Width="100" Margin="5" Background="blue" Foreground="White" Click="btnViewDetail_Click"/>
         </StackPanel>
 
         <!-- Popup for Add/Edit Booking -->
         <Grid x:Name="popupGrid" Visibility="Collapsed" Background="#80000000" Grid.RowSpan="4">
-            <Border Background="White" Padding="20" Margin="100">
+            <Border Background="White" CornerRadius="10" Width="500" Height="600" Padding="20">
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
                         <RowDefinition Height="*"/>
+                        <RowDefinition Height="Auto"/>
                     </Grid.RowDefinitions>
 
-                    <!-- User Name -->
-                    <TextBlock Text="User Name:" Grid.Row="0" Margin="5"/>
-                    <ComboBox x:Name="comboUserName" Grid.Row="0" Margin="5" Width="300">
-                        <!-- Add items dynamically in code-behind -->
-                    </ComboBox>
+                    <!-- Header -->
+                    <TextBlock Text="Add New Booking" 
+                               FontSize="24" 
+                               FontWeight="Bold" 
+                               HorizontalAlignment="Center" 
+                               Margin="0,0,0,20"/>
 
-                    <!-- Room Name -->
-                    <TextBlock Text="Room Name:" Grid.Row="1" Margin="5"/>
-                    <ComboBox x:Name="comboRoomName" Grid.Row="1" Margin="5" Width="300">
-                        <!-- Add items dynamically in code-behind -->
-                    </ComboBox>
+                    <!-- Main Content with ScrollViewer -->
+                    <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto">
+                        <StackPanel Margin="10">
+                            <TextBlock Text="User Name:" FontWeight="SemiBold" Margin="0,10,0,5"/>
+                            <ComboBox x:Name="comboUserName" Height="35" Margin="0,0,0,15"/>
 
-                    <!-- Start Date -->
-                    <TextBlock Text="Start Date:" Grid.Row="2" Margin="5"/>
-                    <DatePicker x:Name="dateStart" Grid.Row="2" Margin="5" Width="300"/>
+                            <TextBlock Text="Room Name:" FontWeight="SemiBold" Margin="0,10,0,5"/>
+                            <ComboBox x:Name="comboRoomName" Height="35" Margin="0,0,0,15"/>
 
-                    <!-- End Date -->
-                    <TextBlock Text="End Date:" Grid.Row="3" Margin="5"/>
-                    <DatePicker x:Name="dateEnd" Grid.Row="3" Margin="5" Width="300"/>
+                            <TextBlock Text="Booking Type:" FontWeight="SemiBold" Margin="0,10,0,5"/>
+                            <ComboBox x:Name="comboBookingType" Height="35" Margin="0,0,0,15" SelectionChanged="comboBookingType_SelectionChanged">
+                                <ComboBoxItem Content="By Hour"/>
+                                <ComboBoxItem Content="By Day"/>
+                            </ComboBox>
 
-                    <!-- Booking Status -->
-                    <TextBlock Text="Booking Status:" Grid.Row="4" Margin="5"/>
-                    <ComboBox x:Name="comboBookingStatus" Grid.Row="4" Margin="5" Width="300">
-                        <ComboBoxItem Content="Pending"/>
-                        <ComboBoxItem Content="Confirmed"/>
-                        <ComboBoxItem Content="Completed"/>
-                        <ComboBoxItem Content="Canceled"/>
-                    </ComboBox>
+                            <TextBlock Text="Start Date:" FontWeight="SemiBold" Margin="0,10,0,5"/>
+                            <DatePicker x:Name="dateStart" Height="35" Margin="0,0,0,15"/>
 
-                    <!-- Booking Type -->
-                    <TextBlock Text="Booking Type:" Grid.Row="5" Margin="5"/>
-                    <TextBox x:Name="txtBookingType" Grid.Row="5" Margin="5" Width="300"/>
+                            <TextBlock Text="End Date:" FontWeight="SemiBold" Margin="0,10,0,5"/>
+                            <DatePicker x:Name="dateEnd" Height="35" Margin="0,0,0,15"/>
 
-                    <!-- Total Price -->
-                    <TextBlock Text="Total Price:" Grid.Row="6" Margin="5"/>
-                    <TextBox x:Name="txtTotalPrice" Grid.Row="6" Margin="5" Width="300"/>
+                            <!-- Time pickers for hourly booking -->
+                            <StackPanel x:Name="hourlyBookingPanel" Visibility="Collapsed">
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    
+                                    <StackPanel Grid.Column="0" Margin="0,0,5,0">
+                                        <TextBlock Text="Start Time:" FontWeight="SemiBold" Margin="0,10,0,5"/>
+                                        <ComboBox x:Name="startTimePicker" Height="35" Margin="0,0,0,15"/>
+                                    </StackPanel>
+                                    
+                                    <StackPanel Grid.Column="1" Margin="5,0,0,0">
+                                        <TextBlock Text="End Time:" FontWeight="SemiBold" Margin="0,10,0,5"/>
+                                        <ComboBox x:Name="endTimePicker" Height="35" Margin="0,0,0,15"/>
+                                    </StackPanel>
+                                </Grid>
+                            </StackPanel>
+                        </StackPanel>
+                    </ScrollViewer>
 
                     <!-- Buttons -->
-                    <StackPanel Grid.Row="7" Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
-                        <Button x:Name="btnSaveBooking" Content="Save" Width="100" Margin="5" Background="#3AA9AD" Foreground="White"/>
-                        <Button x:Name="btnCancelBooking" Content="Cancel" Width="100" Margin="5" Background="#3AA9AD" Foreground="White"/>
+                    <StackPanel Grid.Row="2" 
+                                Orientation="Horizontal" 
+                                HorizontalAlignment="Center" 
+                                Margin="0,20,0,0">
+                        <Button x:Name="btnSaveBooking" 
+                                Content="Save" 
+                                Width="120" 
+                                Height="40" 
+                                Margin="10,0" 
+                                Background="#3AA9AD" 
+                                Foreground="White"
+                                BorderThickness="0"/>
+                        <Button x:Name="btnCancelBooking" 
+                                Content="Cancel" 
+                                Width="120" 
+                                Height="40" 
+                                Margin="10,0" 
+                                Background="#a36361" 
+                                Foreground="White"
+                                BorderThickness="0"/>
                     </StackPanel>
                 </Grid>
             </Border>

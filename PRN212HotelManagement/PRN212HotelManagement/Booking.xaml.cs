@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Linq;
 using System.Windows;
+using System.Windows.Controls;
 using HotelManagement_BLL;
 using HotelManagement_DAL;
 using HotelManagement_DAL.DBContext;
 using HotelManagement_DAL.Repositories;
+using Microsoft.EntityFrameworkCore;
 
 namespace PRN212HotelManagement
 {
@@ -21,28 +23,62 @@ namespace PRN212HotelManagement
 
         public Booking(User user)
         {
-            currentUser = user;
             InitializeComponent();
-            _bookingService = new BookingServices(new BookingRepository(new Prn212hotelManagementContext()), new UserRepository(new Prn212hotelManagementContext()), new RoomRepository(new Prn212hotelManagementContext()));
-            _userService = new UserService(new UserRepository(new Prn212hotelManagementContext()));
-            _roomService = new RoomService(new RoomRepository(new Prn212hotelManagementContext()));
-            LoadData();
+            currentUser = user;
+            cboSearchBookingStatus.SelectedIndex = 0; 
+            LoadBookings(); 
         }
 
-        private void LoadData()
+        private void LoadBookings()
         {
-            var bookings = _bookingService.GetAllBookings();
-            dataGridBookings.ItemsSource = bookings;
+            try
+            {
+                using (var context = new Prn212hotelManagementContext())
+                {
+                    var query = context.Bookings
+                        .Include(b => b.User)
+                        .Include(b => b.Room)
+                        .AsQueryable();
 
-            _users = _userService.GetAllUsers();
-            comboUserName.ItemsSource = _users;
-            comboUserName.DisplayMemberPath = "UserName"; 
-            comboUserName.SelectedValuePath = "UserId";
+                    if (!string.IsNullOrWhiteSpace(txtSearchUserName.Text))
+                    {
+                        query = query.Where(b => b.User.UserName.ToLower().Contains(txtSearchUserName.Text.ToLower()));
+                    }
 
-            _rooms = _roomService.GetAllRooms();
-            comboRoomName.ItemsSource = _rooms;
-            comboRoomName.DisplayMemberPath = "RoomName"; 
-            comboRoomName.SelectedValuePath = "RoomId";
+                    if (!string.IsNullOrWhiteSpace(txtSearchRoomName.Text))
+                    {
+                        query = query.Where(b => b.Room.RoomName.ToLower().Contains(txtSearchRoomName.Text.ToLower()));
+                    }
+
+                    if (cboSearchBookingStatus.SelectedIndex > 0)
+                    {
+                        string selectedStatus = ((ComboBoxItem)cboSearchBookingStatus.SelectedItem).Content.ToString();
+                        query = query.Where(b => b.BookingStatus == selectedStatus);
+                    }
+
+                    var bookings = query.ToList();
+                    dataGridBookings.ItemsSource = bookings;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error loading bookings: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+
+        private void txtSearchUserName_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            LoadBookings();
+        }
+
+        private void txtSearchRoomName_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            LoadBookings();
+        }
+
+        private void cboSearchBookingStatus_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            LoadBookings();
         }
 
         private void btnAddBooking_Click(object sender, RoutedEventArgs e)
@@ -87,5 +123,54 @@ namespace PRN212HotelManagement
             login.Show();
             this.Close();
         }
+
+        private void btnViewDetail_Click(object sender, RoutedEventArgs e)
+        {
+            if (dataGridBookings.SelectedItem is HotelManagement_DAL.Booking selectedBooking)
+            {
+                // Tạo các repository cần thiết
+                var context = new Prn212hotelManagementContext();
+                var bookingRepository = new BookingRepository(context);
+                var userRepository = new UserRepository(context);
+                var roomRepository = new RoomRepository(context);
+
+                // Tạo BookingServices với các repository
+                var bookingServices = new BookingServices(bookingRepository, userRepository, roomRepository);
+
+                // Truyền BookingId và BookingServices vào BookingDetail
+                BookingDetail detailWindow = new BookingDetail(selectedBooking.BookingId, bookingServices);
+                detailWindow.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Please select a booking to view details.", "No Booking Selected", MessageBoxButton.OK, MessageBoxImage.Warning);
+            }
+        }
+
+        private void comboBookingType_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (comboBookingType.SelectedItem is ComboBoxItem selectedItem)
+            {
+                if (selectedItem.Content.ToString() == "By Hour")
+                {
+                    hourlyBookingPanel.Visibility = Visibility.Visible;
+                    
+                    // Populate time slots (e.g., every hour from 7:00 to 22:00)
+                    startTimePicker.Items.Clear();
+                    endTimePicker.Items.Clear();
+                    for (int hour = 7; hour <= 22; hour++)
+                    {
+                        string time = $"{hour:D2}:00";
+                        startTimePicker.Items.Add(time);
+                        endTimePicker.Items.Add(time);
+                    }
+                }
+                else // By Day
+                {
+                    hourlyBookingPanel.Visibility = Visibility.Collapsed;
+                }
+            }
+        }
+
     }
 }

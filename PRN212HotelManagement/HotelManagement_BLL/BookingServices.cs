@@ -92,5 +92,12 @@ namespace HotelManagement_BLL
             return _roomRepository.GetAllRooms().FirstOrDefault(r => r.RoomName == roomName);
         }
 
+        public Booking? GetBookingDetails(int bookingId)
+        {
+            // Gọi repository để lấy thông tin đầy đủ của Booking
+            return _bookingRepository.GetBookingById(bookingId);
+        }
+
+
     }
 }
