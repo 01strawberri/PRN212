@@ -116,8 +116,7 @@
               "RelativeToolTip": "PRN212HotelManagement\\ManageUsers.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-12-10T22:17:27.016Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -128,8 +127,7 @@
               "ToolTip": "C:\\Users\\Han_Mai\\Desktop\\PRN212\\PRN212HotelManagement\\PRN212\\PRN212HotelManagement\\PRN212HotelManagement\\ManageRooms.xaml",
               "RelativeToolTip": "PRN212HotelManagement\\ManageRooms.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-10T12:36:47.44Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-10T12:36:47.44Z"
             },
             {
               "$type": "Document",
@@ -153,8 +151,7 @@
               "RelativeToolTip": "PRN212HotelManagement\\Booking.xaml.cs",
               "ViewState": "AgIAACYAAAAAAAAAAAAWwDQAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T22:53:41.054Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-10T22:53:41.054Z"
             },
             {
               "$type": "Document",
@@ -166,8 +163,7 @@
               "RelativeToolTip": "PRN212HotelManagement\\AssemblyInfo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T20:19:42.876Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-05T20:19:42.876Z"
             },
             {
               "$type": "Document",
@@ -179,8 +175,7 @@
               "RelativeToolTip": "PRN212HotelManagement\\ManageRooms.xaml.cs",
               "ViewState": "AgIAAJMAAAAAAAAAAAAmwKgAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T22:55:48.659Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-10T22:55:48.659Z"
             },
             {
               "$type": "Document",
@@ -191,8 +186,7 @@
               "ToolTip": "C:\\Users\\Han_Mai\\Desktop\\PRN212\\PRN212HotelManagement\\PRN212\\PRN212HotelManagement\\PRN212HotelManagement\\StaffWPF.xaml",
               "RelativeToolTip": "PRN212HotelManagement\\StaffWPF.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-05T20:12:23.73Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-05T20:12:23.73Z"
             },
             {
               "$type": "Document",
@@ -204,8 +198,7 @@
               "RelativeToolTip": "PRN212HotelManagement\\StaffWPF.xaml.cs",
               "ViewState": "AgIAABsAAAAAAAAAAAAwwDEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T20:36:22.407Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-05T20:36:22.407Z"
             },
             {
               "$type": "Document",
@@ -217,8 +210,7 @@
               "RelativeToolTip": "PRN212HotelManagement\\AdminWPF.xaml.cs",
               "ViewState": "AgIAAMAAAAAAAAAAAAAIwMIAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T20:14:01.01Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-05T20:14:01.01Z"
             },
             {
               "$type": "Document",
@@ -230,8 +222,7 @@
               "RelativeToolTip": "PRN212HotelManagement\\ManageUsers.xaml.cs",
               "ViewState": "AgIAAJIAAAAAAAAAAAAewKQAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T21:55:41.07Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-10T21:55:41.07Z"
             },
             {
               "$type": "Document",
@@ -266,8 +257,7 @@
               "ToolTip": "C:\\Users\\Han_Mai\\Desktop\\PRN212\\PRN212HotelManagement\\PRN212\\PRN212HotelManagement\\PRN212HotelManagement\\Login.xaml",
               "RelativeToolTip": "PRN212HotelManagement\\Login.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-03T19:25:17.428Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-03T19:25:17.428Z"
             },
             {
               "$type": "Document",
@@ -384,8 +374,7 @@
               "ToolTip": "C:\\Users\\Han_Mai\\Desktop\\PRN212\\PRN212HotelManagement\\PRN212\\PRN212HotelManagement\\PRN212HotelManagement\\App.xaml",
               "RelativeToolTip": "PRN212HotelManagement\\App.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-05T20:14:36.553Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-05T20:14:36.553Z"
             },
             {
               "$type": "Document",
