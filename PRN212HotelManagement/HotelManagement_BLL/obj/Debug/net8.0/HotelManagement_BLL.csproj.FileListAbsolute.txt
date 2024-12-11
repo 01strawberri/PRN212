@@ -61,3 +61,19 @@ C:\Users\Han_Mai\Desktop\PRN212\PRN212HotelManagement\PRN212\PRN212HotelManageme
 C:\Users\Han_Mai\Desktop\PRN212\PRN212HotelManagement\PRN212\PRN212HotelManagement\HotelManagement_BLL\obj\Debug\net8.0\refint\HotelManagement_BLL.dll
 C:\Users\Han_Mai\Desktop\PRN212\PRN212HotelManagement\PRN212\PRN212HotelManagement\HotelManagement_BLL\obj\Debug\net8.0\HotelManagement_BLL.pdb
 C:\Users\Han_Mai\Desktop\PRN212\PRN212HotelManagement\PRN212\PRN212HotelManagement\HotelManagement_BLL\obj\Debug\net8.0\ref\HotelManagement_BLL.dll
+C:\THAI_DANG\FPT University\Semester 5\PRN212\PROJECT_3W\PRN212\PRN212HotelManagement\HotelManagement_BLL\bin\Debug\net8.0\HotelManagement_BLL.deps.json
+C:\THAI_DANG\FPT University\Semester 5\PRN212\PROJECT_3W\PRN212\PRN212HotelManagement\HotelManagement_BLL\bin\Debug\net8.0\HotelManagement_BLL.dll
+C:\THAI_DANG\FPT University\Semester 5\PRN212\PROJECT_3W\PRN212\PRN212HotelManagement\HotelManagement_BLL\bin\Debug\net8.0\HotelManagement_BLL.pdb
+C:\THAI_DANG\FPT University\Semester 5\PRN212\PROJECT_3W\PRN212\PRN212HotelManagement\HotelManagement_BLL\bin\Debug\net8.0\HotelManagement_DAL.dll
+C:\THAI_DANG\FPT University\Semester 5\PRN212\PROJECT_3W\PRN212\PRN212HotelManagement\HotelManagement_BLL\bin\Debug\net8.0\HotelManagement_DAL.pdb
+C:\THAI_DANG\FPT University\Semester 5\PRN212\PROJECT_3W\PRN212\PRN212HotelManagement\HotelManagement_BLL\obj\Debug\net8.0\HotelManagement_BLL.csproj.AssemblyReference.cache
+C:\THAI_DANG\FPT University\Semester 5\PRN212\PROJECT_3W\PRN212\PRN212HotelManagement\HotelManagement_BLL\obj\Debug\net8.0\HotelManagement_BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\THAI_DANG\FPT University\Semester 5\PRN212\PROJECT_3W\PRN212\PRN212HotelManagement\HotelManagement_BLL\obj\Debug\net8.0\HotelManagement_BLL.AssemblyInfoInputs.cache
+C:\THAI_DANG\FPT University\Semester 5\PRN212\PROJECT_3W\PRN212\PRN212HotelManagement\HotelManagement_BLL\obj\Debug\net8.0\HotelManagement_BLL.AssemblyInfo.cs
+C:\THAI_DANG\FPT University\Semester 5\PRN212\PROJECT_3W\PRN212\PRN212HotelManagement\HotelManagement_BLL\obj\Debug\net8.0\HotelManagement_BLL.csproj.CoreCompileInputs.cache
+C:\THAI_DANG\FPT University\Semester 5\PRN212\PROJECT_3W\PRN212\PRN212HotelManagement\HotelManagement_BLL\obj\Debug\net8.0\HotelManagement_BLL.sourcelink.json
+C:\THAI_DANG\FPT University\Semester 5\PRN212\PROJECT_3W\PRN212\PRN212HotelManagement\HotelManagement_BLL\obj\Debug\net8.0\HotelMan.89AA649C.Up2Date
+C:\THAI_DANG\FPT University\Semester 5\PRN212\PROJECT_3W\PRN212\PRN212HotelManagement\HotelManagement_BLL\obj\Debug\net8.0\HotelManagement_BLL.dll
+C:\THAI_DANG\FPT University\Semester 5\PRN212\PROJECT_3W\PRN212\PRN212HotelManagement\HotelManagement_BLL\obj\Debug\net8.0\refint\HotelManagement_BLL.dll
+C:\THAI_DANG\FPT University\Semester 5\PRN212\PROJECT_3W\PRN212\PRN212HotelManagement\HotelManagement_BLL\obj\Debug\net8.0\HotelManagement_BLL.pdb
+C:\THAI_DANG\FPT University\Semester 5\PRN212\PROJECT_3W\PRN212\PRN212HotelManagement\HotelManagement_BLL\obj\Debug\net8.0\ref\HotelManagement_BLL.dll
