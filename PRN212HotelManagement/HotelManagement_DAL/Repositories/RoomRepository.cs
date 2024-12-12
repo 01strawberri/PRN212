@@ -89,5 +89,12 @@ namespace HotelManagement_DAL.Repositories
 
             return query.ToList();
         }
+        public decimal? GetRoomPricePerDay(int roomId)
+        {
+            return _prn212hotelManagementContext.RoomPrices
+                .Where(rp => rp.RoomId == roomId)
+                .Select(rp => rp.RoomPricePerDay)
+                .FirstOrDefault();
+        }
     }
 }

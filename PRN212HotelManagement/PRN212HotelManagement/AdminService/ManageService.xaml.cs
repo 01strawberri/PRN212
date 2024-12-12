@@ -15,6 +15,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.Collections.ObjectModel;
 using PRN212HotelManagement.AdminService;
+using HotelManagement_DAL.DBContext;
+using HotelManagement_DAL.Repositories;
 
 namespace PRN212HotelManagement
 {
@@ -32,7 +34,7 @@ namespace PRN212HotelManagement
             InitializeComponent(); 
 
             services = new ObservableCollection<Service>();
-            _services = new ServicesService();
+            _services = new ServicesService(new ServiceRepository(new Prn212hotelManagementContext()));
 
             LoadServices();
         }

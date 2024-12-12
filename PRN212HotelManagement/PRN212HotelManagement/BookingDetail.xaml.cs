@@ -18,7 +18,6 @@ namespace PRN212HotelManagement
 
         private void LoadBookingDetails(int bookingId)
         {
-            // Lấy thông tin booking
             var booking = _bookingServices.GetBookingDetails(bookingId);
 
             if (booking == null)
@@ -46,6 +45,7 @@ namespace PRN212HotelManagement
             // Gán dữ liệu vào DataGrid
             dataGridBookingDetails.ItemsSource = bookingDetails;
         }
+
 
 
         private void btnBack_Click(object sender, RoutedEventArgs e)

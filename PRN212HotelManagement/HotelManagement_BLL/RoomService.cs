@@ -64,5 +64,10 @@ namespace HotelManagement_BLL
         {
             return _roomRepository.SearchRooms(name, type, status);
         }
+        public decimal? GetRoomPricePerDay(int roomId)
+        {
+            // Sử dụng repository để lấy RoomPricePerDay từ RoomId
+            return _roomRepository.GetRoomPricePerDay(roomId);
+        }
     }
 }

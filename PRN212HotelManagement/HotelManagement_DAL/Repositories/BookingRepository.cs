@@ -116,5 +116,35 @@ namespace HotelManagement_DAL.Repositories
 
             return query.ToList();
         }
+        public bool AddBookingService(BookingService bookingService)
+        {
+            try
+            {
+                _prn212hotelManagementContext.BookingServices.Add(bookingService);
+                _prn212hotelManagementContext.SaveChanges();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error adding BookingService: {ex.Message}");
+                return false;
+            }
+        }
+        public bool DeleteBookingServices(int bookingId)
+        {
+            var bookingServices = _prn212hotelManagementContext.BookingServices
+                .Where(bs => bs.BookingId == bookingId)
+                .ToList();
+
+            if (bookingServices.Any())
+            {
+                _prn212hotelManagementContext.BookingServices.RemoveRange(bookingServices);
+                _prn212hotelManagementContext.SaveChanges();
+                return true;
+            }
+
+            return false;
+        }
+
     }
 }

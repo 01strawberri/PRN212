@@ -15,9 +15,9 @@ namespace HotelManagement_BLL
     {
         private readonly ServiceRepository _repository;
 
-        public ServicesService()
+        public ServicesService(ServiceRepository serviceRepository)
         {
-            _repository = new ServiceRepository();
+            _repository = serviceRepository;
         }
 
         public List<Service> GetServices()

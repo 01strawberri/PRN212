@@ -1,50 +1,46 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Han_Mai\\Desktop\\PRN212\\PRN212HotelManagement\\PRN212\\PRN212HotelManagement\\",
+  "WorkspaceRootPath": "E:\\Git\\PRN212\\PRN212HotelManagement\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{51C0295F-BCC1-425B-8E85-8B0FE798C4FD}|PRN212HotelManagement\\PRN212HotelManagement.csproj|c:\\users\\han_mai\\desktop\\prn212\\prn212hotelmanagement\\prn212\\prn212hotelmanagement\\prn212hotelmanagement\\booking.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{51C0295F-BCC1-425B-8E85-8B0FE798C4FD}|PRN212HotelManagement\\PRN212HotelManagement.csproj|e:\\git\\prn212\\prn212hotelmanagement\\prn212hotelmanagement\\booking.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{51C0295F-BCC1-425B-8E85-8B0FE798C4FD}|PRN212HotelManagement\\PRN212HotelManagement.csproj|solutionrelative:prn212hotelmanagement\\booking.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{51C0295F-BCC1-425B-8E85-8B0FE798C4FD}|PRN212HotelManagement\\PRN212HotelManagement.csproj|c:\\users\\han_mai\\desktop\\prn212\\prn212hotelmanagement\\prn212\\prn212hotelmanagement\\prn212hotelmanagement\\booking.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{51C0295F-BCC1-425B-8E85-8B0FE798C4FD}|PRN212HotelManagement\\PRN212HotelManagement.csproj|e:\\git\\prn212\\prn212hotelmanagement\\prn212hotelmanagement\\booking.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{51C0295F-BCC1-425B-8E85-8B0FE798C4FD}|PRN212HotelManagement\\PRN212HotelManagement.csproj|solutionrelative:prn212hotelmanagement\\booking.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{51C0295F-BCC1-425B-8E85-8B0FE798C4FD}|PRN212HotelManagement\\PRN212HotelManagement.csproj|c:\\users\\han_mai\\desktop\\prn212\\prn212hotelmanagement\\prn212\\prn212hotelmanagement\\prn212hotelmanagement\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{51C0295F-BCC1-425B-8E85-8B0FE798C4FD}|PRN212HotelManagement\\PRN212HotelManagement.csproj|solutionrelative:prn212hotelmanagement\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{8227DEF3-13AB-4FC5-A226-52BC5EDACA15}|HotelManagement_DAL\\HotelManagement_DAL.csproj|e:\\git\\prn212\\prn212hotelmanagement\\hotelmanagement_dal\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8227DEF3-13AB-4FC5-A226-52BC5EDACA15}|HotelManagement_DAL\\HotelManagement_DAL.csproj|solutionrelative:hotelmanagement_dal\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{51C0295F-BCC1-425B-8E85-8B0FE798C4FD}|PRN212HotelManagement\\PRN212HotelManagement.csproj|c:\\users\\han_mai\\desktop\\prn212\\prn212hotelmanagement\\prn212\\prn212hotelmanagement\\prn212hotelmanagement\\viewbookingforadmin.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{51C0295F-BCC1-425B-8E85-8B0FE798C4FD}|PRN212HotelManagement\\PRN212HotelManagement.csproj|solutionrelative:prn212hotelmanagement\\viewbookingforadmin.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{8227DEF3-13AB-4FC5-A226-52BC5EDACA15}|HotelManagement_DAL\\HotelManagement_DAL.csproj|e:\\git\\prn212\\prn212hotelmanagement\\hotelmanagement_dal\\entities\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8227DEF3-13AB-4FC5-A226-52BC5EDACA15}|HotelManagement_DAL\\HotelManagement_DAL.csproj|solutionrelative:hotelmanagement_dal\\entities\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{51C0295F-BCC1-425B-8E85-8B0FE798C4FD}|PRN212HotelManagement\\PRN212HotelManagement.csproj|c:\\users\\han_mai\\desktop\\prn212\\prn212hotelmanagement\\prn212\\prn212hotelmanagement\\prn212hotelmanagement\\bookingdetail.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{51C0295F-BCC1-425B-8E85-8B0FE798C4FD}|PRN212HotelManagement\\PRN212HotelManagement.csproj|solutionrelative:prn212hotelmanagement\\bookingdetail.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{51C0295F-BCC1-425B-8E85-8B0FE798C4FD}|PRN212HotelManagement\\PRN212HotelManagement.csproj|c:\\users\\han_mai\\desktop\\prn212\\prn212hotelmanagement\\prn212\\prn212hotelmanagement\\prn212hotelmanagement\\bookingdetail.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{51C0295F-BCC1-425B-8E85-8B0FE798C4FD}|PRN212HotelManagement\\PRN212HotelManagement.csproj|solutionrelative:prn212hotelmanagement\\bookingdetail.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{51C0295F-BCC1-425B-8E85-8B0FE798C4FD}|PRN212HotelManagement\\PRN212HotelManagement.csproj|c:\\users\\han_mai\\desktop\\prn212\\prn212hotelmanagement\\prn212\\prn212hotelmanagement\\prn212hotelmanagement\\managerooms.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{51C0295F-BCC1-425B-8E85-8B0FE798C4FD}|PRN212HotelManagement\\PRN212HotelManagement.csproj|solutionrelative:prn212hotelmanagement\\managerooms.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8227DEF3-13AB-4FC5-A226-52BC5EDACA15}|HotelManagement_DAL\\HotelManagement_DAL.csproj|c:\\users\\han_mai\\desktop\\prn212\\prn212hotelmanagement\\prn212\\prn212hotelmanagement\\hotelmanagement_dal\\repositories\\bookingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8227DEF3-13AB-4FC5-A226-52BC5EDACA15}|HotelManagement_DAL\\HotelManagement_DAL.csproj|solutionrelative:hotelmanagement_dal\\repositories\\bookingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3B01494A-AE10-486C-A289-275FC999D499}|HotelManagement_BLL\\HotelManagement_BLL.csproj|c:\\users\\han_mai\\desktop\\prn212\\prn212hotelmanagement\\prn212\\prn212hotelmanagement\\hotelmanagement_bll\\bookingservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3B01494A-AE10-486C-A289-275FC999D499}|HotelManagement_BLL\\HotelManagement_BLL.csproj|e:\\git\\prn212\\prn212hotelmanagement\\hotelmanagement_bll\\bookingservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3B01494A-AE10-486C-A289-275FC999D499}|HotelManagement_BLL\\HotelManagement_BLL.csproj|solutionrelative:hotelmanagement_bll\\bookingservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8227DEF3-13AB-4FC5-A226-52BC5EDACA15}|HotelManagement_DAL\\HotelManagement_DAL.csproj|c:\\users\\han_mai\\desktop\\prn212\\prn212hotelmanagement\\prn212\\prn212hotelmanagement\\hotelmanagement_dal\\entities\\bookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8227DEF3-13AB-4FC5-A226-52BC5EDACA15}|HotelManagement_DAL\\HotelManagement_DAL.csproj|solutionrelative:hotelmanagement_dal\\entities\\bookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{51C0295F-BCC1-425B-8E85-8B0FE798C4FD}|PRN212HotelManagement\\PRN212HotelManagement.csproj|e:\\git\\prn212\\prn212hotelmanagement\\prn212hotelmanagement\\bookingdetail.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{51C0295F-BCC1-425B-8E85-8B0FE798C4FD}|PRN212HotelManagement\\PRN212HotelManagement.csproj|solutionrelative:prn212hotelmanagement\\bookingdetail.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{51C0295F-BCC1-425B-8E85-8B0FE798C4FD}|PRN212HotelManagement\\PRN212HotelManagement.csproj|c:\\users\\han_mai\\desktop\\prn212\\prn212hotelmanagement\\prn212\\prn212hotelmanagement\\prn212hotelmanagement\\managerooms.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8227DEF3-13AB-4FC5-A226-52BC5EDACA15}|HotelManagement_DAL\\HotelManagement_DAL.csproj|e:\\git\\prn212\\prn212hotelmanagement\\hotelmanagement_dal\\repositories\\bookingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8227DEF3-13AB-4FC5-A226-52BC5EDACA15}|HotelManagement_DAL\\HotelManagement_DAL.csproj|solutionrelative:hotelmanagement_dal\\repositories\\bookingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51C0295F-BCC1-425B-8E85-8B0FE798C4FD}|PRN212HotelManagement\\PRN212HotelManagement.csproj|e:\\git\\prn212\\prn212hotelmanagement\\prn212hotelmanagement\\bookingdetail.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51C0295F-BCC1-425B-8E85-8B0FE798C4FD}|PRN212HotelManagement\\PRN212HotelManagement.csproj|solutionrelative:prn212hotelmanagement\\bookingdetail.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51C0295F-BCC1-425B-8E85-8B0FE798C4FD}|PRN212HotelManagement\\PRN212HotelManagement.csproj|e:\\git\\prn212\\prn212hotelmanagement\\prn212hotelmanagement\\managerooms.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{51C0295F-BCC1-425B-8E85-8B0FE798C4FD}|PRN212HotelManagement\\PRN212HotelManagement.csproj|solutionrelative:prn212hotelmanagement\\managerooms.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8227DEF3-13AB-4FC5-A226-52BC5EDACA15}|HotelManagement_DAL\\HotelManagement_DAL.csproj|e:\\git\\prn212\\prn212hotelmanagement\\hotelmanagement_dal\\repositories\\servicerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8227DEF3-13AB-4FC5-A226-52BC5EDACA15}|HotelManagement_DAL\\HotelManagement_DAL.csproj|solutionrelative:hotelmanagement_dal\\repositories\\servicerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -53,8 +49,8 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedHeight": 158,
-          "SelectedChildIndex": 20,
+          "DockedHeight": 217,
+          "SelectedChildIndex": 25,
           "Children": [
             {
               "$type": "Bookmark",
@@ -126,140 +122,136 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "BookingServices.cs",
-              "DocumentMoniker": "C:\\Users\\Han_Mai\\Desktop\\PRN212\\PRN212HotelManagement\\PRN212\\PRN212HotelManagement\\HotelManagement_BLL\\BookingServices.cs",
-              "RelativeDocumentMoniker": "HotelManagement_BLL\\BookingServices.cs",
-              "ToolTip": "C:\\Users\\Han_Mai\\Desktop\\PRN212\\PRN212HotelManagement\\PRN212\\PRN212HotelManagement\\HotelManagement_BLL\\BookingServices.cs",
-              "RelativeToolTip": "HotelManagement_BLL\\BookingServices.cs",
-              "ViewState": "AgIAAE4AAAAAAAAAAAAkwF4AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "User.cs",
+              "DocumentMoniker": "E:\\Git\\PRN212\\PRN212HotelManagement\\HotelManagement_DAL\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "HotelManagement_DAL\\Entities\\User.cs",
+              "ToolTip": "E:\\Git\\PRN212\\PRN212HotelManagement\\HotelManagement_DAL\\Entities\\User.cs",
+              "RelativeToolTip": "HotelManagement_DAL\\Entities\\User.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-11T12:49:05.954Z"
+              "WhenOpened": "2024-12-12T17:16:03.151Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BookingDetail.xaml",
+              "DocumentMoniker": "E:\\Git\\PRN212\\PRN212HotelManagement\\PRN212HotelManagement\\BookingDetail.xaml",
+              "RelativeDocumentMoniker": "PRN212HotelManagement\\BookingDetail.xaml",
+              "ToolTip": "E:\\Git\\PRN212\\PRN212HotelManagement\\PRN212HotelManagement\\BookingDetail.xaml",
+              "RelativeToolTip": "PRN212HotelManagement\\BookingDetail.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-12-12T16:39:07.579Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BookingDetail.xaml.cs",
+              "DocumentMoniker": "E:\\Git\\PRN212\\PRN212HotelManagement\\PRN212HotelManagement\\BookingDetail.xaml.cs",
+              "RelativeDocumentMoniker": "PRN212HotelManagement\\BookingDetail.xaml.cs",
+              "ToolTip": "E:\\Git\\PRN212\\PRN212HotelManagement\\PRN212HotelManagement\\BookingDetail.xaml.cs",
+              "RelativeToolTip": "PRN212HotelManagement\\BookingDetail.xaml.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAqwC8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T16:32:57.164Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ManageRooms.xaml.cs",
+              "DocumentMoniker": "E:\\Git\\PRN212\\PRN212HotelManagement\\PRN212HotelManagement\\ManageRooms.xaml.cs",
+              "RelativeDocumentMoniker": "PRN212HotelManagement\\ManageRooms.xaml.cs",
+              "ToolTip": "E:\\Git\\PRN212\\PRN212HotelManagement\\PRN212HotelManagement\\ManageRooms.xaml.cs",
+              "RelativeToolTip": "PRN212HotelManagement\\ManageRooms.xaml.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T16:13:21.088Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ServiceRepository.cs",
+              "DocumentMoniker": "E:\\Git\\PRN212\\PRN212HotelManagement\\HotelManagement_DAL\\Repositories\\ServiceRepository.cs",
+              "RelativeDocumentMoniker": "HotelManagement_DAL\\Repositories\\ServiceRepository.cs",
+              "ToolTip": "E:\\Git\\PRN212\\PRN212HotelManagement\\HotelManagement_DAL\\Repositories\\ServiceRepository.cs",
+              "RelativeToolTip": "HotelManagement_DAL\\Repositories\\ServiceRepository.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAYwDQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T16:08:25.035Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BookingRepository.cs",
+              "DocumentMoniker": "E:\\Git\\PRN212\\PRN212HotelManagement\\HotelManagement_DAL\\Repositories\\BookingRepository.cs",
+              "RelativeDocumentMoniker": "HotelManagement_DAL\\Repositories\\BookingRepository.cs",
+              "ToolTip": "E:\\Git\\PRN212\\PRN212HotelManagement\\HotelManagement_DAL\\Repositories\\BookingRepository.cs",
+              "RelativeToolTip": "HotelManagement_DAL\\Repositories\\BookingRepository.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAswCEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T16:02:01.787Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BookingServices.cs",
+              "DocumentMoniker": "E:\\Git\\PRN212\\PRN212HotelManagement\\HotelManagement_BLL\\BookingServices.cs",
+              "RelativeDocumentMoniker": "HotelManagement_BLL\\BookingServices.cs",
+              "ToolTip": "E:\\Git\\PRN212\\PRN212HotelManagement\\HotelManagement_BLL\\BookingServices.cs",
+              "RelativeToolTip": "HotelManagement_BLL\\BookingServices.cs",
+              "ViewState": "AgIAAIQAAAAAAAAAAAAAAG0AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T16:01:50.382Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Booking.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Han_Mai\\Desktop\\PRN212\\PRN212HotelManagement\\PRN212\\PRN212HotelManagement\\PRN212HotelManagement\\Booking.xaml.cs",
+              "DocumentMoniker": "E:\\Git\\PRN212\\PRN212HotelManagement\\PRN212HotelManagement\\Booking.xaml.cs",
               "RelativeDocumentMoniker": "PRN212HotelManagement\\Booking.xaml.cs",
-              "ToolTip": "C:\\Users\\Han_Mai\\Desktop\\PRN212\\PRN212HotelManagement\\PRN212\\PRN212HotelManagement\\PRN212HotelManagement\\Booking.xaml.cs",
+              "ToolTip": "E:\\Git\\PRN212\\PRN212HotelManagement\\PRN212HotelManagement\\Booking.xaml.cs",
               "RelativeToolTip": "PRN212HotelManagement\\Booking.xaml.cs",
-              "ViewState": "AgIAAIkAAAAAAAAAAAD4v64AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAALoAAAAAAAAAAAAowNEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-11T12:47:21.585Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Han_Mai\\Desktop\\PRN212\\PRN212HotelManagement\\PRN212\\PRN212HotelManagement\\PRN212HotelManagement\\appsettings.json",
-              "RelativeDocumentMoniker": "PRN212HotelManagement\\appsettings.json",
-              "ToolTip": "C:\\Users\\Han_Mai\\Desktop\\PRN212\\PRN212HotelManagement\\PRN212\\PRN212HotelManagement\\PRN212HotelManagement\\appsettings.json",
-              "RelativeToolTip": "PRN212HotelManagement\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-12-11T13:53:16.274Z",
+              "WhenOpened": "2024-12-12T16:01:45.888Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Booking.xaml",
-              "DocumentMoniker": "C:\\Users\\Han_Mai\\Desktop\\PRN212\\PRN212HotelManagement\\PRN212\\PRN212HotelManagement\\PRN212HotelManagement\\Booking.xaml",
+              "DocumentMoniker": "E:\\Git\\PRN212\\PRN212HotelManagement\\PRN212HotelManagement\\Booking.xaml",
               "RelativeDocumentMoniker": "PRN212HotelManagement\\Booking.xaml",
-              "ToolTip": "C:\\Users\\Han_Mai\\Desktop\\PRN212\\PRN212HotelManagement\\PRN212\\PRN212HotelManagement\\PRN212HotelManagement\\Booking.xaml",
+              "ToolTip": "E:\\Git\\PRN212\\PRN212HotelManagement\\PRN212HotelManagement\\Booking.xaml",
               "RelativeToolTip": "PRN212HotelManagement\\Booking.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-11T12:46:52.425Z",
+              "WhenOpened": "2024-12-12T16:01:40.135Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "BookingRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Han_Mai\\Desktop\\PRN212\\PRN212HotelManagement\\PRN212\\PRN212HotelManagement\\HotelManagement_DAL\\Repositories\\BookingRepository.cs",
-              "RelativeDocumentMoniker": "HotelManagement_DAL\\Repositories\\BookingRepository.cs",
-              "ToolTip": "C:\\Users\\Han_Mai\\Desktop\\PRN212\\PRN212HotelManagement\\PRN212\\PRN212HotelManagement\\HotelManagement_DAL\\Repositories\\BookingRepository.cs",
-              "RelativeToolTip": "HotelManagement_DAL\\Repositories\\BookingRepository.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAAwCEAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-11T12:49:12.521Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "BookingService.cs",
-              "DocumentMoniker": "C:\\Users\\Han_Mai\\Desktop\\PRN212\\PRN212HotelManagement\\PRN212\\PRN212HotelManagement\\HotelManagement_DAL\\Entities\\BookingService.cs",
-              "RelativeDocumentMoniker": "HotelManagement_DAL\\Entities\\BookingService.cs",
-              "ToolTip": "C:\\Users\\Han_Mai\\Desktop\\PRN212\\PRN212HotelManagement\\PRN212\\PRN212HotelManagement\\HotelManagement_DAL\\Entities\\BookingService.cs",
-              "RelativeToolTip": "HotelManagement_DAL\\Entities\\BookingService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-11T12:49:57.977Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ManageRooms.xaml",
-              "DocumentMoniker": "C:\\Users\\Han_Mai\\Desktop\\PRN212\\PRN212HotelManagement\\PRN212\\PRN212HotelManagement\\PRN212HotelManagement\\ManageRooms.xaml",
-              "RelativeDocumentMoniker": "PRN212HotelManagement\\ManageRooms.xaml",
-              "ToolTip": "C:\\Users\\Han_Mai\\Desktop\\PRN212\\PRN212HotelManagement\\PRN212\\PRN212HotelManagement\\PRN212HotelManagement\\ManageRooms.xaml",
-              "RelativeToolTip": "PRN212HotelManagement\\ManageRooms.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-11T12:52:26.178Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "ViewBookingForAdmin.xaml",
-              "DocumentMoniker": "C:\\Users\\Han_Mai\\Desktop\\PRN212\\PRN212HotelManagement\\PRN212\\PRN212HotelManagement\\PRN212HotelManagement\\ViewBookingForAdmin.xaml",
-              "RelativeDocumentMoniker": "PRN212HotelManagement\\ViewBookingForAdmin.xaml",
-              "ToolTip": "C:\\Users\\Han_Mai\\Desktop\\PRN212\\PRN212HotelManagement\\PRN212\\PRN212HotelManagement\\PRN212HotelManagement\\ViewBookingForAdmin.xaml",
-              "RelativeToolTip": "PRN212HotelManagement\\ViewBookingForAdmin.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-11T12:52:28.832Z",
+              "Title": "Booking.cs",
+              "DocumentMoniker": "E:\\Git\\PRN212\\PRN212HotelManagement\\HotelManagement_DAL\\Entities\\Booking.cs",
+              "RelativeDocumentMoniker": "HotelManagement_DAL\\Entities\\Booking.cs",
+              "ToolTip": "E:\\Git\\PRN212\\PRN212HotelManagement\\HotelManagement_DAL\\Entities\\Booking.cs",
+              "RelativeToolTip": "HotelManagement_DAL\\Entities\\Booking.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T16:20:17.361Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ManageRooms.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Han_Mai\\Desktop\\PRN212\\PRN212HotelManagement\\PRN212\\PRN212HotelManagement\\PRN212HotelManagement\\ManageRooms.xaml.cs",
-              "RelativeDocumentMoniker": "PRN212HotelManagement\\ManageRooms.xaml.cs",
-              "ToolTip": "C:\\Users\\Han_Mai\\Desktop\\PRN212\\PRN212HotelManagement\\PRN212\\PRN212HotelManagement\\PRN212HotelManagement\\ManageRooms.xaml.cs",
-              "RelativeToolTip": "PRN212HotelManagement\\ManageRooms.xaml.cs",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-11T12:48:12.145Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "BookingDetail.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Han_Mai\\Desktop\\PRN212\\PRN212HotelManagement\\PRN212\\PRN212HotelManagement\\PRN212HotelManagement\\BookingDetail.xaml.cs",
-              "RelativeDocumentMoniker": "PRN212HotelManagement\\BookingDetail.xaml.cs",
-              "ToolTip": "C:\\Users\\Han_Mai\\Desktop\\PRN212\\PRN212HotelManagement\\PRN212\\PRN212HotelManagement\\PRN212HotelManagement\\BookingDetail.xaml.cs",
-              "RelativeToolTip": "PRN212HotelManagement\\BookingDetail.xaml.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAtwDQAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-11T12:47:20.785Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "BookingDetail.xaml",
-              "DocumentMoniker": "C:\\Users\\Han_Mai\\Desktop\\PRN212\\PRN212HotelManagement\\PRN212\\PRN212HotelManagement\\PRN212HotelManagement\\BookingDetail.xaml",
-              "RelativeDocumentMoniker": "PRN212HotelManagement\\BookingDetail.xaml",
-              "ToolTip": "C:\\Users\\Han_Mai\\Desktop\\PRN212\\PRN212HotelManagement\\PRN212\\PRN212HotelManagement\\PRN212HotelManagement\\BookingDetail.xaml",
-              "RelativeToolTip": "PRN212HotelManagement\\BookingDetail.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-11T12:46:53.786Z"
             }
           ]
         },
         {
-          "DockedHeight": 51,
+          "DockedHeight": 100,
           "SelectedChildIndex": -1,
           "Children": [
             {
@@ -269,6 +261,10 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             }
           ]
         }

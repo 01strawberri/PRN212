@@ -18,22 +18,79 @@ namespace HotelManagement_BLL
             _roomRepository = roomRepository;
         }
 
-        public bool AddBooking(int userId, int roomId, string bookingType, string bookingStatus, DateOnly bookingStartDay, DateOnly bookingEndDay, decimal totalPrice)
+        public bool AddBooking(
+                        int userId,
+                        int roomId,
+                        DateOnly startDate,
+                        DateOnly endDate,
+                        string bookingType,
+                        string bookingStatus,
+                        List<Service> selectedServices,
+                        out string errorMessage)
         {
-            var newBooking = new Booking
-            {
-                UserId = userId,
-                RoomId = roomId,
-                BookingType = bookingType,
-                BookingStatus = bookingStatus,
-                BookingStartDay = bookingStartDay,
-                BookingEndDay = bookingEndDay,
-                TotalPrice = totalPrice,
-                CreatedAt = DateTime.Now,
-            };
+            errorMessage = string.Empty;
 
-            return _bookingRepository.AddBooking(newBooking);
+            try
+            {
+                // Lấy giá phòng từ RoomPrice
+                var roomPricePerDay = _roomRepository.GetRoomPricePerDay(roomId);
+                if (roomPricePerDay == null)
+                {
+                    errorMessage = "Room price not found.";
+                    return false;
+                }
+
+                int totalDays = (endDate.ToDateTime(new TimeOnly(0, 0)) - startDate.ToDateTime(new TimeOnly(0, 0))).Days + 1;
+                decimal totalPrice = totalDays * roomPricePerDay.Value;
+
+                // Tổng tiền dịch vụ
+                decimal totalServicePrice = selectedServices.Sum(service => service.ServicePrice);
+                totalPrice += totalServicePrice;
+
+                // Tạo đối tượng Booking
+                var booking = new Booking
+                {
+                    UserId = userId,
+                    RoomId = roomId,
+                    BookingStartDay = startDate,
+                    BookingEndDay = endDate,
+                    BookingType = bookingType,
+                    BookingStatus = bookingStatus,
+                    TotalPrice = totalPrice,
+                    CreatedAt = DateTime.Now
+                };
+
+                // Thêm booking
+                if (!_bookingRepository.AddBooking(booking))
+                {
+                    errorMessage = "Failed to add booking.";
+                    return false;
+                }
+
+                // Thêm các dịch vụ vào BookingService
+                foreach (var service in selectedServices)
+                {
+                    var bookingService = new BookingService
+                    {
+                        BookingId = booking.BookingId,
+                        ServiceId = service.ServiceId,
+                        ServicePrice = service.ServicePrice,
+                        CreatedAt = DateTime.Now
+                    };
+
+                    _bookingRepository.AddBookingService(bookingService);
+                }
+
+                return true;
+            }
+            catch (Exception ex)
+            {
+                errorMessage = $"An error occurred: {ex.Message}";
+                return false;
+            }
         }
+
+
 
         public Booking GetBookingById(int bookingId)
         {
@@ -50,23 +107,81 @@ namespace HotelManagement_BLL
             return _bookingRepository.GetBookingsByStatus(status);
         }
 
-        public bool UpdateBooking(int bookingId, int userId, int roomId, string bookingType, string bookingStatus, DateOnly bookingStartDay, DateOnly bookingEndDay, decimal totalPrice)
+        public bool UpdateBooking(
+                        int bookingId,
+                        int userId,
+                        int roomId,
+                        string bookingType,
+                        string bookingStatus,
+                        DateOnly bookingStartDay,
+                        DateOnly bookingEndDay,
+                        decimal totalPrice,
+                        List<Service> selectedServices, // Thêm tham số dịch vụ đã chọn
+                        out string errorMessage)
         {
-            var booking = new Booking
-            {
-                BookingId = bookingId,
-                UserId = userId,
-                RoomId = roomId,
-                BookingType = bookingType,
-                BookingStatus = bookingStatus,
-                BookingStartDay = bookingStartDay,
-                BookingEndDay = bookingEndDay,
-                TotalPrice = totalPrice,
-                CreatedAt = DateTime.Now,
-            };
+            errorMessage = string.Empty;
 
-            return _bookingRepository.UpdateBooking(booking);
+            try
+            {
+                // Kiểm tra booking có tồn tại không
+                var booking = _bookingRepository.GetBookingById(bookingId);
+                if (booking == null)
+                {
+                    errorMessage = "Booking not found.";
+                    return false;
+                }
+
+                // Cập nhật thông tin booking
+                booking.UserId = userId;
+                booking.RoomId = roomId;
+                booking.BookingType = bookingType;
+                booking.BookingStatus = bookingStatus;
+                booking.BookingStartDay = bookingStartDay;
+                booking.BookingEndDay = bookingEndDay;
+                booking.TotalPrice = totalPrice;
+
+                // Cập nhật thông tin trong cơ sở dữ liệu
+                bool isUpdated = _bookingRepository.UpdateBooking(booking);
+                if (!isUpdated)
+                {
+                    errorMessage = "Failed to update booking.";
+                    return false;
+                }
+
+                // Cập nhật thông tin dịch vụ (nếu có)
+                // Đầu tiên, xóa tất cả dịch vụ hiện tại
+                _bookingRepository.DeleteBookingServices(bookingId);
+
+                // Sau đó, thêm các dịch vụ mới vào
+                foreach (var service in selectedServices)
+                {
+                    var bookingService = new BookingService
+                    {
+                        BookingId = booking.BookingId,
+                        ServiceId = service.ServiceId,
+                        ServicePrice = service.ServicePrice,
+                        CreatedAt = DateTime.Now
+                    };
+
+                    // Thêm dịch vụ vào cơ sở dữ liệu
+                    bool isAdded = _bookingRepository.AddBookingService(bookingService);
+                    if (!isAdded)
+                    {
+                        errorMessage = "Failed to add service to booking.";
+                        return false;
+                    }
+                }
+
+                return true;
+            }
+            catch (Exception ex)
+            {
+                errorMessage = $"An error occurred: {ex.Message}";
+                return false;
+            }
         }
+
+
 
         public bool DeleteBooking(int bookingId)
         {

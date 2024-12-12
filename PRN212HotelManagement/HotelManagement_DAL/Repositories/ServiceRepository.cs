@@ -11,9 +11,9 @@ namespace HotelManagement_DAL.Repositories
     {
         private Prn212hotelManagementContext _context;
 
-        public ServiceRepository()
+        public ServiceRepository(Prn212hotelManagementContext prn212hotelManagementContext)
         {
-            _context = new Prn212hotelManagementContext();
+            _context = prn212hotelManagementContext;
         }
 
         public List<Service> GetAllServices()
