@@ -1,0 +1,94 @@
+﻿<Window x:Class="PRN212HotelManagement.ManageRoomStaff"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PRN212HotelManagement"
+        mc:Ignorable="d"
+        Title="ManageRoomStaff" Height="700" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <!-- Title Row -->
+            <RowDefinition Height="Auto"/>
+            <!-- Search Row -->
+            <RowDefinition Height="*"/>
+            <!-- DataGrid Row -->
+        </Grid.RowDefinitions>
+
+        <!-- Navbar -->
+        <StackPanel Grid.Row="0" Background="#3AA9AD" Orientation="Horizontal">
+            <Button x:Name="btn_Profile" Content="Profile" Width="91" Height="40" Margin="5" Background="Transparent" 
+            Foreground="White" BorderThickness="0" Click="btn_Account_Click"/>
+            <Button x:Name="btn_Bookings" Content="Bookings" Width="92" Height="40" Margin="5" Background="Transparent" 
+            Foreground="White" BorderThickness="0" Click="btn_Bookings_Click"/>
+            <Button x:Name="btn_ManageRoom" Content="Manage Rooms" Width="124" Height="40" Background="Transparent" 
+            Foreground="White" BorderThickness="0" Click="btn_ManageRoom_Click"/>
+            <Button x:Name="btn_ManageUser" Width="129" Height="40" Margin="5" Background="Transparent" 
+            Foreground="White" BorderThickness="0" Content="Manage Users" Click="btn_ManageUser_Click" />
+            <Button x:Name="btn_ManageService" Content="Manage Services" Width="108" Height="40" Margin="5" Background="Transparent" 
+            Foreground="White" BorderThickness="0"/>
+            <Button x:Name="btn_Transaction" Content="Transaction" Width="100" Height="40" Margin="5" Background="Transparent" 
+            Foreground="White" BorderThickness="0" HorizontalAlignment="Right"/>
+            <Button x:Name="btn_Logout" Content="Logout" Width="100" Height="40" Margin="5" Background="Transparent" 
+            Foreground="White" BorderThickness="0" HorizontalAlignment="Right" Click="btn_Logout_Click"/>
+        </StackPanel>
+
+        <!-- Title Section -->
+        <StackPanel Background="#a36361" Margin="0,0,10,476" Grid.Row="2">
+            <TextBlock Text="Manage Rooms" FontSize="24" FontWeight="Bold" Margin="10" HorizontalAlignment="Center" Foreground="Wheat"/>
+        </StackPanel>
+
+        <!-- Search Section -->
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,81,0,237" Grid.RowSpan="2">
+            <StackPanel Orientation="Vertical" Margin="5">
+                <TextBlock Text="Room Name" FontWeight="Bold" Margin="5" HorizontalAlignment="Center"/>
+                <TextBox x:Name="txtSearchRoomName" Width="150" Margin="5"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Vertical" Margin="5">
+                <TextBlock Text="Room Type" FontWeight="Bold" Margin="5" HorizontalAlignment="Center"/>
+                <TextBox x:Name="txtSearchRoomType" Width="150" Margin="5"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Vertical" Margin="5">
+                <TextBlock Text="Room Status" FontWeight="Bold" Margin="5" HorizontalAlignment="Center"/>
+                <ComboBox x:Name="cmbSearchRoomStatus" Width="150" Margin="5">
+                    <ComboBoxItem Content="All"/>
+                    <ComboBoxItem Content="Available"/>
+                    <ComboBoxItem Content="Maintenance"/>
+                    <ComboBoxItem Content="Using"/>
+                </ComboBox>
+            </StackPanel>
+            <StackPanel Margin="0,10,0,0">
+                <Button x:Name="btnSearch" Content="Search" Width="100" Height="40" Margin="5" Background="#3AA9AD" Foreground="White" Click="btnSearch_Click"/>
+            </StackPanel>
+
+        </StackPanel>
+
+        <!-- DataGrid for displaying rooms -->
+        <DataGrid x:Name="dataGridRooms" Grid.Row="2" AutoGenerateColumns="False" Margin="10,163,10,10" IsReadOnly="True" Background="White" SelectionChanged="dataGridRooms_SelectionChanged">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Room ID" Binding="{Binding RoomId}" Width="Auto"/>
+                <DataGridTextColumn Header="Room Name" Binding="{Binding RoomName}" Width="*"/>
+                <DataGridTextColumn Header="Room Type" Binding="{Binding RoomType}" Width="*"/>
+                <DataGridTextColumn Header="Description" Binding="{Binding RoomDescription}" Width="*"/>
+                <DataGridTextColumn Header="Status" Binding="{Binding RoomStatus}" Width="Auto"/>
+                <DataGridTextColumn Header="Price Per Hour" Binding="{Binding RoomPrices[0].RoomPricePerHour}" Width="Auto"/>
+                <DataGridTextColumn Header="Price Per Day" Binding="{Binding RoomPrices[0].RoomPricePerDay}" Width="Auto"/>
+                <DataGridTemplateColumn Header="Change Status" Width="Auto">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <ComboBox SelectionChanged="ComboBox_SelectionChanged" Width="100">
+                                <ComboBoxItem Content="Available"/>
+                                <ComboBoxItem Content="Maintenance"/>
+                                <ComboBoxItem Content="Using"/>
+
+                            </ComboBox>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>

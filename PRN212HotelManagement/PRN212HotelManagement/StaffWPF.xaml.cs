@@ -42,12 +42,6 @@ namespace PRN212HotelManagement
             
         }
 
-        private void btn_Bookings_Click(object sender, RoutedEventArgs e)
-        {
-            Booking viewBookingForStaff = new Booking(currentUser);
-            viewBookingForStaff.Show();
-            this.Close();
-        }
 
         private void btn_Logout_Click(object sender, RoutedEventArgs e)
         {
@@ -182,7 +176,12 @@ namespace PRN212HotelManagement
             passwordDialog.Content = stackPanel;
             passwordDialog.ShowDialog();
         }
-
+        private void btn_Bookings_Click(object sender, RoutedEventArgs e)
+        {
+            BookingView viewBookingForStaff = new BookingView(currentUser);
+            viewBookingForStaff.Show();
+            this.Close();
+        }
         private void btn_ChangeEmail_Click(object sender, RoutedEventArgs e)
         {
             // Copy the email change implementation from AdminWPF

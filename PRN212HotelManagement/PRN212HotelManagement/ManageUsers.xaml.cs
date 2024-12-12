@@ -5,27 +5,18 @@ using HotelManagement_DAL.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace PRN212HotelManagement
 {
-    /// <summary>
-    /// Interaction logic for ManageUsers.xaml
-    /// </summary>
     public partial class ManageUsers : Window
     {
         private UserService _userService;
         private User _currentUser;
         private User currentUser;
+        private List<User> userList;
+
         public ManageUsers(User user)
         {
             InitializeComponent();
@@ -35,11 +26,34 @@ namespace PRN212HotelManagement
             _userService = new UserService(userRepository);
             LoadUsers();
         }
+
         private void LoadUsers()
         {
-            var users = _userService.GetAllUsers();
-            dataGridUsers.ItemsSource = users;
+            userList = _userService.GetAllUsers();
+            dataGridUsers.ItemsSource = userList;
         }
+
+        private void btnSearch_Click(object sender, RoutedEventArgs e)
+        {
+            string username = txtSearchUserName.Text.Trim();
+            var role = (cmbSearchRole.SelectedItem as ComboBoxItem)?.Content.ToString();
+
+            // Map role names to their respective IDs
+            var roleMapping = new Dictionary<string, int>
+            {
+                { "Admin", 1 },
+                { "Staff", 2 },
+                { "Customer", 3 }
+            };
+
+            var filteredUsers = userList.Where(
+                u => (string.IsNullOrEmpty(username) || u.UserName.Contains(username)) &&
+                (role == "All" || string.IsNullOrEmpty(role) || (roleMapping.ContainsKey(role) && u.UserRole == roleMapping[role]))
+            ).ToList();
+
+            dataGridUsers.ItemsSource = filteredUsers;
+        }
+
         private void btnAddUser_Click(object sender, RoutedEventArgs e)
         {
             _currentUser = null;
@@ -145,6 +159,7 @@ namespace PRN212HotelManagement
             account.Show();
             this.Close();
         }
+
         private void btn_Logout_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
@@ -159,10 +174,11 @@ namespace PRN212HotelManagement
             this.Close();
         }
 
-
         private void btn_Bookings_Click(object sender, RoutedEventArgs e)
         {
-            
+            //Booking manageRooms = new Booking();
+            //manageRooms.Show();
+            //this.Close();
         }
 
         private void btn_ManageUser_Click(object sender, RoutedEventArgs e)

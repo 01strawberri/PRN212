@@ -60,6 +60,10 @@ namespace HotelManagement_BLL
         {
             return _roomRepository.DeleteRoom(roomId);
         }
+        public List<Room> getAllRoomsByPrices()
+        {
+            return _roomRepository.getAllRoomsWithPrices();
+        }
         public List<Room> SearchRooms(string name = null, string type = null, string status = null)
         {
             return _roomRepository.SearchRooms(name, type, status);

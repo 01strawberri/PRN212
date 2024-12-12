@@ -1,4 +1,5 @@
 ﻿using HotelManagement_DAL.DBContext;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,6 +20,10 @@ namespace HotelManagement_DAL.Repositories
         public List<Room> GetAllRooms()
         {
             return _prn212hotelManagementContext.Rooms.ToList();
+        }
+        public List<Room> getAllRoomsWithPrices()
+        {
+            return _prn212hotelManagementContext.Rooms.Include(r => r.RoomPrices).ToList();
         }
         public Room? GetRoomById(int id)
         {
