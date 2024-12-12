@@ -34,9 +34,6 @@
     <Compile Update="TransactionWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="ViewBookingForStaff.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="AdminWPF.xaml">
@@ -64,9 +61,6 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="TransactionWindow.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="ViewBookingForStaff.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

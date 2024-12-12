@@ -427,7 +427,6 @@ C:\THAI_DANG\FPT University\Semester 5\PRN212\PROJECT_3W\PRN212\PRN212HotelManag
 C:\THAI_DANG\FPT University\Semester 5\PRN212\PROJECT_3W\PRN212\PRN212HotelManagement\PRN212HotelManagement\obj\Debug\net8.0-windows\ManageUsers.g.cs
 C:\THAI_DANG\FPT University\Semester 5\PRN212\PROJECT_3W\PRN212\PRN212HotelManagement\PRN212HotelManagement\obj\Debug\net8.0-windows\Register.g.cs
 C:\THAI_DANG\FPT University\Semester 5\PRN212\PROJECT_3W\PRN212\PRN212HotelManagement\PRN212HotelManagement\obj\Debug\net8.0-windows\StaffWPF.g.cs
-C:\THAI_DANG\FPT University\Semester 5\PRN212\PROJECT_3W\PRN212\PRN212HotelManagement\PRN212HotelManagement\obj\Debug\net8.0-windows\ViewBookingForStaff.g.cs
 C:\THAI_DANG\FPT University\Semester 5\PRN212\PROJECT_3W\PRN212\PRN212HotelManagement\PRN212HotelManagement\obj\Debug\net8.0-windows\App.g.cs
 C:\THAI_DANG\FPT University\Semester 5\PRN212\PROJECT_3W\PRN212\PRN212HotelManagement\PRN212HotelManagement\obj\Debug\net8.0-windows\PRN212HotelManagement_MarkupCompile.cache
 C:\THAI_DANG\FPT University\Semester 5\PRN212\PROJECT_3W\PRN212\PRN212HotelManagement\PRN212HotelManagement\obj\Debug\net8.0-windows\PRN212HotelManagement_MarkupCompile.lref
@@ -440,7 +439,6 @@ C:\THAI_DANG\FPT University\Semester 5\PRN212\PROJECT_3W\PRN212\PRN212HotelManag
 C:\THAI_DANG\FPT University\Semester 5\PRN212\PROJECT_3W\PRN212\PRN212HotelManagement\PRN212HotelManagement\obj\Debug\net8.0-windows\ManageUsers.baml
 C:\THAI_DANG\FPT University\Semester 5\PRN212\PROJECT_3W\PRN212\PRN212HotelManagement\PRN212HotelManagement\obj\Debug\net8.0-windows\Register.baml
 C:\THAI_DANG\FPT University\Semester 5\PRN212\PROJECT_3W\PRN212\PRN212HotelManagement\PRN212HotelManagement\obj\Debug\net8.0-windows\StaffWPF.baml
-C:\THAI_DANG\FPT University\Semester 5\PRN212\PROJECT_3W\PRN212\PRN212HotelManagement\PRN212HotelManagement\obj\Debug\net8.0-windows\ViewBookingForStaff.baml
 C:\THAI_DANG\FPT University\Semester 5\PRN212\PROJECT_3W\PRN212\PRN212HotelManagement\PRN212HotelManagement\obj\Debug\net8.0-windows\PRN212HotelManagement.g.resources
 C:\THAI_DANG\FPT University\Semester 5\PRN212\PROJECT_3W\PRN212\PRN212HotelManagement\PRN212HotelManagement\obj\Debug\net8.0-windows\PRN212HotelManagement.GeneratedMSBuildEditorConfig.editorconfig
 C:\THAI_DANG\FPT University\Semester 5\PRN212\PROJECT_3W\PRN212\PRN212HotelManagement\PRN212HotelManagement\obj\Debug\net8.0-windows\PRN212HotelManagement.AssemblyInfoInputs.cache
@@ -457,3 +455,7 @@ C:\THAI_DANG\FPT University\Semester 5\PRN212\PROJECT_3W\PRN212\PRN212HotelManag
 C:\THAI_DANG\FPT University\Semester 5\PRN212\PROJECT_3W\PRN212\PRN212HotelManagement\PRN212HotelManagement\obj\Debug\net8.0-windows\TransactionWindow.g.cs
 C:\THAI_DANG\FPT University\Semester 5\PRN212\PROJECT_3W\PRN212\PRN212HotelManagement\PRN212HotelManagement\obj\Debug\net8.0-windows\TransactionDetailWindow.baml
 C:\THAI_DANG\FPT University\Semester 5\PRN212\PROJECT_3W\PRN212\PRN212HotelManagement\PRN212HotelManagement\obj\Debug\net8.0-windows\TransactionDetailWindow.g.cs
+C:\THAI_DANG\FPT University\Semester 5\PRN212\PROJECT_3W\PRN212\PRN212HotelManagement\PRN212HotelManagement\obj\Debug\net8.0-windows\BookingDetail.g.cs
+C:\THAI_DANG\FPT University\Semester 5\PRN212\PROJECT_3W\PRN212\PRN212HotelManagement\PRN212HotelManagement\obj\Debug\net8.0-windows\ViewBookingForAdmin.g.cs
+C:\THAI_DANG\FPT University\Semester 5\PRN212\PROJECT_3W\PRN212\PRN212HotelManagement\PRN212HotelManagement\obj\Debug\net8.0-windows\BookingDetail.baml
+C:\THAI_DANG\FPT University\Semester 5\PRN212\PROJECT_3W\PRN212\PRN212HotelManagement\PRN212HotelManagement\obj\Debug\net8.0-windows\ViewBookingForAdmin.baml

@@ -11,12 +11,20 @@ namespace HotelManagement_BLL
         private readonly UserRepository _userRepository;
         private readonly RoomRepository _roomRepository;
 
+        private readonly ServiceRepository _repository;
+
         public BookingServices(BookingRepository bookingRepository, UserRepository userRepository, RoomRepository roomRepository)
         {
             _bookingRepository = bookingRepository;
             _userRepository = userRepository;
             _roomRepository = roomRepository;
         }
+
+        public BookingServices(BookingRepository bookingRepository)
+        {
+            _bookingRepository = bookingRepository;
+        }
+
 
         public bool AddBooking(
                         int userId,
