@@ -13,9 +13,6 @@
     <Compile Update="Booking.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="BookingDetail.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Update="Login.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -31,7 +28,13 @@
     <Compile Update="StaffWPF.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="ViewBookingForAdmin.xaml.cs">
+    <Compile Update="TransactionDetailWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="TransactionWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ViewBookingForStaff.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -40,9 +43,6 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Booking.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="BookingDetail.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Login.xaml">
@@ -60,7 +60,13 @@
     <Page Update="StaffWPF.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="ViewBookingForAdmin.xaml">
+    <Page Update="TransactionDetailWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="TransactionWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ViewBookingForStaff.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

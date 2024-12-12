@@ -1,0 +1,36 @@
+﻿<Window x:Class="PRN212HotelManagement.TransactionWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Transaction History" Height="700" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <!-- Search Bar -->
+            <RowDefinition Height="Auto"/>
+            <!-- DataGrid -->
+        </Grid.RowDefinitions>
+
+        <!-- Search Bar -->
+        <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="10">
+            <TextBox x:Name="txtSearchBookingId" Width="200"  />
+            <Button x:Name="btnSearch" Content="Search" Width="100" Margin="5" Click="btnSearch_Click"/>
+        </StackPanel>
+
+        <!-- DataGrid for Transactions -->
+        <DataGrid x:Name="dataGridTransactions" AutoGenerateColumns="False" Margin="0,0,0,604" IsReadOnly="True" Background="White" Grid.Row="1" SelectionChanged="dataGridTransactions_SelectionChanged">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Transaction ID" Binding="{Binding TransactionId}" Width="Auto"/>
+                <DataGridTextColumn Header="Booking ID" Binding="{Binding BookingId}" Width="Auto"/>
+                <DataGridTextColumn Header="User ID" Binding="{Binding UserId}" Width="Auto"/>
+                <DataGridTextColumn Header="Event Description" Binding="{Binding EventDescription}" Width="*"/>
+                <DataGridTextColumn Header="Transaction Type" Binding="{Binding TransactionType}" Width="*"/>
+                <DataGridTextColumn Header="Amount" Binding="{Binding TransactionAmount}" Width="*"/>
+                <DataGridTextColumn Header="Event Date" Binding="{Binding EventDate}" Width="*"/>
+                <DataGridTextColumn Header="Start Time" Binding="{Binding Booking.BookingStartTime}" Width="*"/>
+                <DataGridTextColumn Header="End Time" Binding="{Binding Booking.BookingEndTime}" Width="*"/>
+                <DataGridTextColumn Header="Status" Binding="{Binding TransactionStatus}" Width="*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+    </Grid>
+</Window>
