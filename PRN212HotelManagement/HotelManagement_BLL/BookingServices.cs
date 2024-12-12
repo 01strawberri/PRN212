@@ -216,6 +216,10 @@ namespace HotelManagement_BLL
             return _bookingRepository.GetBookingById(bookingId);
         }
 
+        public Booking GetBookingByUserAndRoom(int userId, int roomId)
+        {
+            return _bookingRepository.GetBookingByUserAndRoom(userId, roomId);
+        }
 
     }
 }

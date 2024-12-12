@@ -75,5 +75,20 @@ namespace HotelManagement_DAL.Repositories
             _prn212hotelManagementContext.SaveChanges();
             return true;
         }
+
+        public void Add(User user)
+        {
+            _prn212hotelManagementContext.Users.Add(user);
+        }
+
+        public void SaveChanges()
+        {
+            _prn212hotelManagementContext.SaveChanges();
+        }
+
+        public IQueryable<User> GetAll()
+        {
+            return _prn212hotelManagementContext.Users;
+        }
     }
 }

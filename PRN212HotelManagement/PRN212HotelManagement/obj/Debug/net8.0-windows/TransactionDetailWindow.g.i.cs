@@ -84,7 +84,7 @@ namespace PRN212HotelManagement {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/PRN212HotelManagement;V1.0.0.0;component/transactiondetailwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/PRN212HotelManagement;component/transactiondetailwindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\TransactionDetailWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

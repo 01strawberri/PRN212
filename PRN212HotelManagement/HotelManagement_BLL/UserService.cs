@@ -80,5 +80,16 @@ namespace HotelManagement_BLL
         {
             return _userRepository.DeleteUser(userId);
         }
+
+        public User GetUserByPhoneAndName(string phone, string name)
+        {
+            return GetAllUsers()
+                .FirstOrDefault(u => u.UserPhone == phone && u.UserName == name);
+        }
+
+        public void AddUser(User user)
+        {
+            _userRepository.AddUser(user);
+        }
     }
 }

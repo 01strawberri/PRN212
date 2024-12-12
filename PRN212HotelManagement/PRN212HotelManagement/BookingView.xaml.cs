@@ -16,6 +16,7 @@ namespace PRN212HotelManagement
         private readonly RoomService _roomService;
         private readonly ServicesService _serviceService;
         private readonly CheckOutService _checkOutService;
+        private readonly TransactionService _transactionService;
         private User currentUser;
         private HotelManagement_DAL.Booking selectedBookingForUpdate;
 
@@ -33,6 +34,7 @@ namespace PRN212HotelManagement
             _roomService = new RoomService(new RoomRepository(context));
             _serviceService = new ServicesService(new ServiceRepository(context));
             _checkOutService = new CheckOutService(new CheckOutRepository(context));
+            _transactionService = new TransactionService(new TransactionRepository(context));
 
             LoadData();
             LoadBookings();
@@ -40,7 +42,6 @@ namespace PRN212HotelManagement
 
         private void LoadData()
         {
-            comboUserName.ItemsSource = _userService.GetAllUsers();
             comboRoomName.ItemsSource = _roomService.GetAllRooms();
         }
 
@@ -90,11 +91,14 @@ namespace PRN212HotelManagement
         private void btnAddBooking_Click(object sender, RoutedEventArgs e)
         {
             // Reset popup fields
-            comboUserName.SelectedItem = null;
+            txtCustomerName.Text = "";
+            txtCustomerPhone.Text = "";
+            txtCustomerEmail.Text = "";
             comboRoomName.SelectedItem = null;
             dateStart.SelectedDate = null;
             dateEnd.SelectedDate = null;
             txtTotalPrice.Text = "0";
+            listBoxSelectedServices.Items.Clear();
 
             // Show popup
             popupGrid.Visibility = Visibility.Visible;
@@ -108,11 +112,13 @@ namespace PRN212HotelManagement
                 selectedBookingForUpdate = selectedBooking;
 
                 // Fill in the popup with the selected booking's details
-                comboUserName.SelectedValue = selectedBooking.UserId;
+                var user = selectedBooking.User;
+                txtCustomerName.Text = user.UserName;
+                txtCustomerPhone.Text = user.UserPhone;
+                txtCustomerEmail.Text = user.UserEmail;
                 comboRoomName.SelectedValue = selectedBooking.RoomId;
                 dateStart.SelectedDate = selectedBooking.BookingStartDay.ToDateTime(new TimeOnly(0, 0));
                 dateEnd.SelectedDate = selectedBooking.BookingEndDay.ToDateTime(new TimeOnly(0, 0));
-                // Assuming selected services are stored in a related list or something
 
                 // Show popup for updating booking
                 popupGrid.Visibility = Visibility.Visible;
@@ -125,28 +131,75 @@ namespace PRN212HotelManagement
 
         private void btnSaveBooking_Click(object sender, RoutedEventArgs e)
         {
-            if (comboUserName.SelectedValue == null || comboRoomName.SelectedValue == null || dateStart.SelectedDate == null || dateEnd.SelectedDate == null)
+            // Validate required fields
+            if (txtCustomerName.Text.Trim() == "" || txtCustomerPhone.Text.Trim() == "" || 
+                txtCustomerEmail.Text.Trim() == "" || comboRoomName.SelectedValue == null || 
+                dateStart.SelectedDate == null || dateEnd.SelectedDate == null)
             {
                 MessageBox.Show("Please fill in all required fields.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                 return;
             }
 
-            int userId = (int)comboUserName.SelectedValue;
-            int roomId = (int)comboRoomName.SelectedValue; // Lấy roomId
+            string customerName = txtCustomerName.Text.Trim();
+            string customerPhone = txtCustomerPhone.Text.Trim();
+            string customerEmail = txtCustomerEmail.Text.Trim();
+            int roomId = (int)comboRoomName.SelectedValue;
             DateOnly startDate = DateOnly.FromDateTime(dateStart.SelectedDate.Value);
             DateOnly endDate = DateOnly.FromDateTime(dateEnd.SelectedDate.Value);
 
-            // Lấy danh sách dịch vụ đã chọn từ listboxSelectedServices
+            // Get or create user
+            User user = _userService.GetUserByPhoneAndName(customerPhone, customerName);
+            if (user == null)
+            {
+                // Create new user with role 3 (customer)
+                user = new User
+                {
+                    UserName = customerName,
+                    UserEmail = customerEmail,
+                    UserPassword = "1", // Default password
+                    UserPhone = customerPhone,
+                    UserRole = 3
+                };
+                _userService.AddUser(user);
+            }
+
             var selectedServices = listBoxSelectedServices.Items.Cast<Service>().ToList();
             string errorMessage;
 
-            // Kiểm tra nếu là thêm mới hay cập nhật
-            if (selectedBookingForUpdate == null) // Thêm mới booking
+            if (selectedBookingForUpdate == null) // Add new booking
             {
-                bool isAdded = _bookingService.AddBooking(userId, roomId, startDate, endDate, "ByDay", "Pending", selectedServices, out errorMessage);
+                bool isAdded = _bookingService.AddBooking(
+                    user.UserId, 
+                    roomId, 
+                    startDate, 
+                    endDate, 
+                    "ByDay", 
+                    "Pending", 
+                    selectedServices, 
+                    out errorMessage);
 
                 if (isAdded)
                 {
+                    // Add transaction for check-in
+                    var booking = _bookingService.GetBookingByUserAndRoom(user.UserId, roomId);
+                    if (booking != null)
+                    {
+                        var transaction = new Transaction
+                        {
+                            BookingId = booking.BookingId,
+                            UserId = user.UserId,
+                            EventDescription = "Customer Checkin",
+                            TransactionType = "Check in",
+                            TransactionAmount = decimal.Parse(txtTotalPrice.Text),
+                            EventDate = DateTime.Now,
+                            TransactionStatus = "Using"
+                        };
+                        _transactionService.AddTransaction(transaction);
+
+                        // Update room status to Pending
+                        _roomService.UpdateRoomStatus(roomId, "Pending");
+                    }
+
                     MessageBox.Show("Booking added successfully!", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
                     popupGrid.Visibility = Visibility.Collapsed;
                     LoadBookings();
@@ -156,10 +209,10 @@ namespace PRN212HotelManagement
                     MessageBox.Show($"Failed to add booking: {errorMessage}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
             }
-            else // Cập nhật booking
+            else // Update existing booking
             {
                 // Cập nhật các thông tin của bookingForUpdate
-                selectedBookingForUpdate.UserId = userId;
+                selectedBookingForUpdate.UserId = user.UserId;
                 selectedBookingForUpdate.RoomId = roomId; // Đảm bảo roomId được cập nhật
                 selectedBookingForUpdate.BookingStartDay = startDate;
                 selectedBookingForUpdate.BookingEndDay = endDate;
@@ -172,7 +225,7 @@ namespace PRN212HotelManagement
                 // Gọi phương thức UpdateBooking với đủ tất cả tham số cần thiết
                 bool isUpdated = _bookingService.UpdateBooking(
                     selectedBookingForUpdate.BookingId, // bookingId
-                    userId, // userId
+                    user.UserId, // userId
                     roomId, // roomId
                     selectedBookingForUpdate.BookingType, // bookingType
                     selectedBookingForUpdate.BookingStatus, // bookingStatus

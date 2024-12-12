@@ -73,5 +73,15 @@ namespace HotelManagement_BLL
             // Sử dụng repository để lấy RoomPricePerDay từ RoomId
             return _roomRepository.GetRoomPricePerDay(roomId);
         }
+        public bool UpdateRoomStatus(int roomId, string status)
+        {
+            var room = _roomRepository.GetRoomById(roomId);
+            if (room != null)
+            {
+                room.RoomStatus = status;
+                return _roomRepository.UpdateRoom(room);
+            }
+            return false;
+        }
     }
 }

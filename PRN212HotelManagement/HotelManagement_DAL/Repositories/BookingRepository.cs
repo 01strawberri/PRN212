@@ -146,5 +146,12 @@ namespace HotelManagement_DAL.Repositories
             return false;
         }
 
+        public Booking GetBookingByUserAndRoom(int userId, int roomId)
+        {
+            return _prn212hotelManagementContext.Bookings
+                .OrderByDescending(b => b.BookingId)
+                .FirstOrDefault(b => b.UserId == userId && b.RoomId == roomId);
+        }
+
     }
 }
