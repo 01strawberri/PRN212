@@ -3,23 +3,99 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:PRN212HotelManagement"
         mc:Ignorable="d"
-        Title="ManageService" Height="450" Width="800">
+        Title="Manage Service" Height="700" Width="800">
     <Grid>
-        <DataGrid x:Name="ServicesDataGrid" AutoGenerateColumns="False" IsReadOnly="True" Margin="10,10,10,50">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <!-- Navbar -->
+            <RowDefinition Height="Auto"/>
+            <!-- Title -->
+            <RowDefinition Height="Auto"/>
+            <!-- Search -->
+            <RowDefinition Height="*"/>
+            <!-- DataGrid -->
+            <RowDefinition Height="Auto"/>
+            <!-- Buttons -->
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Background="#3AA9AD" Orientation="Horizontal">
+            <Button x:Name="btn_Profile" Content="Profile" Width="91" Height="40" Margin="5" Background="Transparent" 
+            Foreground="White" BorderThickness="0" Click="btn_Account_Click"/>
+            <Button x:Name="btn_Bookings" Content="Bookings" Width="92" Height="40" Margin="5" Background="Transparent" 
+            Foreground="White" BorderThickness="0" Click="btn_Bookings_Click"/>
+            <Button x:Name="btn_ManageRoom" Content="Manage Rooms" Width="124" Height="40" Background="Transparent" 
+            Foreground="White" BorderThickness="0" Click="btn_ManageRoom_Click"/>
+            <Button x:Name="btn_ManageUser" Width="129" Height="40" Margin="5" Background="Transparent" 
+            Foreground="White" BorderThickness="0" Content="Manage Users" Click="btn_ManageUser_Click" />
+            <Button x:Name="btn_Transaction" Content="Transaction" Width="100" Height="40" Margin="5" Background="Transparent" 
+            Foreground="White" BorderThickness="0" HorizontalAlignment="Right"  Click="btn_Transaction_Click"/>
+            <Button x:Name="btn_Logout" Content="Logout" Width="100" Height="40" Margin="5" Background="Transparent" 
+            Foreground="White" BorderThickness="0" HorizontalAlignment="Right" Click="btn_Logout_Click"/>
+        </StackPanel>
+
+        <!-- Title Section -->
+        <StackPanel Background="#a36361" Grid.Row="1">
+            <TextBlock Text="Manage Services" FontSize="24" FontWeight="Bold" Margin="10" HorizontalAlignment="Center" Foreground="Wheat"/>
+        </StackPanel>
+
+
+        <!-- DataGrid for displaying services -->
+        <DataGrid x:Name="dataGridServices" Grid.Row="3" AutoGenerateColumns="False" Margin="10" IsReadOnly="True" Background="White">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="ID" Binding="{Binding ServiceId}" Width="50" />
-                <DataGridTextColumn Header="Type" Binding="{Binding ServiceType}" Width="100" />
-                <DataGridTextColumn Header="Name" Binding="{Binding ServiceName}" Width="150" />
-                <DataGridTextColumn Header="Description" Binding="{Binding ServiceDescription}" Width="200" />
-                <DataGridTextColumn Header="Price" Binding="{Binding ServicePrice}" Width="100" />
-                <DataGridTextColumn Header="Status" Binding="{Binding ServiceStatus}" Width="100" />
+                <DataGridTextColumn Header="Service ID" Binding="{Binding ServiceId}" Width="Auto"/>
+                <DataGridTextColumn Header="Service Name" Binding="{Binding ServiceName}" Width="*"/>
+                <DataGridTextColumn Header="Service Type" Binding="{Binding ServiceType}" Width="*"/>
+                <DataGridTextColumn Header="Description" Binding="{Binding ServiceDescription}" Width="*"/>
+                <DataGridTextColumn Header="Price" Binding="{Binding ServicePrice}" Width="Auto"/>
+                <DataGridTextColumn Header="Status" Binding="{Binding ServiceStatus}" Width="Auto"/>
             </DataGrid.Columns>
         </DataGrid>
 
-        <Button Content="Add Service" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="212,0,0,20" Click="AddService_Click" />
-        <Button Content="Edit Service" HorizontalAlignment="Left" VerticalAlignment="Bottom" Click="EditService_Click" Margin="355,0,0,20" />
-        <Button Content="Delete Service" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,213,20" Click="DeleteService_Click" />
+        <!-- Buttons for managing services -->
+        <StackPanel Grid.Row="4" Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
+            <Button x:Name="btnAddService" Content="Add Service" Width="100" Margin="5" Background="green" Foreground="White" Click="btnAddService_Click"/>
+            <Button x:Name="btnEditService" Content="Edit Service" Width="100" Margin="5" Background="#3AA9AD" Foreground="White" Click="btnEditService_Click"/>
+            <Button x:Name="btnDeleteService" Content="Delete Service" Width="100" Margin="5" Background="red" Foreground="White" Click="btnDeleteService_Click"/>
+        </StackPanel>
+
+        <!-- Popup for adding/editing services -->
+        <Grid x:Name="popupGrid" Visibility="Collapsed" Background="#80000000" Grid.RowSpan="5">
+            <Border Background="White" Padding="20" Margin="100">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <TextBlock Text="Service Name:" Grid.Row="0" Margin="5"/>
+                    <TextBox x:Name="txtServiceName" Grid.Row="0" Margin="5" Width="300"/>
+
+                    <TextBlock Text="Service Type:" Grid.Row="1" Margin="5"/>
+                    <TextBox x:Name="txtServiceType" Grid.Row="1" Margin="5" Width="300"/>
+
+                    <TextBlock Text="Description:" Grid.Row="2" Margin="5"/>
+                    <TextBox x:Name="txtServiceDescription" Grid.Row="2" Margin="5" Width="300"/>
+
+                    <TextBlock Text="Price:" Grid.Row="3" Margin="5"/>
+                    <TextBox x:Name="txtServicePrice" Grid.Row="3" Margin="5" Width="300"/>
+
+                    <TextBlock Text="Status:" Grid.Row="4" Margin="5"/>
+                    <ComboBox x:Name="cmbServiceStatus" Grid.Row="4" Margin="5" Width="300">
+                        <ComboBoxItem Content="Available"/>
+                        <ComboBoxItem Content="Unavailable"/>
+                    </ComboBox>
+
+                    <StackPanel Grid.Row="5" Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
+                        <Button x:Name="btnSaveService" Content="Save" Width="100" Margin="5" Background="#3AA9AD" Foreground="White" Click="btnSaveService_Click"/>
+                        <Button x:Name="btnCancelService" Content="Cancel" Width="100" Margin="5" Background="#3AA9AD" Foreground="White" Click="btnCancelService_Click"/>
+                    </StackPanel>
+                </Grid>
+            </Border>
+        </Grid>
     </Grid>
 </Window>

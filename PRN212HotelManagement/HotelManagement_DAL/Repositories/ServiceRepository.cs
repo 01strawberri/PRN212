@@ -21,13 +21,14 @@ namespace HotelManagement_DAL.Repositories
             return _context.Services.ToList();
         }
 
-        public void AddService(Service service)
+        public bool AddService(Service service)
         {
             _context.Services.Add(service);
             _context.SaveChanges();
+            return true;
         }
 
-        public void UpdateService(Service service)
+        public bool UpdateService(Service service)
         {
             var serviceInDb = _context.Services.SingleOrDefault(s => s.ServiceId == service.ServiceId);
             if (serviceInDb != null)
@@ -35,9 +36,10 @@ namespace HotelManagement_DAL.Repositories
                 _context.Entry(serviceInDb).CurrentValues.SetValues(service);
                 _context.SaveChanges();
             }
+            return true;
         }
 
-        public void DeleteService(int serviceId)
+        public bool DeleteService(int serviceId)
         {
             var service = _context.Services.Find(serviceId);
             if (service != null)
@@ -45,6 +47,7 @@ namespace HotelManagement_DAL.Repositories
                 _context.Services.Remove(service);
                 _context.SaveChanges();
             }
+            return true;
         }
 
 

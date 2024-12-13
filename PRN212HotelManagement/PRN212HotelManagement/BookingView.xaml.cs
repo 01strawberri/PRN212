@@ -292,13 +292,6 @@ namespace PRN212HotelManagement
             this.Close();
         }
 
-        private void btn_Bookings_Click(object sender, RoutedEventArgs e)
-        {
-            BookingView booking = new BookingView(currentUser);
-            booking.Show();
-            this.Close();
-        }
-
         // Khi nhấn nút "Add Service" trong popup
         private void btnAddService_Click(object sender, RoutedEventArgs e)
         {
@@ -339,22 +332,38 @@ namespace PRN212HotelManagement
         {
             if (dataGridBookings.SelectedItem is HotelManagement_DAL.Booking selectedBooking)
             {
-                selectedBooking.BookingStatus = "CheckOut";
-
-                _checkOutService.UpdateBooking(selectedBooking);
-                _checkOutService.AddTransaction(new Transaction
+                try
                 {
-                    BookingId = selectedBooking.BookingId,
-                    UserId = selectedBooking.UserId,
-                    EventDescription = "Checkout completed",
-                    TransactionType = "Checkout",
-                    TransactionAmount = selectedBooking.TotalPrice,
-                    EventDate = DateTime.Now,
-                    TransactionStatus = "Completed"
-                });
+                    // Cập nhật trạng thái Booking thành "Confirmed"
+                    _checkOutService.UpdateBookingStatusToConfirmed(selectedBooking.BookingId);
 
-                LoadBookings();
+                    // Tạo một giao dịch (transaction) cho việc CheckOut
+                    _checkOutService.AddTransaction(new Transaction
+                    {
+                        BookingId = selectedBooking.BookingId,
+                        UserId = selectedBooking.UserId,
+                        EventDescription = "Checkout completed",
+                        TransactionType = "Checkout",
+                        TransactionAmount = selectedBooking.TotalPrice,
+                        EventDate = DateTime.Now,
+                        TransactionStatus = "Completed"
+                    });
+
+                    MessageBox.Show("CheckOut completed successfully!", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+
+                    // Reload danh sách bookings
+                    LoadBookings();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"An error occurred while checking out: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Please select a booking to check out.", "No Booking Selected", MessageBoxButton.OK, MessageBoxImage.Warning);
             }
         }
+
     }
 }

@@ -17,10 +17,18 @@ namespace HotelManagement_DAL.Repositories
             return _context.Bookings.Find(bookingId);
         }
 
-        public void UpdateBooking(Booking booking)
+        public void UpdateBookingStatusToConfirmed(int bookingId)
         {
-            _context.Bookings.Update(booking);
-            _context.SaveChanges();
+            var booking = _context.Bookings.Find(bookingId);
+            if (booking != null)
+            {
+                booking.BookingStatus = "Confirmed";
+                _context.SaveChanges();
+            }
+            else
+            {
+                throw new ArgumentException($"Booking with ID {bookingId} not found.");
+            }
         }
 
         public void AddTransaction(Transaction transaction)

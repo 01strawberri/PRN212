@@ -21,12 +21,10 @@
             Foreground="White" BorderThickness="0" Click="btn_Bookings_Click"/>
             <Button x:Name="btn_ManageRoom" Content="Manage Room" Width="124" Height="40" Background="Transparent" 
             Foreground="White" BorderThickness="0" Click="btn_ManageRoom_Click"/>
-            <Button x:Name="btn_ManageUser" Width="129" Height="40" Margin="5" Background="Transparent" 
-            Foreground="White" BorderThickness="0" Content="Manage Users" Click="btn_ManageUser_Click" />
             <Button x:Name="btn_ManageService" Content="Manage Services" Width="108" Height="40" Margin="5" Background="Transparent" 
             Foreground="White" BorderThickness="0"/>
             <Button x:Name="btn_Transaction" Content="Transaction" Width="100" Height="40" Margin="5" Background="Transparent" 
-            Foreground="White" BorderThickness="0" HorizontalAlignment="Right"/>
+            Foreground="White" BorderThickness="0" HorizontalAlignment="Right" Click="btn_Transaction_Click"/>
             <Button x:Name="btn_Logout" Content="Logout" Width="100" Height="40" Margin="5" Background="Transparent" 
             Foreground="White" BorderThickness="0" HorizontalAlignment="Right" Click="btn_Logout_Click"/>
         </StackPanel>

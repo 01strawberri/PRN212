@@ -53,12 +53,6 @@ namespace PRN212HotelManagement
             this.Close();
         }
 
-        private void btn_Bookings_Click(object sender, RoutedEventArgs e)
-        {
-            ViewBookingForAdmin bookingWindow = new ViewBookingForAdmin(currentUser);
-            bookingWindow.Show();
-            this.Close();
-        }
 
         private void btn_ManageRoom_Click(object sender, RoutedEventArgs e)
         {
@@ -76,12 +70,15 @@ namespace PRN212HotelManagement
 
         private void btn_ManageService_Click(object sender, RoutedEventArgs e)
         {
-
+            ManageService manageServiceWindow = new ManageService();
+            manageServiceWindow.Show();
+            this.Close();
         }
 
         private void btn_Transaction_Click(object sender, RoutedEventArgs e)
         {
-
+            TransactionWindow transactionWindow = new TransactionWindow();
+            transactionWindow.Show();
         }
 
         private void btn_Logout_Click(object sender, RoutedEventArgs e)

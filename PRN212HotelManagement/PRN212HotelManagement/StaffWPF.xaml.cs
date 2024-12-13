@@ -39,7 +39,9 @@ namespace PRN212HotelManagement
 
         private void btn_Rooms_Click(object sender, RoutedEventArgs e)
         {
-            
+            ViewRoom viewRoom = new ViewRoom();
+            viewRoom.Show();
+            this.Close();
         }
 
 

@@ -151,22 +151,15 @@ namespace PRN212HotelManagement
         }
         private void btn_Logout_Click(object sender, RoutedEventArgs e)
         {
-            this.Close();
             Login login = new Login();
             login.Show();
-        }
-
-        private void btn_ManageRoom_Click(object sender, RoutedEventArgs e)
-        {
-            ManageRooms manageRooms = new ManageRooms(currentUser);
-            manageRooms.Show();
             this.Close();
         }
-
-
         private void btn_Bookings_Click(object sender, RoutedEventArgs e)
         {
-            
+            ViewBookingForAdmin viewBookingForAdmin = new ViewBookingForAdmin(currentUser);
+            viewBookingForAdmin.Show();
+            this.Close();
         }
 
         private void btn_ManageUser_Click(object sender, RoutedEventArgs e)
@@ -188,6 +181,12 @@ namespace PRN212HotelManagement
             txtRoomDescription.Clear();
             txtRoomStatus.Clear();
             txtRoomName.Tag = null; 
+        }
+
+        private void btn_Transaction_Click(object sender, RoutedEventArgs e)
+        {
+            TransactionWindow transactionWindow = new TransactionWindow();
+            transactionWindow.Show();
         }
     }
 }

@@ -197,8 +197,8 @@ namespace PRN212HotelManagement
 
         private void btn_Bookings_Click(object sender, RoutedEventArgs e)
         {
-            BookingView bookingView = new BookingView(currentUser);
-            bookingView.Show();
+            ViewBookingForAdmin viewBookingForAdmin = new ViewBookingForAdmin(currentUser);
+            viewBookingForAdmin.Show();
             this.Close();
         }
          
@@ -409,6 +409,13 @@ namespace PRN212HotelManagement
 
             emailDialog.Content = stackPanel;
             emailDialog.ShowDialog();
+        }
+
+        private void btn_ManageService_Click(object sender, RoutedEventArgs e)
+        {
+            ManageService manageServiceWindow = new ManageService();
+            manageServiceWindow.Show();
+            this.Close();
         }
     }
 }

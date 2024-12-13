@@ -176,21 +176,21 @@ namespace PRN212HotelManagement
 
         private void btn_Bookings_Click(object sender, RoutedEventArgs e)
         {
-            //Booking manageRooms = new Booking();
-            //manageRooms.Show();
-            //this.Close();
-        }
-
-        private void btn_ManageUser_Click(object sender, RoutedEventArgs e)
-        {
-            ManageUsers manageUsersWindow = new ManageUsers(currentUser);
-            manageUsersWindow.Show();
+            ViewBookingForAdmin viewBookingForAdmin = new ViewBookingForAdmin(currentUser);
+            viewBookingForAdmin.Show();
             this.Close();
         }
+
 
         private void btnCancel_Click(object sender, RoutedEventArgs e)
         {
             popupGrid.Visibility = Visibility.Collapsed;
+        }
+
+        private void btn_Transaction_Click(object sender, RoutedEventArgs e)
+        {
+            TransactionWindow transactionWindow = new TransactionWindow();
+            transactionWindow.Show();
         }
     }
 }

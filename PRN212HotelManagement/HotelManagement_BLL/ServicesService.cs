@@ -25,18 +25,18 @@ namespace HotelManagement_BLL
             return _repository.GetAllServices();
         }
 
-        public void AddService(Service service)
+        public bool AddService(Service service)
         {
-            _repository.AddService(service);
+            return _repository.AddService(service);
         }
-        public void UpdateService(Service updatedService)
+        public bool UpdateService(Service updatedService)
         {
-            _repository.UpdateService(updatedService);
+            return _repository.UpdateService(updatedService);
         }
 
-        public void DeleteService(int serviceId)
+        public bool DeleteService(int serviceId)
         {
-            _repository.DeleteService(serviceId);
+            return _repository.DeleteService(serviceId);
         }
     }
 }

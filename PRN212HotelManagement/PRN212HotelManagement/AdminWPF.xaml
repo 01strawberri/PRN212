@@ -24,7 +24,7 @@
             <Button x:Name="btn_ManageUser" Width="129" Height="40" Margin="5" Background="Transparent" 
                     Foreground="White" BorderThickness="0" Content="Manage Users" Click="btn_ManageUser_Click" />
             <Button x:Name="btn_ManageService" Content="Manage Services" Width="108" Height="40" Margin="5" Background="Transparent" 
-                    Foreground="White" BorderThickness="0"/>
+                    Foreground="White" BorderThickness="0" Click="btn_ManageService_Click"/>
             <Button x:Name="btn_Transaction" Content="Transaction" Width="100" Height="40" Margin="5" Background="Transparent" 
                     Foreground="White" BorderThickness="0" HorizontalAlignment="Right"  Click="btn_Transaction_Click"/>
             <Button x:Name="btn_Logout" Content="Logout" Width="100" Height="40" Margin="5" Background="Transparent" 
